@@ -1,0 +1,136 @@
+/*
+
+* Override Pages default styles or create your own styles here
+
+*/
+
+.form-group-default .form-control {
+    height: 40px;
+    min-height: 40px;
+    margin-top:0;
+}
+
+
+.switchery {
+    width: 70px;
+    height: 40px;
+}
+
+.switchery>small {
+    height: 40px;
+    width: 40px;
+}
+
+.grid-view .filters input, .grid-view .filters select {
+    height:calc(2.25rem + 2px);
+}
+
+.modal-open .select2-container {
+    z-index: 1000;
+}
+
+.social-card.share .card-header .user-pic > img {
+    width: 50px;
+    height: 50px;
+}
+
+.social-card.share .card-header:hover {
+    cursor: initial;
+}
+
+.bg-partnership{
+    background-color: #8EB71E !important
+}
+
+.btn-portal{
+    height: 300px;
+    width: 100%;
+    box-shadow:inset 0 0 0 2000px rgba(195,207,239,0.5);
+}
+
+.btn-portal h3{
+    color: white;
+    padding-top: 25%;
+    font-weight: bold;
+}
+
+.checkbox input[type=checkbox]:checked + label::after {
+    font-family: "Font Awesome 5 Free";
+    content: "\F00C";
+    font-weight: bold;
+    color: #fff;
+}
+
+#progressbar{
+    margin-top: 30%;
+    transform: rotate(270deg);
+    background-color:red;
+}
+
+#progressbar[value]::-webkit-progress-bar {
+    background-color: #eee;
+    border-radius: 2px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+}
+
+.countdown{
+    font-weight: bolder
+}
+
+.badge-title{
+    background-color: red !important;
+    color: white !important;
+    font-weight: bolder !important;
+    padding: 5px !important;
+    margin-left: -4% !important;
+
+}
+
+/*
+.grid-view table.items th a {
+    color: white !important;
+}
+
+.grid-view table.items th {
+    background: rgb(142,183,30);
+    background: linear-gradient(0deg, rgba(142,183,30,1) 0%, rgba(205,227,145,1) 55%, rgba(142,183,30,1) 100%);
+    color: white !important;
+}
+
+*/
+.sidebar-header img {
+    margin-top: -20px !important;
+    margin-left: -8% !important;
+}
+
+.brand img {
+    height: 100px !important;
+}
+
+@media only screen and (min-width: 980px){
+    body.menu-behind .header .brand {
+        height: 60px;
+    }
+
+    body.menu-behind .header .brand img{
+        margin-top: -10%;
+    }
+}
+
+.table thead tr,
+.items thead tr{
+    background-color: grey !important;
+}
+
+.table thead tr th,
+-items thead tr th{
+    background-color: grey !important;  
+    background:none !important;
+    color:white;
+    font-size: 13px;
+}
+
+.table thead tr th a{
+    text-decoration: none !important;
+    color:white;
+}
