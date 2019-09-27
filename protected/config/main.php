@@ -3,12 +3,10 @@
 // uncomment the following to define a path alias
 // Yii::setPathOfAlias('local','path/to/local-folder');
 
-// This is the main Web application configuration. Any writable
-// CWebApplication properties can be configured here.
 return array(
     'basePath'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'..',
-    'name'=>'My Web Application',
-    'theme'          => 'site',
+    'name'=>'Factoria Peñaranda',
+    'theme'          => 'classic',
     'preload'        => array('log'),
     'language'       => 'es',
     'sourceLanguage' => 'en',
@@ -37,9 +35,6 @@ return array(
             'urlFormat'      => 'path',
             'showScriptName' => false,
             'rules'          => array(
-                'perfil'                                 => 'site/perfil',
-                'login'                                  => 'site/login',
-                'logout'                                 => 'site/logout',
                 '<controller:\w+>/<id:\d+>'              => '<controller>/view',
                 '<controller:\w+>/<action:\w+>/<id:\d+>' => '<controller>/<action>',
                 '<controller:\w+>/<action:\w+>'          => '<controller>/<action>'
