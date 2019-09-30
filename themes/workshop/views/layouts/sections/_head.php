@@ -1,4 +1,4 @@
-<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
 <meta charset="utf-8" />
 
 <title><?php echo CHtml::encode($this->pageTitle); ?></title>
@@ -18,9 +18,9 @@
 <link href="<?= Yii::app()->theme->getBaseUrl() ?>/bin/css/bootstrap.min.css" rel="stylesheet" type="text/css">
 <link href="<?= Yii::app()->theme->getBaseUrl() ?>/bin/css/jquery-ui.min.css" rel="stylesheet" type="text/css">
 <link href="<?= Yii::app()->theme->getBaseUrl() ?>/bin/css/animate.css" rel="stylesheet" type="text/css">
-<link href="<?= Yii::app()->theme->getBaseUrl() ?>/bin/css/css-plugin-collections.css" rel="stylesheet"/>
+<link href="<?= Yii::app()->theme->getBaseUrl() ?>/bin/css/css-plugin-collections.css" rel="stylesheet" />
 <!-- CSS | menuzord megamenu skins -->
-<link id="menuzord-menu-skins" href="<?= Yii::app()->theme->getBaseUrl() ?>/bin/css/menuzord-rounded-boxed.css" rel="stylesheet"/>
+<link id="menuzord-menu-skins" href="<?= Yii::app()->theme->getBaseUrl() ?>/bin/css/menuzord-rounded-boxed.css" rel="stylesheet" />
 <!-- CSS | Main style file -->
 <link href="<?= Yii::app()->theme->getBaseUrl() ?>/bin/css/style-main.css" rel="stylesheet" type="text/css">
 <!-- CSS | Preloader Styles -->
@@ -31,9 +31,9 @@
 <link href="<?= Yii::app()->theme->getBaseUrl() ?>/bin/css/responsive.css" rel="stylesheet" type="text/css">
 
 <!-- Revolution Slider 5.x CSS settings -->
-<link  href="<?= Yii::app()->theme->getBaseUrl() ?>/bin/css/settings.css" rel="stylesheet" type="text/css"/>
-<link  href="<?= Yii::app()->theme->getBaseUrl() ?>/bin/css/layers.css" rel="stylesheet" type="text/css"/>
-<link  href="<?= Yii::app()->theme->getBaseUrl() ?>/bin/css/navigation.css" rel="stylesheet" type="text/css"/>
+<link href="<?= Yii::app()->theme->getBaseUrl() ?>/bin/css/settings.css" rel="stylesheet" type="text/css" />
+<link href="<?= Yii::app()->theme->getBaseUrl() ?>/bin/css/layers.css" rel="stylesheet" type="text/css" />
+<link href="<?= Yii::app()->theme->getBaseUrl() ?>/bin/css/navigation.css" rel="stylesheet" type="text/css" />
 
 <!-- CSS | Theme Color -->
 <link href="<?= Yii::app()->theme->getBaseUrl() ?>/bin/css/theme-skin-color-set-1.css" rel="stylesheet" type="text/css">
@@ -49,8 +49,10 @@
 <script src="<?= Yii::app()->theme->getBaseUrl() ?>/bin/js/jquery.themepunch.tools.min.js"></script>
 <script src="<?= Yii::app()->theme->getBaseUrl() ?>/bin/js/jquery.themepunch.revolution.min.js"></script>
 
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-4548528-6"></script>
+
 <script>
-    $(document).ready(function () {
+    $(document).ready(function() {
         var Global = {
             module: '<?= ($this->module) ? $this->module->id : '' ?>',
             controller: '<?= $this->id ?>',
@@ -61,10 +63,19 @@
 
         $.ajax({
             url: Global.baseUrl + '/' + Global.controller + '/parent',
-            success: function (data) {
+            success: function(data) {
                 $('body').append(data);
             },
             dataType: 'html'
         });
+
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-4548528-6');
     });
 </script>
