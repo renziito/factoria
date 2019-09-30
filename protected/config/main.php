@@ -4,8 +4,8 @@
 // Yii::setPathOfAlias('local','path/to/local-folder');
 
 return array(
-    'basePath'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'..',
-    'name'=>'Factoria Peñaranda',
+    'basePath'       => dirname(__FILE__) . DIRECTORY_SEPARATOR . '..',
+    'name'           => 'Factoria Peñaranda',
     'theme'          => 'workshop',
     'preload'        => array('log'),
     'language'       => 'es',

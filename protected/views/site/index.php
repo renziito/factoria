@@ -110,7 +110,7 @@ $this->pageTitle = Yii::app()->name;
 
 
 <!-- Section: Services -->
-<section class="bg-lighter">
+<section class="bg-lighter" id="services">
     <div class="container pb-60">
         <div class="section-title">
             <div class="row">
@@ -186,7 +186,7 @@ $this->pageTitle = Yii::app()->name;
 </section>
 
 <!-- Section: About -->
-<section>
+<section id="us">
     <div class="container">
         <div class="section-content">
             <div class="row">
@@ -219,13 +219,13 @@ $this->pageTitle = Yii::app()->name;
 
 
 <!-- Section: Why Choose Us -->
-<section class="bg-lighter">
+<section class="bg-lighter" id="clients">
     <div class="container">
         <div class="section-content">
             <div class="row">
                 <div class="col-md-7">
                     <div class="pr-40">
-                        <h3 class="text-uppercase text-theme-colored title line-bottom line-height-1 mt-0">Why Choose<span class="text-theme-color-2 font-weight-400"> Us ?</span></h3>
+                        <h3 class="text-uppercase text-theme-colored title line-bottom line-height-1 mt-0">¿Por qué elegirnos?</span></h3>
                         <div class="row">
                             <div class="col-xs-12 col-sm-6 col-md-6">
                                 <div class="icon-box p-0 mb-30">
@@ -297,7 +297,7 @@ $this->pageTitle = Yii::app()->name;
                     </div>
                 </div>
                 <div class="col-md-5">
-                    <h3 class="text-uppercase text-theme-colored title line-bottom line-height-1 mt-0">What <span class="text-theme-color-2 font-weight-400">Clients Say ?</span></h3>
+                    <h3 class="text-uppercase text-theme-colored title line-bottom line-height-1 mt-0">Nuestros Clientes</span></h3>
                     <div class="bxslider bx-nav-top">
                         <div class="testimonial bg-lightest p-20 mb-15">
                             <div class="comment">
@@ -360,6 +360,57 @@ $this->pageTitle = Yii::app()->name;
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Gallery  -->
+<section id="contact">
+    <div class="container">
+        <div class="section-content">
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 col-md-7 pb-sm-20">
+                    <h3 class="line-bottom font-20 text-theme-colored text-uppercase mt-0">Galeria</h3>
+
+                    <div class="gallery-isotope grid-4 gutter-small clearfix" data-lightbox="gallery">
+
+                        <?php foreach ($pictures as $picture): ?>
+                            <div class="gallery-item">
+                                <div class="thumb">
+                                    <img alt="project" src="<?= $picture['thumb'] ?>" class="img-fullwidth">
+                                    <div class="overlay-shade"></div>
+                                    <div class="icons-holder">
+                                        <div class="icons-holder-inner">
+                                            <div class="styled-icons icon-sm icon-dark icon-circled icon-theme-colored">
+                                                <a href="<?= $picture['image'] ?>"  data-lightbox-gallery="gallery"><i class="fa fa-picture-o"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        <?php endforeach; ?>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-5 pb-sm-20">
+                    <h3 class="line-bottom font-20 text-theme-colored text-uppercase mt-0">¿Donde estamos?</h3>
+                    <!-- Google Map HTML Codes -->
+                    <div class="mapouter"><div class="gmap_canvas">
+                            <iframe width="600" height="333" id="gmap_canvas" 
+                                    src="https://maps.google.com/maps?q=pe%C3%B1aranda&t=&z=13&ie=UTF8&iwloc=&output=embed" 
+                                    frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                        </div>
+                        <style>
+                            .mapouter{position:relative;text-align:right;height:333px;width:600px;}
+                            .gmap_canvas {overflow:hidden;background:none!important;height:333px;width:600px;}
+                        </style>
+                    </div>
+
+                    <!--
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5456.163483134849!2d144.95177475051227!3d-37.81589041361766!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d4dd5a05d97%3A0x3e64f855a564844d!2s121+King+St%2C+Melbourne+VIC+3000%2C+Australia!5e0!3m2!1sen!2sbd!4v1556130803137!5m2!1sen!2sbd" 
+                            width="100%" height="333" frameborder="0" style="border:0" allowfullscreen></iframe>-->
                 </div>
             </div>
         </div>

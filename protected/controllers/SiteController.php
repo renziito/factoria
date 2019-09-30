@@ -1,6 +1,6 @@
 <?php
 
-class SiteController extends \Controller {
+class SiteController extends Controller {
 
     /**
      * This is the default 'index' action that is invoked
@@ -30,7 +30,74 @@ class SiteController extends \Controller {
                 'link'     => '#',
             ],
         ];
-        $this->render('index', compact('sliders'));
+
+        $pictures = [
+            [
+                'thumb' => Yii::app()->theme->getBaseUrl() . '/bin/images/gallery/gallery-sm1.jpg',
+                'image' => Yii::app()->theme->getBaseUrl() . '/bin/images/gallery/gallery-lg1.jpg'
+            ],
+            [
+                'thumb' => Yii::app()->theme->getBaseUrl() . '/bin/images/gallery/gallery-sm2.jpg',
+                'image' => Yii::app()->theme->getBaseUrl() . '/bin/images/gallery/gallery-lg2.jpg'
+            ],
+            [
+                'thumb' => Yii::app()->theme->getBaseUrl() . '/bin/images/gallery/gallery-sm3.jpg',
+                'image' => Yii::app()->theme->getBaseUrl() . '/bin/images/gallery/gallery-lg3.jpg'
+            ],
+            [
+                'thumb' => Yii::app()->theme->getBaseUrl() . '/bin/images/gallery/gallery-sm4.jpg',
+                'image' => Yii::app()->theme->getBaseUrl() . '/bin/images/gallery/gallery-lg4.jpg'
+            ],
+            [
+                'thumb' => Yii::app()->theme->getBaseUrl() . '/bin/images/gallery/gallery-sm5.jpg',
+                'image' => Yii::app()->theme->getBaseUrl() . '/bin/images/gallery/gallery-lg5.jpg'
+            ],
+            [
+                'thumb' => Yii::app()->theme->getBaseUrl() . '/bin/images/gallery/gallery-sm6.jpg',
+                'image' => Yii::app()->theme->getBaseUrl() . '/bin/images/gallery/gallery-lg6.jpg'
+            ],
+            [
+                'thumb' => Yii::app()->theme->getBaseUrl() . '/bin/images/gallery/gallery-sm7.jpg',
+                'image' => Yii::app()->theme->getBaseUrl() . '/bin/images/gallery/gallery-lg7.jpg'
+            ],
+            [
+                'thumb' => Yii::app()->theme->getBaseUrl() . '/bin/images/gallery/gallery-sm8.jpg',
+                'image' => Yii::app()->theme->getBaseUrl() . '/bin/images/gallery/gallery-lg8.jpg'
+            ],
+            [
+                'thumb' => Yii::app()->theme->getBaseUrl() . '/bin/images/gallery/gallery-sm9.jpg',
+                'image' => Yii::app()->theme->getBaseUrl() . '/bin/images/gallery/gallery-lg9.jpg'
+            ],
+            [
+                'thumb' => Yii::app()->theme->getBaseUrl() . '/bin/images/gallery/gallery-sm10.jpg',
+                'image' => Yii::app()->theme->getBaseUrl() . '/bin/images/gallery/gallery-lg10.jpg'
+            ],
+            [
+                'thumb' => Yii::app()->theme->getBaseUrl() . '/bin/images/gallery/gallery-sm11.jpg',
+                'image' => Yii::app()->theme->getBaseUrl() . '/bin/images/gallery/gallery-lg11.jpg'
+            ],
+            [
+                'thumb' => Yii::app()->theme->getBaseUrl() . '/bin/images/gallery/gallery-sm12.jpg',
+                'image' => Yii::app()->theme->getBaseUrl() . '/bin/images/gallery/gallery-lg12.jpg'
+            ],
+        ];
+
+        $this->render('index', compact('sliders', 'pictures'));
+    }
+
+    public function actionModal() {
+        echo $this->renderPartial('pages/_modal', true);
+    }
+
+    public function actionParent() {
+        echo '<div class="modal fade" id="BSParentModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                <div class="modal-dialog  modal-lg" role="document">
+                  <div class="modal-content">
+                    <div class="modal-body">
+                    </div>
+                  </div>
+                </div>
+              </div>';
     }
 
     /**

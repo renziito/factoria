@@ -5,10 +5,8 @@
  * It contains the authentication method that checks if the provided
  * data can identity the user.
  */
-namespace Factoria;
+class UserIdentity extends CUserIdentity {
 
-class UserIdentity extends CUserIdentity
-{
     private $id;
 
     /**
@@ -19,8 +17,7 @@ class UserIdentity extends CUserIdentity
      * against some persistent user identity storage (e.g. database).
      * @return boolean whether authentication succeeds.
      */
-    public function authenticate()
-    {
+    public function authenticate() {
         Utils::setBusqueda([
             'username' => $this->username,
             'estado'   => 1
@@ -30,7 +27,7 @@ class UserIdentity extends CUserIdentity
             $this->errorCode = self::ERROR_USERNAME_INVALID;
         } else {
             if (password_verify($this->password, $model->password)) {
-                $this->id       = $model->id;
+                $this->id        = $model->id;
                 $this->setState("correo", $model->correo);
                 $this->setState("rol", $model->rol);
                 $this->setState("nombres", $model->nombres);
@@ -43,8 +40,8 @@ class UserIdentity extends CUserIdentity
         return !$this->errorCode;
     }
 
-    public function getId()
-    {
+    public function getId() {
         return $this->id;
     }
+
 }

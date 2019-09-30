@@ -11,7 +11,6 @@
 <meta name="robots" content="index,follow">
 <meta content="" name="author" />
 
-
 <link rel="shortcut icon" href="<?= Yii::app()->theme->getBaseUrl() ?>/bin/images/favicon.ico">
 <link rel="icon" type="image/x-icon" href="<?= Yii::app()->theme->getBaseUrl() ?>/bin/images/favicon.ico" />
 
@@ -49,3 +48,23 @@
 <!-- Revolution Slider 5.x SCRIPTS -->
 <script src="<?= Yii::app()->theme->getBaseUrl() ?>/bin/js/jquery.themepunch.tools.min.js"></script>
 <script src="<?= Yii::app()->theme->getBaseUrl() ?>/bin/js/jquery.themepunch.revolution.min.js"></script>
+
+<script>
+    $(document).ready(function () {
+        var Global = {
+            module: '<?= ($this->module) ? $this->module->id : '' ?>',
+            controller: '<?= $this->id ?>',
+            action: '<?= $this->action->id ?>',
+            absoluteUrl: '<?= Yii::app()->getBaseUrl(true) ?>',
+            baseUrl: '<?= Yii::app()->baseUrl ?>',
+        }
+
+        $.ajax({
+            url: Global.baseUrl + '/' + Global.controller + '/parent',
+            success: function (data) {
+                $('body').append(data);
+            },
+            dataType: 'html'
+        });
+    });
+</script>
