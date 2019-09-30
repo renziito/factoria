@@ -6,7 +6,7 @@
 return array(
     'basePath'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'..',
     'name'=>'Factoria Peñaranda',
-    'theme'          => 'classic',
+    'theme'          => 'workshop',
     'preload'        => array('log'),
     'language'       => 'es',
     'sourceLanguage' => 'en',
