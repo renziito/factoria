@@ -47,8 +47,8 @@
                 <a class="btn default btn-xs" href="<?= Yii::app()->getBaseUrl(true) ?>/#us">Nosotros</a>
                 <a class="btn default btn-xs" href="<?= Yii::app()->getBaseUrl(true) ?>/#services">Servicios</a>
                 <a class="btn default btn-xs" href="<?= Yii::app()->getBaseUrl(true) ?>/#clients">Clientes</a>
-                <a class="btn default btn-xs" href="<?= Yii::app()->getBaseUrl(true) ?>/blog">Blog</a>
-                <a class="btn default btn-xs" href="<?= Yii::app()->getBaseUrl(true) ?>/#contact">Contacto</a>
+                <a class="btn default btn-xs" href="<?= Yii::app()->getBaseUrl(true) ?>/autos">Venta de Autos</a>
+                <a class="btn default btn-xs" href="<?= Yii::app()->getBaseUrl(true) ?>/#contact">Contáctanos</a>
             </div>
         </div>
     </div>
@@ -109,7 +109,7 @@
                         <li><a href="<?= Yii::app()->getBaseUrl(true) ?>/#services">Servicios</a></li>
                         <li><a href="<?= Yii::app()->getBaseUrl(true) ?>/#clients">Clientes</a></li>
                         <li><a href="<?= Yii::app()->getBaseUrl(true) ?>/blog">Blog</a></li>
-                        <li><a href="<?= Yii::app()->getBaseUrl(true) ?>/#contact">Contacto</a></li>
+                        <li><a href="<?= Yii::app()->controller->createUrl('contacto') ?>">Contacto</a></li>
                     </ul>
                     <ul class="pull-right flip hidden-sm hidden-xs">
                         <li>

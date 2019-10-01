@@ -29,7 +29,6 @@ class UserIdentity extends CUserIdentity {
             if (password_verify($this->password, $model->password)) {
                 $this->id        = $model->id;
                 $this->setState("correo", $model->correo);
-                $this->setState("rol", $model->rol);
                 $this->setState("nombres", $model->nombres);
                 $this->setState("apellidos", $model->apellidos);
                 $this->errorCode = self::ERROR_NONE;

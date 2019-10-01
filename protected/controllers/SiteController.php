@@ -10,22 +10,22 @@ class SiteController extends Controller {
         $sliders = [
             [
                 'image'    => Yii::app()->theme->getBaseUrl() . '/bin/images/bg/bg23.jpg',
-                'title'    => 'Haz tu Carro <br> Revivir',
-                'button'   => 'Mira Como',
+                'title'    => 'ADQUIERE REPUESTOS <br> originales o de segunda',
+                'button'   => '',
                 'position' => 'right',
                 'link'     => '#',
             ],
             [
                 'image'    => Yii::app()->theme->getBaseUrl() . '/bin/images/bg/bg22.jpg',
-                'title'    => 'El mejor <br> servicio de carros',
-                'button'   => 'Saber más',
+                'title'    => 'Una opción segura <br> PARA TU VEHÍCULO',
+                'button'   => '',
                 'position' => 'left',
                 'link'     => '#',
             ],
             [
                 'image'    => Yii::app()->theme->getBaseUrl() . '/bin/images/bg/bg21.jpg',
-                'title'    => 'El mejor taller <br> que existe',
-                'button'   => 'Ver Detalles',
+                'title'    => 'Haz tu carro REVIVIR',
+                'button'   => '',
                 'position' => 'center',
                 'link'     => '#',
             ],
@@ -82,7 +82,64 @@ class SiteController extends Controller {
             ],
         ];
 
-        $this->render('index', compact('sliders', 'pictures'));
+        $clientes = [
+            [
+                'image' => Yii::app()->theme->getBaseUrl() . '/bin/images/gallery/gallery-sm12.jpg',
+                'link'  => 'http://www.google.com.pe'
+            ],
+            [
+                'image' => Yii::app()->theme->getBaseUrl() . '/bin/images/gallery/gallery-sm11.jpg',
+                'link'  => ''
+            ],
+            [
+                'image' => Yii::app()->theme->getBaseUrl() . '/bin/images/gallery/gallery-sm10.jpg',
+                'link'  => 'http://www.google.com.pe'
+            ],
+            [
+                'image' => Yii::app()->theme->getBaseUrl() . '/bin/images/gallery/gallery-sm9.jpg',
+                'link'  => ''
+            ],
+            [
+                'image' => Yii::app()->theme->getBaseUrl() . '/bin/images/gallery/gallery-sm1.jpg',
+                'link'  => 'http://www.google.com.pe'
+            ],
+            [
+                'image' => Yii::app()->theme->getBaseUrl() . '/bin/images/gallery/gallery-sm12.jpg',
+                'link'  => 'http://www.google.com.pe'
+            ],
+            [
+                'image' => Yii::app()->theme->getBaseUrl() . '/bin/images/gallery/gallery-sm11.jpg',
+                'link'  => ''
+            ],
+            [
+                'image' => Yii::app()->theme->getBaseUrl() . '/bin/images/gallery/gallery-sm10.jpg',
+                'link'  => 'http://www.google.com.pe'
+            ],
+            [
+                'image' => Yii::app()->theme->getBaseUrl() . '/bin/images/gallery/gallery-sm9.jpg',
+                'link'  => ''
+            ]
+        ];
+
+        $autos = [
+            [
+                'image'  => Yii::app()->theme->getBaseUrl() . '/bin/images/gallery/gallery-lg5.jpg',
+                'titulo' => 'KIA ROJO MODELO 2018',
+                'anio'   => '2018',
+                'color'  => 'rojo',
+                'km'     => '2000'
+            ],
+            [
+                'image'  => Yii::app()->theme->getBaseUrl() . '/bin/images/gallery/gallery-lg6.jpg',
+                'titulo' => 'KIA ROJO MODELO 2018',
+                'anio'   => '2018',
+                'color'  => 'rojo',
+                'km'     => '2000'
+            ]
+        ];
+
+
+        $this->render('index', compact('sliders', 'pictures', 'clientes', 'autos'));
     }
 
     public function actionModal() {
@@ -98,6 +155,10 @@ class SiteController extends Controller {
                   </div>
                 </div>
               </div>';
+    }
+
+    public function actionContacto() {
+        $this->render('contacto');
     }
 
     /**

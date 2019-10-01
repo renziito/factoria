@@ -1,6 +1,6 @@
 <?php
 
-class BlogController extends Controller {
+class AutosController extends Controller {
 
     /**
      * This is the default 'index' action that is invoked

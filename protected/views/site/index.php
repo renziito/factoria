@@ -110,7 +110,7 @@ $this->pageTitle = Yii::app()->name;
 
 
 <!-- Section: Services -->
-<section class="bg-lighter" id="services">
+<section id="services">
     <div class="container pb-60">
         <div class="section-title">
             <div class="row">
@@ -131,51 +131,83 @@ $this->pageTitle = Yii::app()->name;
                 <div class="col-md-12">
                     <div class="owl-carousel-3col" data-dots="true">
                         <div class=" item">
-                            <div class="thumb"> <img src="<?= Yii::app()->theme->getBaseUrl() ?>/bin/images/practice/1.jpg" class="img-fullwidth" alt=""> </div>
+                            <div class="thumb"> 
+                                <img src="<?= Yii::app()->theme->getBaseUrl() ?>/bin/images/practice/1.jpg" class="img-fullwidth" alt=""> 
+                            </div>
                             <div class="bg-white p-20">
-                                <h4 class="line-bottom text-uppercase font-weight-600 mt-0 mb-15">Engine Diagnostic</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.</p>
-                                <a class="btn btn-theme-colored btn-sm btn-flat" href="#">Get Service ></a>
+                                <h4 class="line-bottom text-uppercase font-weight-600 mt-0 mb-15">
+                                    Scaneo y diagnóstico computarizado
+                                </h4>
+                                <p>
+                                    Nuestro servicio de scaneo a domicilio es la forma más efectiva y 
+                                    transparente para saber con precisión el estado de tu vehículo y 
+                                    diagnosticar de modo claro cual es el inconveniente que podría presentar,
+                                    para atenderlo de inmediato.</p>
+                                <!--<a class="btn btn-theme-colored btn-sm btn-flat" href="#">Get Service ></a>-->
                             </div>
                         </div>
                         <div class="item">
-                            <div class="thumb"> <img src="<?= Yii::app()->theme->getBaseUrl() ?>/bin/images/practice/2.jpg" class="img-fullwidth" alt=""> </div>
+                            <div class="thumb"> 
+                                <img src="<?= Yii::app()->theme->getBaseUrl() ?>/bin/images/practice/2.jpg" class="img-fullwidth" alt=""> 
+                            </div>
                             <div class="bg-white p-20">
-                                <h4 class="line-bottom text-uppercase font-weight-600 mt-0 mb-15">Wheel Alignment</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.</p>
-                                <a class="btn btn-theme-colored btn-sm btn-flat" href="#">Get Service ></a>
+                                <h4 class="line-bottom text-uppercase font-weight-600 mt-0 mb-15">
+                                    Importación y venta directa de repuestos
+                                </h4>
+                                <p>
+                                    Apóyate en nosotros y consigue repuestos compatibles 
+                                    con tu vehículo sin gastar de más ni esperar una eternidad.
+                                    Si tu presupuesto es corto, tenemos opciones de segunda mano para tu auto
+                                </p>
+                                <!--<a class="btn btn-theme-colored btn-sm btn-flat" href="#">Get Service ></a>-->
                             </div>
                         </div>
                         <div class="item">
-                            <div class="thumb"> <img src="<?= Yii::app()->theme->getBaseUrl() ?>/bin/images/practice/3.jpg" class="img-fullwidth" alt=""> </div>
+                            <div class="thumb"> 
+                                <img src="<?= Yii::app()->theme->getBaseUrl() ?>/bin/images/practice/3.jpg" class="img-fullwidth" alt="">
+                            </div>
                             <div class="bg-white p-20">
-                                <h4 class="line-bottom text-uppercase font-weight-600 mt-0 mb-15">Oil Changing</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.</p>
-                                <a class="btn btn-theme-colored btn-sm btn-flat" href="#">Get Service ></a>
+                                <h4 class="line-bottom text-uppercase font-weight-600 mt-0 mb-15">
+                                    Venta de Autos a consignación
+                                </h4>
+                                <p>
+                                    Evita un proceso largo y tedioso: Te ayudamos a comprar el auto ideal para ti,
+                                    o deshacerte de tu automóvil actual al precio justo y realizando los arreglos
+                                    necesarios para evitar futuros reclamos.
+                                </p>
+                                <!--<a class="btn btn-theme-colored btn-sm btn-flat" href="#">Get Service ></a>-->
                             </div>
                         </div>
                         <div class=" item">
-                            <div class="thumb"> <img src="<?= Yii::app()->theme->getBaseUrl() ?>/bin/images/practice/4.jpg" class="img-fullwidth" alt=""> </div>
+                            <div class="thumb">
+                                <img src="<?= Yii::app()->theme->getBaseUrl() ?>/bin/images/practice/4.jpg" class="img-fullwidth" alt=""> 
+                            </div>
                             <div class="bg-white p-20">
-                                <h4 class="line-bottom text-uppercase font-weight-600 mt-0 mb-15">Brake Reparing</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.</p>
-                                <a class="btn btn-theme-colored btn-sm btn-flat" href="#">Get Service ></a>
+                                <h4 class="line-bottom text-uppercase font-weight-600 mt-0 mb-15">
+                                    Asesoramiento para compra vehicular
+                                </h4>
+                                <p>
+                                    Puedes tener muchas dudas y preguntas antes de adquirir el 
+                                    auto ideal para ti... por eso te ayudamos a resolverlas para
+                                    que puedas tomar una elección de la que no te arrepientas.
+                                </p>
+                                <!--<a class="btn btn-theme-colored btn-sm btn-flat" href="#">Get Service ></a>-->
                             </div>
                         </div>
                         <div class="item">
-                            <div class="thumb"> <img src="<?= Yii::app()->theme->getBaseUrl() ?>/bin/images/practice/5.jpg" class="img-fullwidth" alt=""> </div>
-                            <div class="bg-white p-20">
-                                <h4 class="line-bottom text-uppercase font-weight-600 mt-0 mb-15">Wash and Glassing</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.</p>
-                                <a class="btn btn-theme-colored btn-sm btn-flat" href="#">Get Service ></a>
+                            <div class="thumb"> 
+                                <img src="<?= Yii::app()->theme->getBaseUrl() ?>/bin/images/practice/5.jpg" class="img-fullwidth" alt="">
                             </div>
-                        </div>
-                        <div class="item">
-                            <div class="thumb"> <img src="<?= Yii::app()->theme->getBaseUrl() ?>/bin/images/practice/6.jpg" class="img-fullwidth" alt=""> </div>
                             <div class="bg-white p-20">
-                                <h4 class="line-bottom text-uppercase font-weight-600 mt-0 mb-15">Complete Analysis</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.</p>
-                                <a class="btn btn-theme-colored btn-sm btn-flat" href="#">Get Service ></a>
+                                <h4 class="line-bottom text-uppercase font-weight-600 mt-0 mb-15">
+                                    Restauración de vehículos
+                                </h4>
+                                <p>
+                                    Pon tu auto a tono, bien sea para revenderlo, o
+                                    para que luzca mejor que nunca. Te ayudamos a dejar
+                                    tu auto como recién salido de la fábrica.
+                                </p>
+                                <!--<a class="btn btn-theme-colored btn-sm btn-flat" href="#">Get Service ></a>-->
                             </div>
                         </div>
                     </div>
@@ -186,23 +218,20 @@ $this->pageTitle = Yii::app()->name;
 </section>
 
 <!-- Section: About -->
-<section id="us">
+<section class="bg-lighter"  id="us">
     <div class="container">
         <div class="section-content">
             <div class="row">
                 <div class="col-md-6">
-                    <h2 class="mt-0 title line-bottom">Nosotros</h2>
+                    <h2 class="mt-0 title line-bottom">FACTORÍA PEÑARANDA</h2>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing eliter.
-                        Corporis voluptatibu suscipit perferend dolor sit amet, 
-                        consectetur adipisicing elit. Corporis voluptati buneque,
-                        assumenda maxime aspernatur porro.<br>suscipit perferend 
-                        aspernatur porro, quam suscipit quibusdam. Commodi eum.<br>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing eliter.
-                        Corporis voluptatibu suscipit perferend dolor sit amet, 
-                        consectetur adipisicing elit. Corporis voluptati buneque,
-                        assumenda maxime aspernatur porro.<br>suscipit perferend 
-                        aspernatur porro, quam suscipit quibusdam. Commodi eum.
+                        Para muchas personas resulta difícil confiar en un mecánico y 
+                        tener plena seguridad que lo que le sugieren es lo correcto para
+                        su automóvil. Elegir a Factoría Peñaranda es elegir a un socio de
+                        confianza que comprende tus necesidades. Tenemos una experiencia 
+                        conjunta de 30 años y una extensa trayectoria a nivel nacional. 
+                        Por eso estamos seguros de poder ayudarte en todo lo que necesites 
+                        tú y tu automóvil.
                     </p>
                 </div>
                 <div class="col-md-6">
@@ -217,148 +246,28 @@ $this->pageTitle = Yii::app()->name;
     </div>
 </section>
 
-
-<!-- Section: Why Choose Us -->
-<section class="bg-lighter" id="clients">
-    <div class="container">
+<!-- Section: clientes -->
+<section id="clients" class="text-center">
+    <h3 style="font-weight: 700">GRACIAS POR SU CONFIANZA : </h3>
+    <div class="container" style="padding-top:30px">
         <div class="section-content">
             <div class="row">
-                <div class="col-md-7">
-                    <div class="pr-40">
-                        <h3 class="text-uppercase text-theme-colored title line-bottom line-height-1 mt-0">¿Por qué elegirnos?</span></h3>
-                        <div class="row">
-                            <div class="col-xs-12 col-sm-6 col-md-6">
-                                <div class="icon-box p-0 mb-30">
-                                    <a href="#" class="icon bg-theme-colored pull-left sm-pull-none flip">
-                                        <i class="pe-7s-scissors text-white"></i>
-                                    </a>
-                                    <div class="icon-box-details ml-sm-0">
-                                        <h5 class="icon-box-title mt-15 text-uppercase letter-space-1 font-weight-600 mb-5">Less CSS</h5>
-                                        <p class="text-gray">Lorem ipsum dolor sit amet, consectetur.</p>
+                <div class="col-md-12">
+                    <div class="owl-carousel-8col" data-dots="true">
+                        <?php foreach ($clientes as $cliente): ?>
+                            <?php if ($cliente['link']): ?> 
+                                <a target="_blank" href="<?= $cliente['link'] ?>" >
+                                <?php endif; ?> 
+                                <div class=" item">
+                                    <div class="thumb">
+                                        <img src="<?= $cliente['image'] ?>" style="height: 150px;width: 150px"
+                                             class="img-responsive" alt="">
                                     </div>
                                 </div>
-                            </div>
-                            <div class="col-xs-12 col-sm-6 col-md-6">
-                                <div class="icon-box p-0 mb-30">
-                                    <a href="#" class="icon bg-theme-colored pull-left sm-pull-none flip">
-                                        <i class="pe-7s-pen text-white"></i>
-                                    </a>
-                                    <div class="icon-box-details ml-sm-0">
-                                        <h5 class="icon-box-title mt-15 text-uppercase letter-space-1 font-weight-600 mb-5">Special ShortCode</h5>
-                                        <p class="text-gray">Lorem ipsum dolor sit amet, consectetur.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xs-12 col-sm-6 col-md-6">
-                                <div class="icon-box p-0 mb-30">
-                                    <a href="#" class="icon bg-theme-colored pull-left sm-pull-none flip">
-                                        <i class="pe-7s-tools text-white"></i>
-                                    </a>
-                                    <div class="icon-box-details ml-sm-0">
-                                        <h5 class="icon-box-title mt-15 text-uppercase letter-space-1 font-weight-600 mb-5">Easy Customiz</h5>
-                                        <p class="text-gray">Lorem ipsum dolor sit amet, consectetur.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xs-12 col-sm-6 col-md-6">
-                                <div class="icon-box p-0 mb-30">
-                                    <a href="#" class="icon bg-theme-colored pull-left sm-pull-none flip">
-                                        <i class="pe-7s-phone text-white"></i>
-                                    </a>
-                                    <div class="icon-box-details ml-sm-0">
-                                        <h5 class="icon-box-title mt-15 text-uppercase letter-space-1 font-weight-600 mb-5">Responsive</h5>
-                                        <p class="text-gray">Lorem ipsum dolor sit amet, consectetur.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xs-12 col-sm-6 col-md-6">
-                                <div class="icon-box p-0 mb-30">
-                                    <a href="#" class="icon bg-theme-colored pull-left sm-pull-none flip">
-                                        <i class="pe-7s-vector text-white"></i>
-                                    </a>
-                                    <div class="icon-box-details ml-sm-0">
-                                        <h5 class="icon-box-title mt-15 text-uppercase letter-space-1 font-weight-600 mb-5">W3 validation</h5>
-                                        <p class="text-gray">Lorem ipsum dolor sit amet, consectetur.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xs-12 col-sm-6 col-md-6">
-                                <div class="icon-box p-0 mb-30">
-                                    <a href="#" class="icon bg-theme-colored pull-left sm-pull-none flip">
-                                        <i class="pe-7s-light text-white"></i>
-                                    </a>
-                                    <div class="icon-box-details ml-sm-0">
-                                        <h5 class="icon-box-title mt-15 text-uppercase letter-space-1 font-weight-600 mb-5">Retina Ready</h5>
-                                        <p class="text-gray">Lorem ipsum dolor sit amet, consectetur.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-5">
-                    <h3 class="text-uppercase text-theme-colored title line-bottom line-height-1 mt-0">Nuestros Clientes</span></h3>
-                    <div class="bxslider bx-nav-top">
-                        <div class="testimonial bg-lightest p-20 mb-15">
-                            <div class="comment">
-                                <p><em>Lorem ipsum dolor sit ametconse ctetur adipisicing elitvolup tatem error sit qui.</em></p>
-                            </div>
-                            <div class="content mt-20">
-                                <div class="thumb pull-left flip">
-                                    <img width="64" src="<?= Yii::app()->theme->getBaseUrl() ?>/bin/images/testimonials/s2.jpg" alt="" class="img-circle">
-                                </div>
-                                <div class="testimonials-details pull-left flip ml-20">
-                                    <h5 class="author text-theme-color-2 mt-0 mb-0 font-weight-600">Jonathan Smith</h5>
-                                    <h6 class="title font-14 m-0 mt-5 mb-5 text-gray-darkgray">cici inc.</h6>
-                                    <ul class="review_text list-inline">
-                                        <li>
-                                            <div class="star-rating" title="Rated 4.50 out of 5"><span style="width: 90%;">4.50</span></div>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="clearfix"></div>
-                            </div>
-                        </div>
-                        <div class="testimonial bg-lightest p-20 mb-15">
-                            <div class="comment">
-                                <p><em>Lorem ipsum dolor sit ametconse ctetur adipisicing elitvolup tatem error sit qui.</em></p>
-                            </div>
-                            <div class="content mt-20">
-                                <div class="thumb pull-left flip">
-                                    <img width="64" src="<?= Yii::app()->theme->getBaseUrl() ?>/bin/images/testimonials/s2.jpg" alt="" class="img-circle">
-                                </div>
-                                <div class="testimonials-details pull-left flip ml-20">
-                                    <h5 class="author text-theme-color-2 mt-0 mb-0 font-weight-600">Jonathan Smith</h5>
-                                    <h6 class="title font-14 m-0 mt-5 mb-5 text-gray-darkgray">cici inc.</h6>
-                                    <ul class="review_text list-inline">
-                                        <li>
-                                            <div class="star-rating" title="Rated 4.50 out of 5"><span style="width: 90%;">4.50</span></div>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="clearfix"></div>
-                            </div>
-                        </div>
-                        <div class="testimonial bg-lightest p-20 mb-15">
-                            <div class="comment">
-                                <p><em>Lorem ipsum dolor sit ametconse ctetur adipisicing elitvolup tatem error sit qui.</em></p>
-                            </div>
-                            <div class="content mt-20">
-                                <div class="thumb pull-left flip">
-                                    <img width="64" src="<?= Yii::app()->theme->getBaseUrl() ?>/bin/images/testimonials/s2.jpg" alt="" class="img-circle">
-                                </div>
-                                <div class="testimonials-details pull-left flip ml-20">
-                                    <h5 class="author text-theme-color-2 mt-0 mb-0 font-weight-600">Jonathan Smith</h5>
-                                    <h6 class="title font-14 m-0 mt-5 mb-5 text-gray-darkgray">cici inc.</h6>
-                                    <ul class="review_text list-inline">
-                                        <li>
-                                            <div class="star-rating" title="Rated 4.50 out of 5"><span style="width: 90%;">4.50</span></div>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="clearfix"></div>
-                            </div>
-                        </div>
+                                <?php if ($cliente['link']): ?> 
+                                </a>
+                            <?php endif; ?> 
+                        <?php endforeach; ?>
                     </div>
                 </div>
             </div>
@@ -366,38 +275,64 @@ $this->pageTitle = Yii::app()->name;
     </div>
 </section>
 
-
-<!-- Gallery  -->
-<section id="contact">
-    <div class="container">
+<!-- Section: venta de autos -->
+<section class="bg-dark bg-dark-transparent-6 text-white">
+    <div class="container-fluid p-50" style="padding-top:30px">
+        <h3 class=" text-white font-weight-700">VENTA DE AUTOS </h3>
         <div class="section-content">
             <div class="row">
-                <div class="col-xs-12 col-sm-6 col-md-7 pb-sm-20">
-                    <h3 class="line-bottom font-20 text-theme-colored text-uppercase mt-0">Galeria</h3>
-
-                    <div class="gallery-isotope grid-4 gutter-small clearfix" data-lightbox="gallery">
-
-                        <?php foreach ($pictures as $picture): ?>
-                            <div class="gallery-item">
+                <div class="col-md-12">
+                    <div class="owl-carousel-2col" data-dots="true">
+                        <?php foreach ($autos as $auto): ?>
+                            <div class=" item p-50">
                                 <div class="thumb">
-                                    <img alt="project" src="<?= $picture['thumb'] ?>" class="img-fullwidth">
-                                    <div class="overlay-shade"></div>
-                                    <div class="icons-holder">
-                                        <div class="icons-holder-inner">
-                                            <div class="styled-icons icon-sm icon-dark icon-circled icon-theme-colored">
-                                                <a href="<?= $picture['image'] ?>"  data-lightbox-gallery="gallery"><i class="fa fa-picture-o"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
+                                    <img src="<?= $auto['image'] ?>" style="height: 350px;width: 100%"
+                                         class="img-responsive" alt="">
+                                </div>
+                                <div class="bg-white p-20">
+                                    <h4 class="line-bottom text-uppercase font-weight-600 mt-0 mb-15">
+                                        <?= $auto['titulo'] ?>
+                                    </h4>
+                                    <ul class="text-black">
+                                        <ol>Año : <?= $auto['anio'] ?></ol>
+                                        <ol> <?= $auto['km'] ?> Kilometros</ol>
+                                        <ol>Color: <?= $auto['color'] ?></ol>
+                                    </ul>
+                                    <br>
+                                    <a class="btn btn-theme-colored btn-sm btn-flat" href="#">Me Interesa</a>
                                 </div>
                             </div>
                         <?php endforeach; ?>
                     </div>
+                    <a href="#" class="btn btn-block btn-lg p-20 btn-theme-colored"> VER TODOS LOS AUTOS EN VENTA</a>
                 </div>
-                <div class="col-xs-12 col-sm-6 col-md-5 pb-sm-20">
-                    <h3 class="line-bottom font-20 text-theme-colored text-uppercase mt-0">¿Donde estamos?</h3>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15606.332323266884!2d-77.01087643022461!3d-12.072181099999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c625a03ce1ad%3A0x8dafb7103233c562!2sPe%C3%B1aranda%20Diesel%20SAC!5e0!3m2!1ses-419!2spe!4v1569853583000!5m2!1ses-419!2spe" 
-                        width="333" height="333" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Section: marcas -->
+<section class="text-center">
+    <div class="container" style="padding-top:30px">
+        <div class="section-content">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="owl-carousel-5col" data-dots="true">
+                        <?php foreach ($clientes as $cliente): ?>
+                            <?php if ($cliente['link']): ?> 
+                                <a target="_blank" href="<?= $cliente['link'] ?>" >
+                                <?php endif; ?> 
+                                <div class=" item">
+                                    <div class="thumb">
+                                        <img src="<?= $cliente['image'] ?>" style="height: 150px;width: 150px"
+                                             class="img-responsive" alt="">
+                                    </div>
+                                </div>
+                                <?php if ($cliente['link']): ?> 
+                                </a>
+                            <?php endif; ?> 
+                        <?php endforeach; ?>
+                    </div>
                 </div>
             </div>
         </div>
