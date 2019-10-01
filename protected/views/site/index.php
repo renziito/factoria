@@ -127,7 +127,51 @@ $this->pageTitle = Yii::app()->name;
             </div>
         </div>
         <div class="section-content">
-            <div class="row">
+            <div class="row column-view">
+                <style>
+                    .item p {
+                        position: absolute;
+                        left: 0px;
+                        top: 0px;
+                        width: 100%;
+                        height: 100%;
+                        padding: 30px 24px 10px;
+                        overflow: auto;
+                        color: #ffffff;
+                        z-index: 3;
+                        background-color: #fb4848;
+                        opacity: 0;
+                        transition: opacity 500ms ease;
+                        -webkit-transition: opacity 500ms ease;
+                        -ms-transition: opacity 500ms ease;
+                        -o-transition: opacity 500ms ease;
+                        -moz-transition: opacity 500ms ease;
+                    }
+                    .item:hover p {
+                        opacity: 0.7;
+                        -ms-animation-name: flipInX;
+                        -moz-animation-name: flipInX;
+                        -op-animation-name: flipInX;
+                        -webkit-animation-name: flipInX;
+                        animation-name: flipInX;
+                        -ms-animation-duration: 800ms;
+                        -moz-animation-duration: 800ms;
+                        -op-animation-duration: 800ms;
+                        -webkit-animation-duration: 800ms;
+                        animation-duration: 800ms;
+                        -ms-animation-timing-function: linear;
+                        -moz-animation-timing-function: linear;
+                        -op-animation-timing-function: linear;
+                        -webkit-animation-timing-function: linear;
+                        animation-timing-function: linear;
+                        -ms-animation-iteration-count: 1;
+                        -moz-animation-iteration-count: 1;
+                        -op-animation-iteration-count: 1;
+                        -webkit-animation-iteration-count: 1;
+                        animation-iteration-count: 1;
+                    }
+                </style>
+
                 <div class="col-md-12">
                     <div class="owl-carousel-3col" data-dots="true">
                         <div class=" item">
