@@ -23,18 +23,6 @@
             </div>
             <div class="col-sm-6 col-md-3">
                 <div class="widget dark">
-                    <h4 class="widget-title line-bottom-theme-colored-2">Links Utiles</h4>
-                    <ul class="list angle-double-right list-border">
-                        <li><a href="#">Body Building</a></li>
-                        <li><a href="#">Fitness Classes</a></li>
-                        <li><a href="#">Weight lifting</a></li>
-                        <li><a href="#">Yoga Courses</a></li>
-                        <li><a href="#">Training</a></li>              
-                    </ul>
-                </div>
-            </div>
-            <div class="col-sm-6 col-md-3">
-                <div class="widget dark">
                     <h4 class="widget-title line-bottom-theme-colored-2">Servicios</h4>
                     <ul class="list list-border">
                         <li><a href="#">Oil Change</a></li>
@@ -45,6 +33,7 @@
                     </ul>
                 </div>
             </div>
+            <div class="col-sm-6 col-md-3"></div>
             <div class="col-sm-6 col-md-3">
                 <div class="widget dark">
                     <h4 class="widget-title line-bottom-theme-colored-2">Horas de Atención</h4>

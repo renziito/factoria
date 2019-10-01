@@ -396,21 +396,8 @@ $this->pageTitle = Yii::app()->name;
                 </div>
                 <div class="col-xs-12 col-sm-6 col-md-5 pb-sm-20">
                     <h3 class="line-bottom font-20 text-theme-colored text-uppercase mt-0">¿Donde estamos?</h3>
-                    <!-- Google Map HTML Codes -->
-                    <div class="mapouter"><div class="gmap_canvas">
-                            <iframe width="600" height="333" id="gmap_canvas" 
-                                    src="https://maps.google.com/maps?q=pe%C3%B1aranda&t=&z=13&ie=UTF8&iwloc=&output=embed" 
-                                    frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
-                        </div>
-                        <style>
-                            .mapouter{position:relative;text-align:right;height:333px;width:600px;}
-                            .gmap_canvas {overflow:hidden;background:none!important;height:333px;width:600px;}
-                        </style>
-                    </div>
-
-                    <!--
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5456.163483134849!2d144.95177475051227!3d-37.81589041361766!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d4dd5a05d97%3A0x3e64f855a564844d!2s121+King+St%2C+Melbourne+VIC+3000%2C+Australia!5e0!3m2!1sen!2sbd!4v1556130803137!5m2!1sen!2sbd" 
-                            width="100%" height="333" frameborder="0" style="border:0" allowfullscreen></iframe>-->
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15606.332323266884!2d-77.01087643022461!3d-12.072181099999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c625a03ce1ad%3A0x8dafb7103233c562!2sPe%C3%B1aranda%20Diesel%20SAC!5e0!3m2!1ses-419!2spe!4v1569853583000!5m2!1ses-419!2spe" 
+                        width="333" height="333" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
                 </div>
             </div>
         </div>
