@@ -11,6 +11,9 @@
 <meta name="robots" content="index,follow">
 <meta content="" name="author" />
 
+<meta name="description" content="FACTORIA PEÑARANDA - Taller mecánico con más de 30 años de experiencia en el sector. Nos caracteriza la honradez, paciencia y dedicación en el servicio. Permítenos ser tu taller de confianza.">
+<meta name="keywords" content="taller, talleres en lima, talleres en surquillo, venta de repuestos, mecanico, mecanica, lima, peru, surquillo, repuestos, autos, carros, venta de autos, vender mi carro, vehiculos, scaneo, diagnostico, importacion, restauracion">
+
 <link rel="shortcut icon" href="<?= Yii::app()->theme->getBaseUrl() ?>/bin/images/favicon.ico">
 <link rel="icon" type="image/x-icon" href="<?= Yii::app()->theme->getBaseUrl() ?>/bin/images/favicon.ico" />
 
@@ -23,6 +26,7 @@
 <link id="menuzord-menu-skins" href="<?= Yii::app()->theme->getBaseUrl() ?>/bin/css/menuzord-rounded-boxed.css" rel="stylesheet" />
 <!-- CSS | Main style file -->
 <link href="<?= Yii::app()->theme->getBaseUrl() ?>/bin/css/style-main.css" rel="stylesheet" type="text/css">
+<link href="<?= Yii::app()->theme->getBaseUrl() ?>/bin/css/style.css" rel="stylesheet" type="text/css">
 <!-- CSS | Preloader Styles -->
 <link href="<?= Yii::app()->theme->getBaseUrl() ?>/bin/css/preloader.css" rel="stylesheet" type="text/css">
 <!-- CSS | Custom Margin Padding Collection -->
@@ -52,7 +56,7 @@
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-4548528-6"></script>
 
 <script>
-    $(document).ready(function() {
+    $(document).ready(function () {
         var Global = {
             module: '<?= ($this->module) ? $this->module->id : '' ?>',
             controller: '<?= $this->id ?>',
@@ -63,7 +67,7 @@
 
         $.ajax({
             url: Global.baseUrl + '/' + Global.controller + '/parent',
-            success: function(data) {
+            success: function (data) {
                 $('body').append(data);
             },
             dataType: 'html'

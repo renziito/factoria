@@ -936,7 +936,7 @@ section > .container-fluid {
  * -----------------------------------------------
 */
 .header-top {
-  padding: 5px 0;
+  /*padding: 5px 0;*/
 }
 .header-top .header-widget .styled-icons a i:hover {
   background: none;
@@ -4352,7 +4352,7 @@ blockquote p {
  * -----------------------------------------------
 */
 .icon-box {
-  padding: 40px 17px;
+  /*padding: 40px 17px;*/
 }
 .icon-box .icon {
   display: inline-block;
