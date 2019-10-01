@@ -139,7 +139,7 @@ $this->pageTitle = Yii::app()->name;
                         overflow: auto;
                         color: #ffffff;
                         z-index: 3;
-                        background-color: #fb4848;
+                        background-color: #00b096;
                         opacity: 0;
                         transition: opacity 500ms ease;
                         -webkit-transition: opacity 500ms ease;
