@@ -20,7 +20,7 @@
                            text-white font-14 bs-modal-ajax-load mt-0"
                            style="padding: 14px 30px;"
                            data-toggle="modal" data-target="#BSParentModal"
-                           href="<?= $this->createUrl('modal') ?>">Solicita Presupuesto</a>
+                           href="<?= $this->createUrl('modal') ?>">Solicita Repuestos</a>
                     </div>
                 </div>
             </div>

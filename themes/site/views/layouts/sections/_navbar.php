@@ -39,7 +39,7 @@
             <li>
                 <a href="<?= Yii::app()->createUrl('panel/auto') ?>" class="detailed"
                    style="width: 100%">
-                    <span class="title">Autos</span>
+                    <span class="title">Venta de Autos</span>
                 </a>
             </li>
             <li>
