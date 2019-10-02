@@ -11,7 +11,7 @@ $this->pageTitle = Yii::app()->name;
         <?php $this->renderPartial('pages/_slider', ['sliders' => $sliders]); ?>
         <!-- end .rev_slider_wrapper -->
         <script>
-            $(document).ready(function (e) {
+            $(document).ready(function(e) {
                 $(".rev_slider").revolution({
                     sliderType: "standard",
                     sliderLayout: "auto",
@@ -147,6 +147,7 @@ $this->pageTitle = Yii::app()->name;
                         -o-transition: opacity 500ms ease;
                         -moz-transition: opacity 500ms ease;
                     }
+
                     .item:hover p {
                         opacity: 0.7;
                         -ms-animation-name: flipInX;
@@ -175,31 +176,31 @@ $this->pageTitle = Yii::app()->name;
                 <div class="col-md-12">
                     <div class="owl-carousel-3col" data-dots="true">
                         <div class=" item">
-                            <div class="thumb"> 
-                                <img src="<?= Yii::app()->theme->getBaseUrl() ?>/bin/images/practice/1.jpg" class="img-fullwidth" alt=""> 
+                            <div class="thumb">
+                                <img src="<?= Yii::app()->theme->getBaseUrl() ?>/bin/images/practice/1.jpg" class="img-fullwidth" alt="">
                             </div>
                             <div class="bg-white p-20">
                                 <h4 class="line-bottom text-uppercase font-weight-600 mt-0 mb-15">
                                     Scaneo y diagnóstico computarizado
                                 </h4>
                                 <p>
-                                    Nuestro servicio de scaneo a domicilio es la forma más efectiva y 
-                                    transparente para saber con precisión el estado de tu vehículo y 
+                                    Nuestro servicio de scaneo a domicilio es la forma más efectiva y
+                                    transparente para saber con precisión el estado de tu vehículo y
                                     diagnosticar de modo claro cual es el inconveniente que podría presentar,
                                     para atenderlo de inmediato.</p>
                                 <!--<a class="btn btn-theme-colored btn-sm btn-flat" href="#">Get Service ></a>-->
                             </div>
                         </div>
                         <div class="item">
-                            <div class="thumb"> 
-                                <img src="<?= Yii::app()->theme->getBaseUrl() ?>/bin/images/practice/2.jpg" class="img-fullwidth" alt=""> 
+                            <div class="thumb">
+                                <img src="<?= Yii::app()->theme->getBaseUrl() ?>/bin/images/practice/2.jpg" class="img-fullwidth" alt="">
                             </div>
                             <div class="bg-white p-20">
                                 <h4 class="line-bottom text-uppercase font-weight-600 mt-0 mb-15">
                                     Importación y venta directa de repuestos
                                 </h4>
                                 <p>
-                                    Apóyate en nosotros y consigue repuestos compatibles 
+                                    Apóyate en nosotros y consigue repuestos compatibles
                                     con tu vehículo sin gastar de más ni esperar una eternidad.
                                     Si tu presupuesto es corto, tenemos opciones de segunda mano para tu auto
                                 </p>
@@ -207,7 +208,7 @@ $this->pageTitle = Yii::app()->name;
                             </div>
                         </div>
                         <div class="item">
-                            <div class="thumb"> 
+                            <div class="thumb">
                                 <img src="<?= Yii::app()->theme->getBaseUrl() ?>/bin/images/practice/3.jpg" class="img-fullwidth" alt="">
                             </div>
                             <div class="bg-white p-20">
@@ -224,14 +225,14 @@ $this->pageTitle = Yii::app()->name;
                         </div>
                         <div class=" item">
                             <div class="thumb">
-                                <img src="<?= Yii::app()->theme->getBaseUrl() ?>/bin/images/practice/4.jpg" class="img-fullwidth" alt=""> 
+                                <img src="<?= Yii::app()->theme->getBaseUrl() ?>/bin/images/practice/4.jpg" class="img-fullwidth" alt="">
                             </div>
                             <div class="bg-white p-20">
                                 <h4 class="line-bottom text-uppercase font-weight-600 mt-0 mb-15">
                                     Asesoramiento para compra vehicular
                                 </h4>
                                 <p>
-                                    Puedes tener muchas dudas y preguntas antes de adquirir el 
+                                    Puedes tener muchas dudas y preguntas antes de adquirir el
                                     auto ideal para ti... por eso te ayudamos a resolverlas para
                                     que puedas tomar una elección de la que no te arrepientas.
                                 </p>
@@ -239,7 +240,7 @@ $this->pageTitle = Yii::app()->name;
                             </div>
                         </div>
                         <div class="item">
-                            <div class="thumb"> 
+                            <div class="thumb">
                                 <img src="<?= Yii::app()->theme->getBaseUrl() ?>/bin/images/practice/5.jpg" class="img-fullwidth" alt="">
                             </div>
                             <div class="bg-white p-20">
@@ -262,24 +263,24 @@ $this->pageTitle = Yii::app()->name;
 </section>
 
 <!-- Section: About -->
-<section class="bg-lighter"  id="us">
+<section class="bg-lighter" id="us">
     <div class="container">
         <div class="section-content">
             <div class="row">
                 <div class="col-md-6">
                     <h2 class="mt-0 title line-bottom">FACTORÍA PEÑARANDA</h2>
                     <p>
-                        Para muchas personas resulta difícil confiar en un mecánico y 
+                        Para muchas personas resulta difícil confiar en un mecánico y
                         tener plena seguridad que lo que le sugieren es lo correcto para
                         su automóvil. Elegir a Factoría Peñaranda es elegir a un socio de
-                        confianza que comprende tus necesidades. Tenemos una experiencia 
-                        conjunta de 30 años y una extensa trayectoria a nivel nacional. 
-                        Por eso estamos seguros de poder ayudarte en todo lo que necesites 
+                        confianza que comprende tus necesidades. Tenemos una experiencia
+                        conjunta de 30 años y una extensa trayectoria a nivel nacional.
+                        Por eso estamos seguros de poder ayudarte en todo lo que necesites
                         tú y tu automóvil.
                     </p>
                 </div>
                 <div class="col-md-6">
-                    <div class="thumb">                
+                    <div class="thumb">
                         <a href="https://www.youtube.com/watch?v=kcIuVJiYauA" data-lightbox-gallery="youtube-video" title="Video">
                             <img class="img-fullwidth" src="<?= Yii::app()->theme->getBaseUrl() ?>/bin/images/about/8.jpg" alt="images">
                         </a>
@@ -291,6 +292,7 @@ $this->pageTitle = Yii::app()->name;
 </section>
 
 <!-- Section: clientes -->
+<?php $pathClientes = Yii::app()->getBaseUrl(true) . '/files/media/clientes/'?>
 <section id="clients" class="text-center">
     <h3 style="font-weight: 700">GRACIAS POR SU CONFIANZA : </h3>
     <div class="container" style="padding-top:30px">
@@ -298,19 +300,18 @@ $this->pageTitle = Yii::app()->name;
             <div class="row">
                 <div class="col-md-12">
                     <div class="owl-carousel-8col" data-dots="true">
-                        <?php foreach ($clientes as $cliente): ?>
-                            <?php if ($cliente['link']): ?> 
-                                <a target="_blank" href="<?= $cliente['link'] ?>" >
-                                <?php endif; ?> 
+                        <?php foreach ($clientes as $cliente) : ?>
+                            <?php if ($cliente['link']) : ?>
+                                <a target="_blank" href="<?= $cliente['link'] ?>">
+                                <?php endif; ?>
                                 <div class=" item">
                                     <div class="thumb">
-                                        <img src="<?= $cliente['image'] ?>" style="height: 150px;width: 150px"
-                                             class="img-responsive" alt="">
+                                        <img src="<?= Utils::isUrlValid($cliente['image'],$pathClientes) ?>" style="height: 150px;width: 150px" class="img-responsive" alt="">
                                     </div>
                                 </div>
-                                <?php if ($cliente['link']): ?> 
+                                <?php if ($cliente['link']) : ?>
                                 </a>
-                            <?php endif; ?> 
+                            <?php endif; ?>
                         <?php endforeach; ?>
                     </div>
                 </div>
@@ -327,11 +328,10 @@ $this->pageTitle = Yii::app()->name;
             <div class="row">
                 <div class="col-md-12">
                     <div class="owl-carousel-2col" data-dots="true">
-                        <?php foreach ($autos as $auto): ?>
+                        <?php foreach ($autos as $auto) : ?>
                             <div class=" item p-50">
                                 <div class="thumb">
-                                    <img src="<?= $auto['image'] ?>" style="height: 350px;width: 100%"
-                                         class="img-responsive" alt="">
+                                    <img src="<?= $auto['image'] ?>" style="height: 350px;width: 100%" class="img-responsive" alt="">
                                 </div>
                                 <div class="bg-white p-20">
                                     <h4 class="line-bottom text-uppercase font-weight-600 mt-0 mb-15">
@@ -362,19 +362,18 @@ $this->pageTitle = Yii::app()->name;
             <div class="row">
                 <div class="col-md-12">
                     <div class="owl-carousel-5col" data-dots="true">
-                        <?php foreach ($clientes as $cliente): ?>
-                            <?php if ($cliente['link']): ?> 
-                                <a target="_blank" href="<?= $cliente['link'] ?>" >
-                                <?php endif; ?> 
+                        <?php foreach ($clientes as $cliente) : ?>
+                            <?php if ($cliente['link']) : ?>
+                                <a target="_blank" href="<?= $cliente['link'] ?>">
+                                <?php endif; ?>
                                 <div class=" item">
                                     <div class="thumb">
-                                        <img src="<?= $cliente['image'] ?>" style="height: 150px;width: 150px"
-                                             class="img-responsive" alt="">
+                                        <img src="<?= $cliente['image'] ?>" style="height: 150px;width: 150px" class="img-responsive" alt="">
                                     </div>
                                 </div>
-                                <?php if ($cliente['link']): ?> 
+                                <?php if ($cliente['link']) : ?>
                                 </a>
-                            <?php endif; ?> 
+                            <?php endif; ?>
                         <?php endforeach; ?>
                     </div>
                 </div>

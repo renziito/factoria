@@ -9,49 +9,8 @@ class SiteController extends Controller
      */
     public function actionIndex()
     {
-        $sliders= Utils::getAllasArray(
-            Slider::model()->findAll('estado= true')
-        );
-
-        $clientes = [
-            [
-                'image' => Yii::app()->theme->getBaseUrl() . '/bin/images/gallery/gallery-sm12.jpg',
-                'link'  => 'http://www.google.com.pe'
-            ],
-            [
-                'image' => Yii::app()->theme->getBaseUrl() . '/bin/images/gallery/gallery-sm11.jpg',
-                'link'  => ''
-            ],
-            [
-                'image' => Yii::app()->theme->getBaseUrl() . '/bin/images/gallery/gallery-sm10.jpg',
-                'link'  => 'http://www.google.com.pe'
-            ],
-            [
-                'image' => Yii::app()->theme->getBaseUrl() . '/bin/images/gallery/gallery-sm9.jpg',
-                'link'  => ''
-            ],
-            [
-                'image' => Yii::app()->theme->getBaseUrl() . '/bin/images/gallery/gallery-sm1.jpg',
-                'link'  => 'http://www.google.com.pe'
-            ],
-            [
-                'image' => Yii::app()->theme->getBaseUrl() . '/bin/images/gallery/gallery-sm12.jpg',
-                'link'  => 'http://www.google.com.pe'
-            ],
-            [
-                'image' => Yii::app()->theme->getBaseUrl() . '/bin/images/gallery/gallery-sm11.jpg',
-                'link'  => ''
-            ],
-            [
-                'image' => Yii::app()->theme->getBaseUrl() . '/bin/images/gallery/gallery-sm10.jpg',
-                'link'  => 'http://www.google.com.pe'
-            ],
-            [
-                'image' => Yii::app()->theme->getBaseUrl() . '/bin/images/gallery/gallery-sm9.jpg',
-                'link'  => ''
-            ]
-        ];
-
+        $sliders= Utils::getAllasArray(Slider::model()->findAll('estado= true'));
+        $clientes= Utils::getAllasArray(Clientes::model()->findAll('estado= true'));
         $autos = [
             [
                 'image'  => Yii::app()->theme->getBaseUrl() . '/bin/images/gallery/gallery-lg5.jpg',

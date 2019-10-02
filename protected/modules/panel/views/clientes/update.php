@@ -3,8 +3,7 @@
 /* @var $model Clientes */
 
 $this->breadcrumbs=array(
-	'Clientes'=>array('index'),
-	$model->id=>array('view','id'=>$model->id),
+	'Clientes'=>[$this->createUrl('index')],
 	'Actualizar',
 );
 ?>
