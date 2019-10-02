@@ -1,7 +1,7 @@
 <nav class="page-sidebar bg-partnership" data-pages="sidebar">
-    <div class="sidebar-header bg-partnership">
+    <div class="sidebar-header bg-partnership" style="height: 60px;">
         <img src="<?= Yii::app()->theme->getBaseUrl() ?>/assets/images/logo-wide.png" alt="logo"
-             class="brand"  width="200px" 
+             class="brand  hidden-lg hidden-md"  width="200px" 
              data-src="<?= Yii::app()->theme->getBaseUrl() ?>/assets/images/logo-wide.png" 
              data-src-retina="<?= Yii::app()->theme->getBaseUrl() ?>/assets/images/logo-wide.png" />
     </div>
@@ -21,7 +21,7 @@
             <li>
                 <a href="<?= Yii::app()->createUrl('panel/slider') ?>" class="detailed"
                    style="width: 100%">
-                    <span class="title">Carrousel</span>
+                    <span class="title">Sliders</span>
                 </a>
             </li>
             <li>
