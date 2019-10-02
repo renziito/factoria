@@ -31,15 +31,19 @@ $route = Yii::app()->getBaseUrl(true) . '/files/media/clientes/';
 
     <div class="row">
         <div class="col-xs-9">
-            <?= $form->labelEx($model, 'image'); ?>
-            <?= $form->fileField($model, 'image', ['class' => 'form-control', 'size' => 60, 'maxlength' => 255]); ?>
+            <div class="form-group form-group-default required">
+                <?= $form->labelEx($model, 'image'); ?>
+                <?= $form->fileField($model, 'image', ['class' => 'form-control', 'size' => 60, 'maxlength' => 255]); ?>
+            </div>
         </div>
     </div>
 
     <div class="row">
         <div class="col-xs-9">
-            <?= $form->labelEx($model, 'link'); ?>
-            <?= $form->textField($model, 'link', ['class' => 'form-control', 'size' => 60, 'maxlength' => 255]); ?>
+            <div class="form-group form-group-default">
+                <?= $form->labelEx($model, 'link'); ?>
+                <?= $form->textField($model, 'link', ['class' => 'form-control', 'size' => 60, 'maxlength' => 255]); ?>
+            </div>
         </div>
     </div>
 
