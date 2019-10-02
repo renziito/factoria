@@ -7,6 +7,28 @@
     .default:hover {
         background: #e7e7e7;
     }
+    @media only screen and (max-width: 767px){
+        .main-header .header-lower {
+            background-color: #005e9c;
+        }
+    }
+
+    @media only screen and (max-width: 767px){ 
+        .main-menu .navbar-collapse > .navigation > li > a, 
+        .main-menu .navbar-collapse > .navigation > li > ul > li > a,
+        .main-menu .navbar-collapse > .navigation > li > ul > li > ul > li > a {
+            background: #57585a;
+        }
+    }
+    @media only screen and (max-width: 767px){
+        .main-menu .navbar-header .navbar-toggler {
+            background-color: #57585a;
+        }
+    }
+
+    .main-menu .navigation > li:hover {
+        background-color: #005e9c;
+    }
 </style>
 
 <header class="main-header">
@@ -46,15 +68,15 @@
                 <div class="pull-left logo-outer">
                     <div class="logo">
                         <a href="<?= Yii::app()->getBaseUrl(true) ?>">
-                            <img src="<?= Yii::app()->theme->getBaseUrl() ?>/bin/images/logo-wide.png" 
-                                 style="height: 70px"
+                            <img src="<?= Yii::app()->theme->getBaseUrl() ?>/bin/images/logo.jpg" 
+                                 style="height: 120px"
                                  alt="" title="">
                         </a>
                     </div>
                 </div>
                 <div class="pull-right upper-right clearfix">
                     <!--Info Box-->
-                    <div class="upper-column info-box">
+                    <div class="upper-column info-box" style="margin-top: 1.5%;">
                         <div class="icon-box"><i class="fa fa-map-marker"></i></div>
                         <ul>
                             <li><strong>SAN CARLOS 660,</strong></li>
@@ -63,7 +85,7 @@
 
                     </div>
                     <!--Info Box-->
-                    <div class="upper-column info-box">
+                    <div class="upper-column info-box" style="margin-top: 1.5%;">
                         <div class="icon-box"><i class="fa fa-clock-o"></i></div>
                         <ul>
                             <li><strong>LUNES A VIERNES</strong></li>
@@ -72,7 +94,7 @@
                     </div>
 
                     <!--Info Box-->
-                    <div class="upper-column info-box">
+                    <div class="upper-column info-box" style="margin-top: 1.5%;">
                         <div class="icon-box"></div>
                         <ul>
                             <li><strong>SÁBADOS</strong></li>
@@ -108,7 +130,7 @@
                             <li><a href="<?= Yii::app()->getBaseUrl(true) ?>/#us">Nosotros</a></li>
                             <li><a href="<?= Yii::app()->getBaseUrl(true) ?>/#services">Servicios</a></li>
                             <li><a href="<?= Yii::app()->getBaseUrl(true) ?>/#clients">Clientes</a></li>
-                            <li><a href="<?= Yii::app()->getBaseUrl(true) ?>/blog">Blog</a></li>
+                            <li><a href="<?= Yii::app()->getBaseUrl(true) ?>/autos">Venta de Autos</a></li>
                             <li><a href="<?= Yii::app()->controller->createUrl('contacto') ?>">Contacto</a></li>
                         </ul>
                     </div>

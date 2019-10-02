@@ -1,43 +1,45 @@
 <nav class="page-sidebar bg-partnership" data-pages="sidebar">
     <div class="sidebar-header bg-partnership">
-        <img src="<?= Yii::app()->theme->getBaseUrl() ?>/assets/images/logo-partnership-fondoverde.png" alt="logo"
-             class="brand"  width="200" 
-             data-src="<?= Yii::app()->theme->getBaseUrl() ?>/assets/images/logo-partnership-fondoverde.png" 
-             data-src-retina="<?= Yii::app()->theme->getBaseUrl() ?>/assets/images/logo-partnership-fondoverde.png" />
+        <img src="<?= Yii::app()->theme->getBaseUrl() ?>/assets/images/logo-wide.png" alt="logo"
+             class="brand"  width="200px" 
+             data-src="<?= Yii::app()->theme->getBaseUrl() ?>/assets/images/logo-wide.png" 
+             data-src-retina="<?= Yii::app()->theme->getBaseUrl() ?>/assets/images/logo-wide.png" />
     </div>
     <div class="sidebar-menu">
         <ul class="menu-items">
             <li class="m-t-30 ">
-                <a href="<?= Yii::app()->createUrl('portal') ?>" class="detailed">
+                <a href="<?= Yii::app()->createUrl('panel') ?>" class="detailed">
                     <span class="title">Inicio</span>
                 </a>
             </li>
             <li>
-                <a href="<?= Yii::app()->createUrl('perfil') ?>" class="detailed">
-                    <span class="title">Perfil</span>
-                </a>
-            </li>
-            <li>
-                <a href="<?= Yii::app()->createUrl('admin/usuario') ?>" class="detailed"
+                <a href="<?= Yii::app()->createUrl('panel/usuario') ?>" class="detailed"
                    style="width: 100%">
                     <span class="title">Usuarios</span>
                 </a>
             </li>
             <li>
-                <a href="<?= Yii::app()->createUrl('admin/examen') ?>" class="detailed">
-                    <span class="title">Exámenes</span>
+                <a href="<?= Yii::app()->createUrl('panel/slider') ?>" class="detailed"
+                   style="width: 100%">
+                    <span class="title">Carrousel</span>
                 </a>
             </li>
             <li>
-                <a href="<?= Yii::app()->createUrl('admin/notas') ?>"
+                <a href="<?= Yii::app()->createUrl('panel/servicios') ?>" class="detailed"
                    style="width: 100%">
-                    <span class="title">Revisión de Notas</span>
+                    <span class="title">Servicios</span>
                 </a>
             </li>
             <li>
-                <a href="<?= Yii::app()->createUrl('admin/tipo') ?>" class="detailed"
+                <a href="<?= Yii::app()->createUrl('panel/clientes') ?>" class="detailed"
                    style="width: 100%">
-                    <span class="title">Tipo Exámen</span>
+                    <span class="title">Clientes</span>
+                </a>
+            </li>
+            <li>
+                <a href="<?= Yii::app()->createUrl('panel/auto') ?>" class="detailed"
+                   style="width: 100%">
+                    <span class="title">Autos</span>
                 </a>
             </li>
             <li>

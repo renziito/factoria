@@ -2,6 +2,14 @@
 
 class m191001_022635_first_tables extends CDbMigration {
 
+    public function up() {
+        return $this->safeUp();
+    }
+
+    public function down() {
+        return $this->safeDown();
+    }
+
     public function safeUp() {
 
         $this->createTable('usuario', array(
@@ -15,10 +23,10 @@ class m191001_022635_first_tables extends CDbMigration {
             'estado'     => 'boolean default TRUE',
         ));
 
-        $this->insert('user', array(
+        $this->insert('usuario', array(
             'username'  => 'sa',
             'password'  => password_hash('admin', PASSWORD_DEFAULT),
-            'mail'      => 'sepia.aki@gmail.com',
+            'correo'    => 'sepia.aki@gmail.com',
             'nombres'   => 'Super',
             'apellidos' => 'Admin'
         ));
@@ -30,25 +38,6 @@ class m191001_022635_first_tables extends CDbMigration {
             'button'     => 'string',
             'position'   => 'string',
             'link'       => 'string',
-            'created_at' => 'datetime default now()',
-            'estado'     => 'boolean default TRUE',
-        ));
-
-        $this->createTable('slider', array(
-            'id'         => 'pk auto_increment',
-            'image'      => 'string',
-            'title'      => 'text NOT NULL',
-            'button'     => 'string',
-            'position'   => 'string',
-            'link'       => 'string',
-            'created_at' => 'datetime default now()',
-            'estado'     => 'boolean default TRUE',
-        ));
-
-        $this->createTable('imagenes', array(
-            'id'         => 'pk auto_increment',
-            'thumb'      => 'string',
-            'image'      => 'text',
             'created_at' => 'datetime default now()',
             'estado'     => 'boolean default TRUE',
         ));
@@ -107,7 +96,6 @@ class m191001_022635_first_tables extends CDbMigration {
     public function safeDown() {
         $this->dropTable('usuario');
         $this->dropTable('slider');
-        $this->dropTable('imagenes');
         $this->dropTable('nosotros');
         $this->dropTable('servicios');
         $this->dropTable('clientes');

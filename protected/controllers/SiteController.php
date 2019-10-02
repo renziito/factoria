@@ -31,57 +31,6 @@ class SiteController extends Controller {
             ],
         ];
 
-        $pictures = [
-            [
-                'thumb' => Yii::app()->theme->getBaseUrl() . '/bin/images/gallery/gallery-sm1.jpg',
-                'image' => Yii::app()->theme->getBaseUrl() . '/bin/images/gallery/gallery-lg1.jpg'
-            ],
-            [
-                'thumb' => Yii::app()->theme->getBaseUrl() . '/bin/images/gallery/gallery-sm2.jpg',
-                'image' => Yii::app()->theme->getBaseUrl() . '/bin/images/gallery/gallery-lg2.jpg'
-            ],
-            [
-                'thumb' => Yii::app()->theme->getBaseUrl() . '/bin/images/gallery/gallery-sm3.jpg',
-                'image' => Yii::app()->theme->getBaseUrl() . '/bin/images/gallery/gallery-lg3.jpg'
-            ],
-            [
-                'thumb' => Yii::app()->theme->getBaseUrl() . '/bin/images/gallery/gallery-sm4.jpg',
-                'image' => Yii::app()->theme->getBaseUrl() . '/bin/images/gallery/gallery-lg4.jpg'
-            ],
-            [
-                'thumb' => Yii::app()->theme->getBaseUrl() . '/bin/images/gallery/gallery-sm5.jpg',
-                'image' => Yii::app()->theme->getBaseUrl() . '/bin/images/gallery/gallery-lg5.jpg'
-            ],
-            [
-                'thumb' => Yii::app()->theme->getBaseUrl() . '/bin/images/gallery/gallery-sm6.jpg',
-                'image' => Yii::app()->theme->getBaseUrl() . '/bin/images/gallery/gallery-lg6.jpg'
-            ],
-            [
-                'thumb' => Yii::app()->theme->getBaseUrl() . '/bin/images/gallery/gallery-sm7.jpg',
-                'image' => Yii::app()->theme->getBaseUrl() . '/bin/images/gallery/gallery-lg7.jpg'
-            ],
-            [
-                'thumb' => Yii::app()->theme->getBaseUrl() . '/bin/images/gallery/gallery-sm8.jpg',
-                'image' => Yii::app()->theme->getBaseUrl() . '/bin/images/gallery/gallery-lg8.jpg'
-            ],
-            [
-                'thumb' => Yii::app()->theme->getBaseUrl() . '/bin/images/gallery/gallery-sm9.jpg',
-                'image' => Yii::app()->theme->getBaseUrl() . '/bin/images/gallery/gallery-lg9.jpg'
-            ],
-            [
-                'thumb' => Yii::app()->theme->getBaseUrl() . '/bin/images/gallery/gallery-sm10.jpg',
-                'image' => Yii::app()->theme->getBaseUrl() . '/bin/images/gallery/gallery-lg10.jpg'
-            ],
-            [
-                'thumb' => Yii::app()->theme->getBaseUrl() . '/bin/images/gallery/gallery-sm11.jpg',
-                'image' => Yii::app()->theme->getBaseUrl() . '/bin/images/gallery/gallery-lg11.jpg'
-            ],
-            [
-                'thumb' => Yii::app()->theme->getBaseUrl() . '/bin/images/gallery/gallery-sm12.jpg',
-                'image' => Yii::app()->theme->getBaseUrl() . '/bin/images/gallery/gallery-lg12.jpg'
-            ],
-        ];
-
         $clientes = [
             [
                 'image' => Yii::app()->theme->getBaseUrl() . '/bin/images/gallery/gallery-sm12.jpg',
@@ -139,7 +88,7 @@ class SiteController extends Controller {
         ];
 
 
-        $this->render('index', compact('sliders', 'pictures', 'clientes', 'autos'));
+        $this->render('index', compact('sliders', 'clientes', 'autos'));
     }
 
     public function actionModal() {

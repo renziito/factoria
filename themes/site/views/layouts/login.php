@@ -10,7 +10,7 @@
             }
         </script>
     </head>
-    <body class="bg-partnership">
+    <body style="background-color:#00b096">
         <div class="container">
             <?= $content ?>
         </div>

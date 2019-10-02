@@ -4,9 +4,9 @@
     </a>
     <div class="bg-partnership hidden-sm hidden-xs">
         <div class="brand inline m-l-5 ">
-            <img src="<?= Yii::app()->theme->getBaseUrl() ?>/assets/images/logo-partnership-fondoverde.png" alt="logo" 
-                 data-src="<?= Yii::app()->theme->getBaseUrl() ?>/assets/images/logo-partnership-fondoverde.png" 
-                 data-src-retina="<?= Yii::app()->theme->getBaseUrl() ?>/assets/images/logo-partnership-fondoverde.png"
+            <img src="<?= Yii::app()->theme->getBaseUrl() ?>/assets/images/logo-wide.png" alt="logo" 
+                 data-src="<?= Yii::app()->theme->getBaseUrl() ?>/assets/images/logo-wide.png" 
+                 data-src-retina="<?= Yii::app()->theme->getBaseUrl() ?>/assets/images/logo-wide.png"
                  width="200px">
         </div>
     </div>
