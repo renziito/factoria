@@ -1,35 +1,17 @@
 <?php
 
-class SiteController extends Controller {
+class SiteController extends Controller
+{
 
     /**
      * This is the default 'index' action that is invoked
      * when an action is not explicitly requested by users.
      */
-    public function actionIndex() {
-        $sliders = [
-            [
-                'image'    => Yii::app()->theme->getBaseUrl() . '/bin/images/bg/bg23.jpg',
-                'title'    => 'ADQUIERE REPUESTOS <br> originales o de segunda',
-                'button'   => '',
-                'position' => 'right',
-                'link'     => '#',
-            ],
-            [
-                'image'    => Yii::app()->theme->getBaseUrl() . '/bin/images/bg/bg22.jpg',
-                'title'    => 'Una opción segura <br> PARA TU VEHÍCULO',
-                'button'   => '',
-                'position' => 'left',
-                'link'     => '#',
-            ],
-            [
-                'image'    => Yii::app()->theme->getBaseUrl() . '/bin/images/bg/bg21.jpg',
-                'title'    => 'Haz tu carro REVIVIR',
-                'button'   => '',
-                'position' => 'center',
-                'link'     => '#',
-            ],
-        ];
+    public function actionIndex()
+    {
+        $sliders= Utils::getAllasArray(
+            Slider::model()->findAll('estado= true')
+        );
 
         $clientes = [
             [
@@ -91,11 +73,13 @@ class SiteController extends Controller {
         $this->render('index', compact('sliders', 'clientes', 'autos'));
     }
 
-    public function actionModal() {
+    public function actionModal()
+    {
         echo $this->renderPartial('pages/_modal', true);
     }
 
-    public function actionParent() {
+    public function actionParent()
+    {
         echo '<div class="modal fade" id="BSParentModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
                 <div class="modal-dialog  modal-lg" role="document">
                   <div class="modal-content">
@@ -106,14 +90,16 @@ class SiteController extends Controller {
               </div>';
     }
 
-    public function actionContacto() {
+    public function actionContacto()
+    {
         $this->render('contacto');
     }
 
     /**
      * This is the action to handle external exceptions.
      */
-    public function actionError() {
+    public function actionError()
+    {
         if ($error = Yii::app()->errorHandler->error) {
             if (Yii::app()->request->isAjaxRequest) {
                 echo $error['message'];
@@ -122,5 +108,4 @@ class SiteController extends Controller {
             }
         }
     }
-
 }

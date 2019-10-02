@@ -3,7 +3,25 @@
 /**
  * @package Sismonitor\Components
  */
-class Utils {
+class Utils
+{
+    public static function getAllasArray($data)
+    {
+        return (array)$data;
+    }
+
+    public static function isUrlValid($url, $path = false)
+    {
+        if (filter_var($url, FILTER_VALIDATE_URL)) {
+            return $url;
+        } else {
+            if ($path) {
+                return $path.$url;
+            } else {
+                return false;
+            }
+        }
+    }
 
     public static $busqueda = [
         'select'    => '*',
@@ -12,7 +30,8 @@ class Utils {
         'order'     => ''
     ];
 
-    public static function show($data, $detenerProcesos = false, $titulo = 'Datos') {
+    public static function show($data, $detenerProcesos = false, $titulo = 'Datos')
+    {
         echo "<code><b>{$titulo} :</b></code>";
         echo "<pre>";
         print_r($data);
@@ -22,7 +41,8 @@ class Utils {
         }
     }
 
-    public static function setBusqueda($buscar, $select = false, $order = false) {
+    public static function setBusqueda($buscar, $select = false, $order = false)
+    {
         $condition = '';
         $params    = [];
         if (is_array($buscar)) {
@@ -63,7 +83,8 @@ class Utils {
         }
     }
 
-    public static function getBusqueda() {
+    public static function getBusqueda()
+    {
         return self::$busqueda;
     }
 
@@ -72,44 +93,58 @@ class Utils {
      * @param string $string
      * @return string
      */
-    public static function reset_string($string, $spaces = false) {
-
+    public static function reset_string($string, $spaces = false)
+    {
         $string = trim($string);
 
         $string = str_replace(
-                array('Ã¡', 'Ã ', 'Ã¤', 'Ã¢', 'Âª', 'Ã', 'Ã€', 'Ã‚', 'Ã„'), array('a', 'a', 'a', 'a', 'a', 'A', 'A', 'A', 'A'), $string
+            array('Ã¡', 'Ã ', 'Ã¤', 'Ã¢', 'Âª', 'Ã', 'Ã€', 'Ã‚', 'Ã„'),
+            array('a', 'a', 'a', 'a', 'a', 'A', 'A', 'A', 'A'),
+            $string
         );
 
         $string = str_replace(
-                array('Ã©', 'Ã¨', 'Ã«', 'Ãª', 'Ã‰', 'Ãˆ', 'ÃŠ', 'Ã‹'), array('e', 'e', 'e', 'e', 'E', 'E', 'E', 'E'), $string
+            array('Ã©', 'Ã¨', 'Ã«', 'Ãª', 'Ã‰', 'Ãˆ', 'ÃŠ', 'Ã‹'),
+            array('e', 'e', 'e', 'e', 'E', 'E', 'E', 'E'),
+            $string
         );
 
         $string = str_replace(
-                array('Ã­', 'Ã¬', 'Ã¯', 'Ã®', 'Ã', 'ÃŒ', 'Ã', 'ÃŽ'), array('i', 'i', 'i', 'i', 'I', 'I', 'I', 'I'), $string
+            array('Ã­', 'Ã¬', 'Ã¯', 'Ã®', 'Ã', 'ÃŒ', 'Ã', 'ÃŽ'),
+            array('i', 'i', 'i', 'i', 'I', 'I', 'I', 'I'),
+            $string
         );
 
         $string = str_replace(
-                array('Ã³', 'Ã²', 'Ã¶', 'Ã´', 'Ã“', 'Ã’', 'Ã–', 'Ã”'), array('o', 'o', 'o', 'o', 'O', 'O', 'O', 'O'), $string
+            array('Ã³', 'Ã²', 'Ã¶', 'Ã´', 'Ã“', 'Ã’', 'Ã–', 'Ã”'),
+            array('o', 'o', 'o', 'o', 'O', 'O', 'O', 'O'),
+            $string
         );
 
         $string = str_replace(
-                array('Ãº', 'Ã¹', 'Ã¼', 'Ã»', 'Ãš', 'Ã™', 'Ã›', 'Ãœ'), array('u', 'u', 'u', 'u', 'U', 'U', 'U', 'U'), $string
+            array('Ãº', 'Ã¹', 'Ã¼', 'Ã»', 'Ãš', 'Ã™', 'Ã›', 'Ãœ'),
+            array('u', 'u', 'u', 'u', 'U', 'U', 'U', 'U'),
+            $string
         );
 
         $string = str_replace(
-                array('Ã±', 'Ã‘', 'Ã§', 'Ã‡'), array('n', 'N', 'c', 'C'), $string
+            array('Ã±', 'Ã‘', 'Ã§', 'Ã‡'),
+            array('n', 'N', 'c', 'C'),
+            $string
         );
 
-//Esta parte se encarga de eliminar cualquier caracter extraÃ±o
+        //Esta parte se encarga de eliminar cualquier caracter extraÃ±o
         $string = str_replace(
-                array("\\", "Â¨", "Âº", "-", "~",
+            array("\\", "Â¨", "Âº", "-", "~",
                     "#", "@", "|", "!", "\"",
                     "Â·", "$", "%", "&", "/",
                     "(", ")", "?", "'", "Â¡",
                     "Â¿", "^", "`",
                     "+", "}", "{", "Â¨", "Â´",
                     ">", "< ", ";", ",", ":",
-                    ".", " "), '', $string
+                    ".", " "),
+            '',
+            $string
         );
 
         if ($spaces) {
@@ -126,7 +161,8 @@ class Utils {
      * @param string $ellipsis variable que indica como terminar el texto
      * @return string
      */
-    public static function limitcharacters($string, $limit = 10, $ellipsis = "...") {
+    public static function limitcharacters($string, $limit = 10, $ellipsis = "...")
+    {
         $cadena = substr($string, 0, $limit);
 
         $longitud = strlen($string);
@@ -138,7 +174,8 @@ class Utils {
         }
     }
 
-    public static function getMonth($mes) {
+    public static function getMonth($mes)
+    {
         $meses = [
             '',
             'Ene',
@@ -157,7 +194,8 @@ class Utils {
         return $meses[$mes];
     }
 
-    public static function getUbicacion($query) {
+    public static function getUbicacion($query)
+    {
         $url = "https://geocoder.api.here.com/6.2/geocode.json?app_id=04pa1GDaTRk78dVz6iQk%20&app_code=Xmz8Y3-heGExorerdas-Uw%20&searchtext=" . $query;
 
         $json = file_get_contents($url);
@@ -165,18 +203,20 @@ class Utils {
         return json_decode($json, true);
     }
 
-    public static function getIcons() {
+    public static function getIcons()
+    {
         $iconos = Icon::model()->findAll('state = 1 ORDER BY name');
         $return = [];
         foreach ($iconos as $icono) {
-            if (!(strpos($icono->name, 'Outlined') || strpos($icono->name, 'Outline') )) {
+            if (!(strpos($icono->name, 'Outlined') || strpos($icono->name, 'Outline'))) {
                 $return[$icono->icon] = '#x' . $icono->unicode . '; ' . $icono->name;
             }
         }
         return $return;
     }
 
-    public static function Slugify($string, $date = false, $short = false) {
+    public static function Slugify($string, $date = false, $short = false)
+    {
         if ($string != "") {
             $characters = array(
                 "Á" => "A", "Ç" => "c", "É" => "e", "Í" => "i", "Ñ" => "n", "Ó" => "o", "Ú" => "u",
@@ -203,5 +243,4 @@ class Utils {
 
         return $string;
     }
-
 }
