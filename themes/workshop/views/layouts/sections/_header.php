@@ -1,36 +1,3 @@
-<style>
-    .default {
-        border-color: #57585a;
-        color: white;
-    }
-
-    .default:hover {
-        background: #e7e7e7;
-    }
-    @media only screen and (max-width: 767px){
-        .main-header .header-lower {
-            background-color: #005e9c;
-        }
-    }
-
-    @media only screen and (max-width: 767px){ 
-        .main-menu .navbar-collapse > .navigation > li > a, 
-        .main-menu .navbar-collapse > .navigation > li > ul > li > a,
-        .main-menu .navbar-collapse > .navigation > li > ul > li > ul > li > a {
-            background: #57585a;
-        }
-    }
-    @media only screen and (max-width: 767px){
-        .main-menu .navbar-header .navbar-toggler {
-            background-color: #57585a;
-        }
-    }
-
-    .main-menu .navigation > li:hover {
-        background-color: #005e9c;
-    }
-</style>
-
 <header class="main-header">
 
     <!--Header Top-->
@@ -49,7 +16,7 @@
                         <li><a href="#"><span class="fa fa-instagram"></span></a></li>
                     </ul>
                     <div class="call-btn">
-                        <a class="btn btn-dark btn-flat bg-theme-color-2
+                        <a class="btn btn-flat bg-workshop-color
                            text-white font-14 bs-modal-ajax-load mt-0"
                            style="padding: 14px 30px;"
                            data-toggle="modal" data-target="#BSParentModal"
