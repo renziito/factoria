@@ -120,8 +120,8 @@ $this->pageTitle = Yii::app()->name;
                         <i class="flaticon-carrepair-tool-6 font-45"></i>
                     </div>
 
-                    <h2 class="text-uppercase text-theme-colored title line-bottom">
-                        Nuestros <span class="text-theme-color-2 font-weight-400">Servicios</span>
+                    <h2 class="text-uppercase mt-0 title line-bottom">
+                        Nuestros Servicios
                     </h2>
                 </div>
             </div>
@@ -294,7 +294,7 @@ $this->pageTitle = Yii::app()->name;
 <!-- Section: clientes -->
 <?php $pathClientes = Yii::app()->getBaseUrl(true) . '/files/media/clientes/'?>
 <section id="clients" class="text-center">
-    <h3 style="font-weight: 700">GRACIAS POR SU CONFIANZA : </h3>
+    <h3 class="mt-30 title">GRACIAS POR SU CONFIANZA : </h3>
     <div class="container" style="padding-top:30px">
         <div class="section-content">
             <div class="row">
@@ -323,7 +323,7 @@ $this->pageTitle = Yii::app()->name;
 <!-- Section: venta de autos -->
 <section class="bg-dark bg-dark-transparent-6 text-white">
     <div class="container-fluid p-50" style="padding-top:30px">
-        <h3 class=" text-white font-weight-700">VENTA DE AUTOS </h3>
+        <h3 class=" text-white mt-0 title line-bottom">VENTA DE AUTOS </h3>
         <div class="section-content">
             <div class="row">
                 <div class="col-md-12">

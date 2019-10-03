@@ -35,8 +35,8 @@
                 <div class="pull-left logo-outer">
                     <div class="logo">
                         <a href="<?= Yii::app()->getBaseUrl(true) ?>">
-                            <img src="<?= Yii::app()->theme->getBaseUrl() ?>/bin/images/logo.jpg" 
-                                 style="height: 120px"
+                            <img src="<?= Yii::app()->theme->getBaseUrl() ?>/bin/images/logo-factoria-horizontal.png" 
+                                 style="max-height: 100px"
                                  alt="" title="">
                         </a>
                     </div>

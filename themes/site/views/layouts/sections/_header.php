@@ -1,13 +1,13 @@
-<div class="header ">
+<div class="header m-b-20">
     <a href="#" class="btn-link toggle-sidebar d-lg-none" data-toggle="sidebar">
         <i class="fas fa-bars"></i>
     </a>
     <div class="bg-partnership hidden-sm hidden-xs">
         <div class="brand inline m-l-5 ">
-            <img src="<?= Yii::app()->theme->getBaseUrl() ?>/assets/images/logo-wide.png" alt="logo" 
-                 data-src="<?= Yii::app()->theme->getBaseUrl() ?>/assets/images/logo-wide.png" 
-                 data-src-retina="<?= Yii::app()->theme->getBaseUrl() ?>/assets/images/logo-wide.png"
-                 width="200px">
+            <img src="<?= Yii::app()->theme->getBaseUrl() ?>/assets/images/logo-factoria-blancotransparente.png" alt="logo" 
+                 data-src="<?= Yii::app()->theme->getBaseUrl() ?>/assets/images/logo-factoria-blancotransparente.png" 
+                 data-src-retina="<?= Yii::app()->theme->getBaseUrl() ?>/assets/images/logo-factoria-blancotransparente.png"
+                 width="150px" style="margin:auto">
         </div>
     </div>
     <div class="d-flex align-items-center hidden">

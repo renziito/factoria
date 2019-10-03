@@ -1,13 +1,13 @@
 <nav class="page-sidebar bg-partnership" data-pages="sidebar">
-    <div class="sidebar-header bg-partnership" style="height: 60px;">
-        <img src="<?= Yii::app()->theme->getBaseUrl() ?>/assets/images/logo-wide.png" alt="logo"
+    <div class="sidebar-header bg-partnership m-b-30" style="height: 60px;">
+        <img src="<?= Yii::app()->theme->getBaseUrl() ?>/assets/images/logo-factoria-blancotransparente.png" alt="logo"
              class="brand  hidden-lg hidden-md"  width="200px" 
-             data-src="<?= Yii::app()->theme->getBaseUrl() ?>/assets/images/logo-wide.png" 
-             data-src-retina="<?= Yii::app()->theme->getBaseUrl() ?>/assets/images/logo-wide.png" />
+             data-src="<?= Yii::app()->theme->getBaseUrl() ?>/assets/images/logo-factoria-blancotransparente.png" 
+             data-src-retina="<?= Yii::app()->theme->getBaseUrl() ?>/assets/images/logo-factoria-blancotransparente.png" />
     </div>
     <div class="sidebar-menu">
         <ul class="menu-items">
-            <li class="m-t-30 ">
+            <li class="m-t-50 ">
                 <a href="<?= Yii::app()->createUrl('panel') ?>" class="detailed">
                     <span class="title">Inicio</span>
                 </a>
