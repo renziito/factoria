@@ -205,21 +205,20 @@ $this->pageTitle = Yii::app()->name;
             <div class="row">
                 <div class="col-md-6">
                     <h2 class="mt-0 title line-bottom">FACTORÍA PEÑARANDA</h2>
-                    <p>
-                        Para muchas personas resulta difícil confiar en un mecánico y
-                        tener plena seguridad que lo que le sugieren es lo correcto para
-                        su automóvil. Elegir a Factoría Peñaranda es elegir a un socio de
-                        confianza que comprende tus necesidades. Tenemos una experiencia
-                        conjunta de 30 años y una extensa trayectoria a nivel nacional.
-                        Por eso estamos seguros de poder ayudarte en todo lo que necesites
-                        tú y tu automóvil.
-                    </p>
+                    <p><?= $nosotros->parrafo ?></p>
                 </div>
                 <div class="col-md-6">
                     <div class="thumb">
-                        <a href="https://www.youtube.com/watch?v=kcIuVJiYauA" data-lightbox-gallery="youtube-video" title="Video">
-                            <img class="img-fullwidth" src="<?= Yii::app()->theme->getBaseUrl() ?>/bin/images/about/8.jpg" alt="images">
-                        </a>
+                        <?php if ($nosotros->youtube): ?>
+                            <a href="<?= $nosotros->youtube ?>"
+                               data-lightbox-gallery="youtube-video" title="Video">
+                               <?php endif; ?>
+                            <img class="img-fullwidth" 
+                                 src="<?= Yii::app()->getBaseUrl() ?>/files/media/nosotros/<?= $nosotros->image ?>"
+                                 alt="images">
+                                 <?php if ($nosotros->youtube): ?>
+                            </a>
+                        <?php endif; ?>
                     </div>
                 </div>
             </div>

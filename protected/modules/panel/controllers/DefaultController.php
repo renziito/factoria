@@ -3,7 +3,42 @@
 class DefaultController extends Controller {
 
     public function actionIndex() {
-        $this->render('index');
+        $model = Nosotros::model()->find('estado=TRUE');
+        $post  = Yii::app()->request->getPost('Nosotros');
+        if ($post) {
+            $model->estado = false;
+            $model->update();
+
+            $file = CUploadedFile::getInstance($model, 'image');
+            if (trim($file) == "") {
+                $post['image'] = $model->image;
+            }
+            
+            $model = new Nosotros();
+            $model->attributes = $post;
+
+            if ($model->save()) {
+                if (trim($file) != "") {
+                    $data = Files::getNombreExtensionFile($file->name);
+                    $name = $model->id . '_' . date('dHis');
+                    $ext  = $data['extension'];
+
+                    $urlFile = Yii::getPathofAlias('webroot.files.media.nosotros');
+                    $ruta    = $urlFile . "/" . $name . "." . $ext;
+                    Files::createDir($urlFile);
+                    if ($file->saveAs($ruta)) {
+                        $model->image = $name . "." . $ext;
+                        if (!$model->update()) {
+                            throw new Exception("No se puede guardar la foto [logicamente]");
+                        }
+                    } else {
+                        throw new Exception("No se puede guardar la foto [fisicamente]");
+                    }
+                }
+            }
+        }
+
+        $this->render('index', ['model' => $model]);
     }
 
     public function actionLogout() {
