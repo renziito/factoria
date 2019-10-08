@@ -11,6 +11,7 @@ class SiteController extends Controller
     {
         $sliders= Utils::getAllasArray(Slider::model()->findAll('estado= true'));
         $clientes= Utils::getAllasArray(Clientes::model()->findAll('estado= true'));
+        $marcas = Utils::getAllasArray(Marcas::model()->findAll('estado = true'));
         $autos = [
             [
                 'image'  => Yii::app()->theme->getBaseUrl() . '/bin/images/gallery/gallery-lg5.jpg',
@@ -25,11 +26,18 @@ class SiteController extends Controller
                 'anio'   => '2018',
                 'color'  => 'rojo',
                 'km'     => '2000'
+            ],
+            [
+                'image'  => Yii::app()->theme->getBaseUrl() . '/bin/images/gallery/gallery-lg5.jpg',
+                'titulo' => 'KIA ROJO MODELO 2018',
+                'anio'   => '2018',
+                'color'  => 'rojo',
+                'km'     => '2000'
             ]
         ];
 
 
-        $this->render('index', compact('sliders', 'clientes', 'autos'));
+        $this->render('index', compact('sliders', 'clientes', 'autos','marcas'));
     }
 
     public function actionModal()

@@ -11,7 +11,7 @@ $this->pageTitle = Yii::app()->name;
         <?php $this->renderPartial('pages/_slider', ['sliders' => $sliders]); ?>
         <!-- end .rev_slider_wrapper -->
         <script>
-            $(document).ready(function(e) {
+            $(document).ready(function (e) {
                 $(".rev_slider").revolution({
                     sliderType: "standard",
                     sliderLayout: "auto",
@@ -292,7 +292,7 @@ $this->pageTitle = Yii::app()->name;
 </section>
 
 <!-- Section: clientes -->
-<?php $pathClientes = Yii::app()->getBaseUrl(true) . '/files/media/clientes/'?>
+<?php $pathClientes    = Yii::app()->getBaseUrl(true) . '/files/media/clientes/' ?>
 <section id="clients" class="text-center">
     <h3 class="mt-30 title">GRACIAS POR SU CONFIANZA : </h3>
     <div class="container" style="padding-top:30px">
@@ -306,7 +306,7 @@ $this->pageTitle = Yii::app()->name;
                                 <?php endif; ?>
                                 <div class=" item">
                                     <div class="thumb">
-                                        <img src="<?= Utils::isUrlValid($cliente['image'],$pathClientes) ?>" 
+                                        <img src="<?= Utils::isUrlValid($cliente['image'], $pathClientes) ?>" 
                                              style="height: 100px;width: 150px" class="img-responsive" alt="">
                                     </div>
                                 </div>
@@ -357,24 +357,20 @@ $this->pageTitle = Yii::app()->name;
 </section>
 
 <!-- Section: marcas -->
+<?php $pathMarca = Yii::app()->getBaseUrl(true) . '/files/media/marcas/' ?>
 <section class="text-center">
     <div class="container" style="padding-top:30px">
         <div class="section-content">
             <div class="row">
                 <div class="col-md-12">
                     <div class="owl-carousel-5col" data-dots="true">
-                        <?php foreach ($clientes as $cliente) : ?>
-                            <?php if ($cliente['link']) : ?>
-                                <a target="_blank" href="<?= $cliente['link'] ?>">
-                                <?php endif; ?>
-                                <div class=" item">
-                                    <div class="thumb">
-                                        <img src="<?= $cliente['image'] ?>" style="height: 150px;width: 150px" class="img-responsive" alt="">
-                                    </div>
+                        <?php foreach ($marcas as $marca) : ?>
+                            <div class=" item">
+                                <div class="thumb">
+                                    <img src="<?= Utils::isUrlValid($marca['image'], $pathMarca) ?>" 
+                                         style="height: 100px;width: 150px" class="img-responsive" alt="">
                                 </div>
-                                <?php if ($cliente['link']) : ?>
-                                </a>
-                            <?php endif; ?>
+                            </div>
                         <?php endforeach; ?>
                     </div>
                 </div>
