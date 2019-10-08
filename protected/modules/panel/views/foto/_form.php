@@ -6,52 +6,31 @@
 
 <div class="form">
 
-    <?php $form=$this->beginWidget('CActiveForm', [
-	'id'=>'auto-foto-form',
-	'enableAjaxValidation'=>false,
-    ]); ?>
+    <?php
+    $form = $this->beginWidget('CActiveForm', [
+        'id'                   => 'auto-foto-form',
+        'enableAjaxValidation' => false,
+        'htmlOptions'          => [
+            "enctype" => "multipart/form-data"
+        ]
+    ]);
+    ?>
 
     <p class="note">Los campos con un <span class="required">*</span> son requeridos.</p>
 
-    <?= $form->errorSummary($model,'<b>Por favor verifique los siguientes errores : </b>'); ?>
+    <?= $form->errorSummary($model, '<b>Por favor verifique los siguientes errores : </b>'); ?>
 
-            <div class="row">
-            <div class="col-xs-9">
-            <?= $form->labelEx($model,'auto_id'); ?>
-            <?= $form->textField($model,'auto_id'); ?>
+    <div class="row">
+        <div class="col-xs-6">
+            <div class="form-group form-group-default required">
+                <?= $form->labelEx($model, 'image'); ?>
+                <?= $form->fileField($model, 'image', ['class' => 'form-control']); ?>
             </div>
         </div>
+    </div>
 
-                <div class="row">
-            <div class="col-xs-9">
-            <?= $form->labelEx($model,'image'); ?>
-            <?= $form->textField($model,'image',['class'=>'form-control','size'=>60,'maxlength'=>255]); ?>
-            </div>
-        </div>
-
-                <div class="row">
-            <div class="col-xs-9">
-            <?= $form->labelEx($model,'destacado'); ?>
-            <?= $form->textField($model,'destacado'); ?>
-            </div>
-        </div>
-
-                <div class="row">
-            <div class="col-xs-9">
-            <?= $form->labelEx($model,'created_at'); ?>
-            <?= $form->textField($model,'created_at'); ?>
-            </div>
-        </div>
-
-                <div class="row">
-            <div class="col-xs-9">
-            <?= $form->labelEx($model,'estado'); ?>
-            <?= $form->textField($model,'estado'); ?>
-            </div>
-        </div>
-
-            <hr>
-    <?= CHtml::submitButton($model->isNewRecord ? 'Crear' : 'Guardar',['class'=>'btn btn-success']); ?>
+    <hr>
+    <?= CHtml::submitButton($model->isNewRecord ? 'Crear' : 'Guardar', ['class' => 'btn btn-success']); ?>
 
     <?php $this->endWidget(); ?>
 

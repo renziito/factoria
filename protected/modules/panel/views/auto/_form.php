@@ -71,7 +71,7 @@
     <?php $this->endWidget(); ?>
 
     <script>
-        $(document).ready(function(){
+        $(document).ready(function () {
             var elem = document.querySelector('.switchery');
             var init = new Switchery(elem);
         });
