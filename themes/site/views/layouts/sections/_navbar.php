@@ -9,7 +9,7 @@
         <ul class="menu-items">
             <li class="m-t-50 ">
                 <a href="<?= Yii::app()->createUrl('panel') ?>" class="detailed">
-                    <span class="title">Inicio</span>
+                    <span class="title">Nosotros</span>
                 </a>
             </li>
             <li>
