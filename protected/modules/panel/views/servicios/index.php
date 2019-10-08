@@ -30,10 +30,8 @@ $this->breadcrumbs = array(
                     }
                 }
             ],
-            'parrafo',
             'titulo',
-            'button',
-            'link',
+            'parrafo',
             [
                 'class'              => 'CButtonColumn',
                 'template'           => '{update}{delete}',

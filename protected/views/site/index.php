@@ -175,6 +175,23 @@ $this->pageTitle = Yii::app()->name;
 
                 <div class="col-md-12">
                     <div class="owl-carousel-3col" data-dots="true">
+                        <?php foreach ($servicios as $servicio): ?>
+                            <div class=" item">
+                                <div class="thumb">
+                                    <img 
+                                        src="<?= Yii::app()->getBaseUrl(true) ?>/files/media/clientes/<?= $servicio['image'] ?>"
+                                        class="img-fullwidth" alt="">
+                                </div>
+                                <div class="bg-white p-20">
+                                    <h4 class="line-bottom text-uppercase font-weight-600 mt-0 mb-15">
+                                        <?= $servicio['titulo'] ?>
+                                    </h4>
+                                    <p><?= $servicio['parrafo'] ?></p>
+                                    <!--<a class="btn btn-theme-colored btn-sm btn-flat" href="#">Get Service ></a>-->
+                                </div>
+                            </div>
+                        <?php endforeach; ?>
+
                         <div class=" item">
                             <div class="thumb">
                                 <img src="<?= Yii::app()->theme->getBaseUrl() ?>/bin/images/practice/1.jpg" class="img-fullwidth" alt="">
@@ -292,7 +309,7 @@ $this->pageTitle = Yii::app()->name;
 </section>
 
 <!-- Section: clientes -->
-<?php $pathClientes    = Yii::app()->getBaseUrl(true) . '/files/media/clientes/' ?>
+<?php $pathClientes = Yii::app()->getBaseUrl(true) . '/files/media/clientes/' ?>
 <section id="clients" class="text-center">
     <h3 class="mt-30 title">GRACIAS POR SU CONFIANZA : </h3>
     <div class="container" style="padding-top:30px">

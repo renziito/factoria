@@ -12,6 +12,7 @@ class SiteController extends Controller
         $sliders= Utils::getAllasArray(Slider::model()->findAll('estado= true'));
         $clientes= Utils::getAllasArray(Clientes::model()->findAll('estado= true'));
         $marcas = Utils::getAllasArray(Marcas::model()->findAll('estado = true'));
+        $servicios = Utils::getAllasArray(Servicios::model()->findAll('estado=true'));
         $autos = [
             [
                 'image'  => Yii::app()->theme->getBaseUrl() . '/bin/images/gallery/gallery-lg5.jpg',
@@ -37,7 +38,7 @@ class SiteController extends Controller
         ];
 
 
-        $this->render('index', compact('sliders', 'clientes', 'autos','marcas'));
+        $this->render('index', compact('sliders', 'clientes', 'autos','marcas','servicios'));
     }
 
     public function actionModal()
