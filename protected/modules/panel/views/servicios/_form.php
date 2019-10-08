@@ -32,36 +32,46 @@ $route = Yii::app()->getBaseUrl(true) . '/files/media/servicios/';
 
     <div class="row">
         <div class="col-xs-9">
-            <?= $form->labelEx($model, 'image'); ?>
-            <?= $form->fileField($model, 'image', ['class' => 'form-control']); ?>
+            <div class="form-group form-group-default required">
+                <?= $form->labelEx($model, 'image'); ?>
+                <?= $form->fileField($model, 'image', ['class' => 'form-control']); ?>
+            </div>
         </div>
     </div>
 
     <div class="row">
         <div class="col-xs-9">
-            <?= $form->labelEx($model, 'parrafo', ['label' => 'Texto de Descripcion']); ?><br>
-            <?= $form->textArea($model, 'parrafo', array('class' => 'form-control')); ?>
+            <div class="form-group form-group-default required">
+                <?= $form->labelEx($model, 'parrafo', ['label' => 'Texto de Descripcion']); ?><br>
+                <?= $form->textArea($model, 'parrafo', array('class' => 'form-control')); ?>
+            </div>
         </div>
     </div>
 
     <div class="row">
         <div class="col-xs-9">
-            <?= $form->labelEx($model, 'titulo'); ?>
-            <?= $form->textField($model, 'titulo', array('class' => 'form-control')); ?>
+            <div class="form-group form-group-default required">
+                <?= $form->labelEx($model, 'titulo'); ?>
+                <?= $form->textField($model, 'titulo', array('class' => 'form-control')); ?>
+            </div>
         </div>
     </div>
 
     <div class="row">
         <div class="col-xs-9">
-            <?= $form->labelEx($model, 'button', ['label' => 'Texto de boton']); ?>
-            <?= $form->textField($model, 'button', array('class' => 'form-control')); ?>
+            <div class="form-group form-group-default required">
+                <?= $form->labelEx($model, 'button', ['label' => 'Texto de boton']); ?>
+                <?= $form->textField($model, 'button', array('class' => 'form-control')); ?>
+            </div>
         </div>
     </div>
 
     <div class="row">
-        <div class="col-xs-9">
-            <?= $form->labelEx($model, 'link'); ?>
-            <?= $form->textField($model, 'link', array('class' => 'form-control')); ?>
+        <div class="col-xs-9">  
+            <div class="form-group form-group-default required">
+                <?= $form->labelEx($model, 'link'); ?>
+                <?= $form->textField($model, 'link', array('class' => 'form-control')); ?>
+            </div>
         </div>
     </div>
 

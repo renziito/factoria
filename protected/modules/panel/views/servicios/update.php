@@ -3,9 +3,8 @@
 /* @var $model Servicios */
 
 $this->breadcrumbs = array(
-    'Servicios' => array('index'),
-    $model->id  => array('view', 'id' => $model->id),
-    'Actualizar',
+    'Servicios' => [$this->createUrl('index')],
+    $model->titulo,
 );
 ?>
 <h1>Actualizar Servicios <?php echo $model->id; ?></h1>

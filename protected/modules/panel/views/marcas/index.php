@@ -21,6 +21,15 @@ $this->breadcrumbs = array(
         'filter'       => $model,
         'columns'      => [
             'id',
+            [
+                'name'        => 'image',
+                'htmlOptions' => array('style' => 'text-align:center'),
+                'value'       => function ($data) {
+                    if ($data->image) {
+                        echo '<img width="80px" src="' . Yii::app()->getBaseUrl(true) . '/files/media/marcas/' . $data->image . '" />';
+                    }
+                }
+            ],
             'image',
             [
                 'class'              => 'CButtonColumn',
