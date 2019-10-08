@@ -179,7 +179,7 @@ $this->pageTitle = Yii::app()->name;
                             <div class=" item">
                                 <div class="thumb">
                                     <img 
-                                        src="<?= Yii::app()->getBaseUrl(true) ?>/files/media/clientes/<?= $servicio['image'] ?>"
+                                        src="<?= Yii::app()->getBaseUrl(true) ?>/files/media/servicios/<?= $servicio['image'] ?>"
                                         class="img-fullwidth" alt="">
                                 </div>
                                 <div class="bg-white p-20">
@@ -191,87 +191,6 @@ $this->pageTitle = Yii::app()->name;
                                 </div>
                             </div>
                         <?php endforeach; ?>
-
-                        <div class=" item">
-                            <div class="thumb">
-                                <img src="<?= Yii::app()->theme->getBaseUrl() ?>/bin/images/practice/1.jpg" class="img-fullwidth" alt="">
-                            </div>
-                            <div class="bg-white p-20">
-                                <h4 class="line-bottom text-uppercase font-weight-600 mt-0 mb-15">
-                                    Scaneo y diagnóstico computarizado
-                                </h4>
-                                <p>
-                                    Nuestro servicio de scaneo a domicilio es la forma más efectiva y
-                                    transparente para saber con precisión el estado de tu vehículo y
-                                    diagnosticar de modo claro cual es el inconveniente que podría presentar,
-                                    para atenderlo de inmediato.</p>
-                                <!--<a class="btn btn-theme-colored btn-sm btn-flat" href="#">Get Service ></a>-->
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="thumb">
-                                <img src="<?= Yii::app()->theme->getBaseUrl() ?>/bin/images/practice/2.jpg" class="img-fullwidth" alt="">
-                            </div>
-                            <div class="bg-white p-20">
-                                <h4 class="line-bottom text-uppercase font-weight-600 mt-0 mb-15">
-                                    Importación y venta directa de repuestos
-                                </h4>
-                                <p>
-                                    Apóyate en nosotros y consigue repuestos compatibles
-                                    con tu vehículo sin gastar de más ni esperar una eternidad.
-                                    Si tu presupuesto es corto, tenemos opciones de segunda mano para tu auto
-                                </p>
-                                <!--<a class="btn btn-theme-colored btn-sm btn-flat" href="#">Get Service ></a>-->
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="thumb">
-                                <img src="<?= Yii::app()->theme->getBaseUrl() ?>/bin/images/practice/3.jpg" class="img-fullwidth" alt="">
-                            </div>
-                            <div class="bg-white p-20">
-                                <h4 class="line-bottom text-uppercase font-weight-600 mt-0 mb-15">
-                                    Venta de Autos a consignación
-                                </h4>
-                                <p>
-                                    Evita un proceso largo y tedioso: Te ayudamos a comprar el auto ideal para ti,
-                                    o deshacerte de tu automóvil actual al precio justo y realizando los arreglos
-                                    necesarios para evitar futuros reclamos.
-                                </p>
-                                <!--<a class="btn btn-theme-colored btn-sm btn-flat" href="#">Get Service ></a>-->
-                            </div>
-                        </div>
-                        <div class=" item">
-                            <div class="thumb">
-                                <img src="<?= Yii::app()->theme->getBaseUrl() ?>/bin/images/practice/4.jpg" class="img-fullwidth" alt="">
-                            </div>
-                            <div class="bg-white p-20">
-                                <h4 class="line-bottom text-uppercase font-weight-600 mt-0 mb-15">
-                                    Asesoramiento para compra vehicular
-                                </h4>
-                                <p>
-                                    Puedes tener muchas dudas y preguntas antes de adquirir el
-                                    auto ideal para ti... por eso te ayudamos a resolverlas para
-                                    que puedas tomar una elección de la que no te arrepientas.
-                                </p>
-                                <!--<a class="btn btn-theme-colored btn-sm btn-flat" href="#">Get Service ></a>-->
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="thumb">
-                                <img src="<?= Yii::app()->theme->getBaseUrl() ?>/bin/images/practice/5.jpg" class="img-fullwidth" alt="">
-                            </div>
-                            <div class="bg-white p-20">
-                                <h4 class="line-bottom text-uppercase font-weight-600 mt-0 mb-15">
-                                    Restauración de vehículos
-                                </h4>
-                                <p>
-                                    Pon tu auto a tono, bien sea para revenderlo, o
-                                    para que luzca mejor que nunca. Te ayudamos a dejar
-                                    tu auto como recién salido de la fábrica.
-                                </p>
-                                <!--<a class="btn btn-theme-colored btn-sm btn-flat" href="#">Get Service ></a>-->
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
