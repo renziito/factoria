@@ -1,39 +1,27 @@
 <?php
-/* @var $this ServiciosController */
-/* @var $model Servicios */
+/* @var $this MarcasController */
+/* @var $model Marcas */
 
 $this->breadcrumbs = array(
-    'Servicios' => array('index'),
+    'Marcas' => array('index'),
     'Administrar',
 );
 ?>
 
 <h1>
-    Administrador de Servicios
+    Administrador de Marcas  
     <a class="pull-right btn btn-success" href="<?= $this->createUrl("create") ?>">Nuevo</a>
 </h1>
 
 <div class="table-responsive">
     <?php
     $this->widget('zii.widgets.grid.CGridView', [
-        'id'           => 'servicios-grid',
+        'id'           => 'marcas-grid',
         'dataProvider' => $model->search(),
         'filter'       => $model,
         'columns'      => [
             'id',
-            [
-                'name'        => 'image',
-                'htmlOptions' => array('style' => 'text-align:center'),
-                'value'       => function ($data) {
-                    if ($data->image) {
-                        echo '<img width="80px" src="' . Yii::app()->getBaseUrl(true) . '/files/media/servicios/' . $data->image . '" />';
-                    }
-                }
-            ],
-            'parrafo',
-            'titulo',
-            'button',
-            'link',
+            'image',
             [
                 'class'              => 'CButtonColumn',
                 'template'           => '{update}{delete}',

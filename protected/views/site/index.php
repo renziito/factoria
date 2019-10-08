@@ -306,7 +306,8 @@ $this->pageTitle = Yii::app()->name;
                                 <?php endif; ?>
                                 <div class=" item">
                                     <div class="thumb">
-                                        <img src="<?= Utils::isUrlValid($cliente['image'],$pathClientes) ?>" style="height: 150px;width: 150px" class="img-responsive" alt="">
+                                        <img src="<?= Utils::isUrlValid($cliente['image'],$pathClientes) ?>" 
+                                             style="height: 100px;width: 150px" class="img-responsive" alt="">
                                     </div>
                                 </div>
                                 <?php if ($cliente['link']) : ?>
@@ -327,7 +328,7 @@ $this->pageTitle = Yii::app()->name;
         <div class="section-content">
             <div class="row">
                 <div class="col-md-12">
-                    <div class="owl-carousel-2col" data-dots="true">
+                    <div class="owl-carousel-3col" data-dots="true">
                         <?php foreach ($autos as $auto) : ?>
                             <div class=" item p-50">
                                 <div class="thumb">
