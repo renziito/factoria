@@ -19,29 +19,37 @@
 
     <div class="row">
         <div class="col-xs-9">
-            <?= $form->labelEx($model, 'username'); ?>
-            <?= $form->textField($model, 'username', ['class' => 'form-control', 'size' => 60, 'maxlength' => 255]); ?>
+            <div class="form-group form-group-default required">
+                <?= $form->labelEx($model, 'username'); ?>
+                <?= $form->textField($model, 'username', ['class' => 'form-control', 'size' => 60, 'maxlength' => 255]); ?>
+            </div>
         </div>
     </div>
 
     <div class="row">
         <div class="col-xs-9">
-            <?= $form->labelEx($model, 'correo'); ?>
-            <?= $form->textField($model, 'correo', ['class' => 'form-control', 'size' => 60, 'maxlength' => 255]); ?>
+            <div class="form-group form-group-default required">
+                <?= $form->labelEx($model, 'correo'); ?>
+                <?= $form->textField($model, 'correo', ['class' => 'form-control', 'size' => 60, 'maxlength' => 255]); ?>
+            </div>
         </div>
     </div>
 
     <div class="row">
         <div class="col-xs-9">
-            <?= $form->labelEx($model, 'nombres'); ?>
-            <?= $form->textField($model, 'nombres', ['class' => 'form-control', 'size' => 60, 'maxlength' => 255]); ?>
+            <div class="form-group form-group-default required">
+                <?= $form->labelEx($model, 'nombres'); ?>
+                <?= $form->textField($model, 'nombres', ['class' => 'form-control', 'size' => 60, 'maxlength' => 255]); ?>
+            </div>
         </div>
     </div>
 
     <div class="row">
         <div class="col-xs-9">
-            <?= $form->labelEx($model, 'apellidos'); ?>
-            <?= $form->textField($model, 'apellidos', ['class' => 'form-control', 'size' => 60, 'maxlength' => 255]); ?>
+            <div class="form-group form-group-default required">
+                <?= $form->labelEx($model, 'apellidos'); ?>
+                <?= $form->textField($model, 'apellidos', ['class' => 'form-control', 'size' => 60, 'maxlength' => 255]); ?>
+            </div>
         </div>
     </div>
 
