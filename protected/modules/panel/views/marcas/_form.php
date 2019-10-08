@@ -11,6 +11,9 @@ $route = Yii::app()->getBaseUrl(true) . '/files/media/marcas/';
     $form  = $this->beginWidget('CActiveForm', [
         'id'                   => 'marcas-form',
         'enableAjaxValidation' => false,
+        'htmlOptions'          => [
+            "enctype" => "multipart/form-data"
+        ]
     ]);
     ?>
 
@@ -29,7 +32,7 @@ $route = Yii::app()->getBaseUrl(true) . '/files/media/marcas/';
         <div class="col-xs-9">
             <div class="form-group form-group-default required">
                 <?= $form->labelEx($model, 'image'); ?>
-                <?= $form->fileField($model, 'image', ['class' => 'form-control', 'size' => 60, 'maxlength' => 255]); ?>
+                <?= $form->fileField($model, 'image', ['class' => 'form-control']); ?>
             </div>
         </div>
     </div>
