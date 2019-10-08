@@ -12,31 +12,7 @@ class SiteController extends Controller {
         $marcas    = Utils::getAllasArray(Marcas::model()->findAll('estado = true'));
         $servicios = Utils::getAllasArray(Servicios::model()->findAll('estado=true'));
         $nosotros  = Nosotros::model()->find('estado = TRUE');
-        $autos     = [
-            [
-                'image'  => Yii::app()->theme->getBaseUrl() . '/bin/images/gallery/gallery-lg5.jpg',
-                'titulo' => 'KIA ROJO MODELO 2018',
-                'anio'   => '2018',
-                'color'  => 'rojo',
-                'km'     => '2000'
-            ],
-            [
-                'image'  => Yii::app()->theme->getBaseUrl() . '/bin/images/gallery/gallery-lg6.jpg',
-                'titulo' => 'KIA ROJO MODELO 2018',
-                'anio'   => '2018',
-                'color'  => 'rojo',
-                'km'     => '2000'
-            ],
-            [
-                'image'  => Yii::app()->theme->getBaseUrl() . '/bin/images/gallery/gallery-lg5.jpg',
-                'titulo' => 'KIA ROJO MODELO 2018',
-                'anio'   => '2018',
-                'color'  => 'rojo',
-                'km'     => '2000'
-            ]
-        ];
-
-
+        $autos     = Utils::getAllasArray(Auto::model()->findAll('estado = TRUE'));
         $this->render('index', compact('sliders', 'clientes', 'autos', 'marcas', 'servicios', 'nosotros'));
     }
 

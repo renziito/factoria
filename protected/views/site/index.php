@@ -257,6 +257,7 @@ $this->pageTitle = Yii::app()->name;
 </section>
 
 <!-- Section: venta de autos -->
+<?php $pathAutos = Yii::app()->getBaseUrl(true) . '/files/media/autos/' ?>
 <section class="bg-dark bg-dark-transparent-6 text-white">
     <div class="container-fluid p-50" style="padding-top:30px">
         <h3 class=" text-white mt-0 title line-bottom">VENTA DE AUTOS </h3>
@@ -267,19 +268,24 @@ $this->pageTitle = Yii::app()->name;
                         <?php foreach ($autos as $auto) : ?>
                             <div class=" item p-50">
                                 <div class="thumb">
-                                    <img src="<?= $auto['image'] ?>" style="height: 350px;width: 100%" class="img-responsive" alt="">
+                                    <?php
+                                    $foto = AutoFoto::model()->find('auto_id = ' . $auto['id'] . ' AND estado = TRUE');
+                                    ?>
+                                    <img src="<?= $pathAutos . $foto->image ?>" style="height: 350px;width: 100%" class="img-responsive" alt="">
                                 </div>
                                 <div class="bg-white p-20">
                                     <h4 class="line-bottom text-uppercase font-weight-600 mt-0 mb-15">
-                                        <?= $auto['titulo'] ?>
+                                        <?= $auto['descripcion'] ?>
                                     </h4>
                                     <ul class="text-black">
-                                        <ol>Año : <?= $auto['anio'] ?></ol>
-                                        <ol> <?= $auto['km'] ?> Kilometros</ol>
+                                        <ol>Marca : <?= $auto['marca'] ?></ol>
+                                        <ol>Modelo : <?= $auto['modelo'] ?></ol>
+                                        <ol>Año : <?php //$auto['anio']              ?></ol>
+                                        <ol> <?= $auto['kilometraje'] ?> Kilometros</ol>
                                         <ol>Color: <?= $auto['color'] ?></ol>
                                     </ul>
                                     <br>
-                                    <a class="btn btn-theme-colored btn-sm btn-flat" href="#">Me Interesa</a>
+                                    <!--<a class="btn btn-theme-colored btn-sm btn-flat" href="#">Me Interesa</a>-->
                                 </div>
                             </div>
                         <?php endforeach; ?>
