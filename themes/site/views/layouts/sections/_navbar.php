@@ -1,7 +1,7 @@
 <nav class="page-sidebar bg-partnership" data-pages="sidebar">
     <div class="sidebar-header bg-partnership m-b-30" style="height: 60px;">
         <img src="<?= Yii::app()->theme->getBaseUrl() ?>/assets/images/logo-factoria-blancotransparente.png" alt="logo"
-             class="brand  hidden-lg hidden-md"  width="200px" 
+             class="brand  hidden-lg hidden-md"  width="125px" 
              data-src="<?= Yii::app()->theme->getBaseUrl() ?>/assets/images/logo-factoria-blancotransparente.png" 
              data-src-retina="<?= Yii::app()->theme->getBaseUrl() ?>/assets/images/logo-factoria-blancotransparente.png" />
     </div>
@@ -47,7 +47,7 @@
                    style="width: 100%">
                     <span class="title">Venta de Autos</span>
                 </a>
-            </li>
+            </li><br><br>
             <li>
                 <a href="<?= Yii::app()->createUrl('logout') ?>" class="detailed"
                    style="width: 100%">

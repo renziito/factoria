@@ -7,7 +7,7 @@
             <img src="<?= Yii::app()->theme->getBaseUrl() ?>/assets/images/logo-factoria-blancotransparente.png" alt="logo" 
                  data-src="<?= Yii::app()->theme->getBaseUrl() ?>/assets/images/logo-factoria-blancotransparente.png" 
                  data-src-retina="<?= Yii::app()->theme->getBaseUrl() ?>/assets/images/logo-factoria-blancotransparente.png"
-                 width="150px" style="margin:auto">
+                 width="125px" style="margin:auto">
         </div>
     </div>
     <div class="d-flex align-items-center hidden">
