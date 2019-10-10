@@ -1848,6 +1848,7 @@ var THEMEMASCOT = {};
                         autoplayTimeout: data_duration,
                         loop: true,
                         items: 5,
+                        center:true,
                         margin: 15,
                         dots: data_dots,
                         nav: data_nav,

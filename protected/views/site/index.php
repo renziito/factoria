@@ -227,8 +227,8 @@ $this->pageTitle = Yii::app()->name;
     <div class="container" style="padding-top:30px">
         <div class="section-content">
             <div class="row">
-                <div class="col-md-12">
-                    <div class="owl-carousel-8col" data-dots="true">
+                <div class="col-md-12 text-center">
+                    <div class="owl-carousel-5col" data-dots="true">
                         <?php foreach ($clientes as $cliente) : ?>
                             <?php if ($cliente['link']) : ?>
                                 <a target="_blank" href="<?= $cliente['link'] ?>">
