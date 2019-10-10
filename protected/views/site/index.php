@@ -112,21 +112,14 @@ $this->pageTitle = Yii::app()->name;
 <!-- Section: Services -->
 <section id="services">
     <div class="container pb-60">
-        <div class="section-title">
+        <div class="section-content">
             <div class="row">
                 <div class="col-md-12">
-                    <p class="text-uppercase mb-0"></p>
-                    <div class="title-icon">
-                        <i class="flaticon-carrepair-tool-6 font-45"></i>
-                    </div>
-
                     <h2 class="text-uppercase mt-0 title line-bottom">
                         Nuestros Servicios
                     </h2>
                 </div>
             </div>
-        </div>
-        <div class="section-content">
             <div class="row column-view">
                 <style>
                     .item p {
@@ -275,12 +268,12 @@ $this->pageTitle = Yii::app()->name;
                                 </div>
                                 <div class="bg-white p-20">
                                     <h4 class="line-bottom text-uppercase font-weight-600 mt-0 mb-15">
-                                        <?= $auto['descripcion'] ?>
+                                        <?= $auto['marca'] ?>-<?= $auto['modelo'] ?>
                                     </h4>
                                     <ul class="text-black">
                                         <ol>Marca : <?= $auto['marca'] ?></ol>
                                         <ol>Modelo : <?= $auto['modelo'] ?></ol>
-                                        <ol>Año : <?php //$auto['anio']              ?></ol>
+                                        <ol>Año : <?php //$auto['anio']               ?></ol>
                                         <ol> <?= $auto['kilometraje'] ?> Kilometros</ol>
                                         <ol>Color: <?= $auto['color'] ?></ol>
                                     </ul>

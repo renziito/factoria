@@ -7,16 +7,16 @@
                     <p>San Carlos 660, Surquillo</p>
                     <ul class="list-inline mt-5">
                         <li class="m-0 pl-10 pr-10"> 
-                            <i class="fa fa-phone text-theme-color-2 mr-5"></i>
+                            <i class="fa fa-phone text-color-workshop mr-5"></i>
                             <a class="text-gray" href="#">952 323 616</a> 
                         </li>
                         <li class="m-0 pl-10 pr-10"> 
-                            <i class="fa fa-envelope-o text-theme-color-2 mr-5"></i> 
-                            <a class="text-gray" href="#">boris@factoriapenaranda.com</a>
+                            <i class="fa fa-envelope-o text-color-workshop mr-5"></i> 
+                            <a class="text-gray" href="#">taller@factoriapenaranda.com</a>
                         </li>
                         <li class="m-0 pl-10 pr-10">
-                            <i class="fa fa-globe text-theme-color-2 mr-5"></i> 
-                            <a class="text-gray" href="<?= Yii::app()->getBaseUrl(true) ?>"><?= Yii::app()->getBaseUrl(true) ?></a>
+                            <i class="fa fa-globe text-color-workshop mr-5"></i> 
+                            <a class="text-gray" href="http://www.factoriapenaranda.com">www.factoriapenaranda.com</a>
                         </li>
                     </ul>
                 </div>
@@ -39,19 +39,22 @@
                     <h4 class="widget-title line-bottom-theme-colored-2">Horas de Atención</h4>
                     <div class="opening-hourse">
                         <ul class="list-border">
-                            <li class="clearfix"> <span> Lun - Mar :  </span>
-                                <div class="value pull-right"> 6.00 am - 10.00 pm </div>
+                            <li class="clearfix"> <span> Lun - Vier :  </span>
+                                <div class="value pull-right"> 8:15 am - 5:45 pm </div>
                             </li>
-                            <li class="clearfix"> <span> Mier - Juev :</span>
-                                <div class="value pull-right"> 8.00 am - 6.00 pm </div>
-                            </li>
-                            <li class="clearfix"> <span> Vier : </span>
-                                <div class="value pull-right"> 3.00 pm - 8.00 pm </div>
-                            </li>
-                            <li class="clearfix"> <span> Domingo : </span>
-                                <div class="value pull-right"> Closed </div>
+                            <li class="clearfix"> <span> Sábados :</span>
+                                <div class="value pull-right"> 8:00 am - 12:00 pm </div>
                             </li>
                         </ul>
+                    </div>
+                    <br>
+                    <h4 class="widget-title line-bottom-theme-colored-2">Instagram</h4>
+                    <div>
+                        <div id="instafeed1" class="instagram-feed clearfix" 
+                             data-userid="3450544574" 
+                             data-accesstoken="3450544574.1677ed0.7d0725a565914415b40a4953c17bcdc9"
+                             data-limit="2" data-resolution="low_resolution">
+                        </div>
                     </div>
                 </div>
             </div>

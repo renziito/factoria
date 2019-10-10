@@ -16154,6 +16154,12 @@ display:none;
     .navbar-expand-md .navbar-toggler {
         display: none;
     }
+    .logo-outer{
+        padding-top: 0px !important;
+        padding-right: 0px !important;
+        padding-bottom: 0px !important;
+        padding-left: 115px !important;
+    }
 }
 
 
@@ -16197,4 +16203,11 @@ display:none;
 
 .main-menu .navigation>li:hover {
     background-color: #005e9c;
+}
+
+.bg-workshop-color:hover{
+    background-color: #008b76 !important;
+}
+.text-color-workshop{
+    color:#00b096;
 }

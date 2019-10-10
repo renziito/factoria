@@ -7,16 +7,22 @@
                 <div class="top-left">
                     <ul class="clearfix">
                         <li><i class="fa fa-whatsapp"></i> 993 616 759</li>
-                        <li><i class="fa fa-envelope"></i> bpenaranda@factoriapenaranda.com</li>
+                        <li><i class="fa fa-envelope"></i> taller@factoriapenaranda.com</li>
                     </ul>
                 </div>
                 <div class="top-right clearfix">
                     <ul class="social-icon-one clearfix">
-                        <li><a href="#"><span class="fa fa-facebook-f"></span></a></li>
-                        <li><a href="#"><span class="fa fa-instagram"></span></a></li>
+                        <li><a href="https://www.facebook.com/pecarser/"
+                               target="_blank">
+                                <span class="fa fa-facebook-f"></span>
+                            </a></li>
+                        <li><a href="https://www.instagram.com/factoria.penaranda/"
+                               target="_blank">
+                                <span class="fa fa-instagram"></span>
+                            </a></li>
                     </ul>
                     <div class="call-btn">
-                        <a class="btn btn-flat bg-workshop-color
+                        <a class="btn btn-flat bg-workshop-color btn-hover-repuesto
                            text-white font-14 bs-modal-ajax-load mt-0"
                            style="padding: 14px 30px;"
                            data-toggle="modal" data-target="#BSParentModal"
@@ -35,8 +41,8 @@
                 <div class="pull-left logo-outer">
                     <div class="logo">
                         <a href="<?= Yii::app()->getBaseUrl(true) ?>">
-                            <img src="<?= Yii::app()->theme->getBaseUrl() ?>/bin/images/logo-factoria-horizontal.png" 
-                                 style="max-height: 100px"
+                            <img src="<?= Yii::app()->theme->getBaseUrl() ?>/bin/images/logo-factoria-fondotransparente.png" 
+                                 style="max-height: 130px"
                                  alt="" title="">
                         </a>
                     </div>
@@ -46,7 +52,7 @@
                     <div class="upper-column info-box" style="margin-top: 1.5%;">
                         <div class="icon-box"><i class="fa fa-map-marker"></i></div>
                         <ul>
-                            <li><strong>SAN CARLOS 660,</strong></li>
+                            <li><strong>Jr Mariano Jurado de los Reyes 660</strong></li>
                             <li>SURQUILLO</li>
                         </ul>
 

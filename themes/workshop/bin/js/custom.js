@@ -1739,13 +1739,14 @@ var THEMEMASCOT = {};
                 $owl_carousel_3col.each(function () {
                     var data_dots = ($(this).data("dots") === undefined) ? false : $(this).data("dots");
                     var data_nav = ($(this).data("nav") === undefined) ? false : $(this).data("nav");
-                    var data_duration = ($(this).data("duration") === undefined) ? 4000 : $(this).data("duration");
+                    var data_duration = ($(this).data("duration") === undefined) ? 5000 : $(this).data("duration");
                     $(this).owlCarousel({
                         rtl: THEMEMASCOT.isRTL.check(),
                         autoplay: true,
                         autoplayTimeout: data_duration,
                         loop: true,
                         items: 3,
+                        autoplayHoverPause: true,
                         margin: 15,
                         dots: data_dots,
                         nav: data_nav,
