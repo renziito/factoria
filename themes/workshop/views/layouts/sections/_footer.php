@@ -1,4 +1,5 @@
-<footer id="footer" class="footer divider layer-overlay overlay-dark-8" data-bg-img="<?= Yii::app()->theme->getBaseUrl() ?>/bin/images/bg/bg6.jpg">
+<footer id="footer" class="footer divider" style="background-size:100% 100%;"
+        data-bg-img="<?= Yii::app()->theme->getBaseUrl() ?>/bin/images/fondo_footer.png">
     <div class="container pt-70 pb-40">
         <div class="row">
             <div class="col-sm-6 col-md-3">

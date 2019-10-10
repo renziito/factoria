@@ -192,7 +192,8 @@ $this->pageTitle = Yii::app()->name;
 </section>
 
 <!-- Section: About -->
-<section class="bg-lighter" id="us">
+<?php $themeUrl = Yii::app()->theme->getBaseUrl() ?>
+<section class="bg-lighter" id="us" style="background:url(<?= $themeUrl ?>/bin/images/fondo_nosotros.png);background-size:100% 100%;">
     <div class="container">
         <div class="section-content">
             <div class="row">
@@ -235,7 +236,7 @@ $this->pageTitle = Yii::app()->name;
                                 <div class=" item">
                                     <div class="thumb">
                                         <img src="<?= Utils::isUrlValid($cliente['image'], $pathClientes) ?>" 
-                                             style="height: 100px;width: 150px" class="img-responsive" alt="">
+                                             class="img-responsive" alt="">
                                     </div>
                                 </div>
                                 <?php if ($cliente['link']) : ?>
@@ -251,7 +252,7 @@ $this->pageTitle = Yii::app()->name;
 
 <!-- Section: venta de autos -->
 <?php $pathAutos = Yii::app()->getBaseUrl(true) . '/files/media/autos/' ?>
-<section class="bg-dark bg-dark-transparent-6 text-white">
+<section class="bg-dark bg-dark-transparent-6 text-white" style="background:url(<?= $themeUrl ?>/bin/images/fondo_venta-autos.png);background-size:100% 100%;">
     <div class="container-fluid p-50" style="padding-top:30px">
         <h3 class=" text-white mt-0 title line-bottom">VENTA DE AUTOS </h3>
         <div class="section-content">
@@ -273,7 +274,7 @@ $this->pageTitle = Yii::app()->name;
                                     <ul class="text-black">
                                         <ol>Marca : <?= $auto['marca'] ?></ol>
                                         <ol>Modelo : <?= $auto['modelo'] ?></ol>
-                                        <ol>Año : <?php //$auto['anio']               ?></ol>
+                                        <ol>Año : <?php //$auto['anio']                  ?></ol>
                                         <ol> <?= $auto['kilometraje'] ?> Kilometros</ol>
                                         <ol>Color: <?= $auto['color'] ?></ol>
                                     </ul>
@@ -302,7 +303,7 @@ $this->pageTitle = Yii::app()->name;
                             <div class=" item">
                                 <div class="thumb">
                                     <img src="<?= Utils::isUrlValid($marca['image'], $pathMarca) ?>" 
-                                         style="height: 100px;width: 150px" class="img-responsive" alt="">
+                                         class="img-responsive" alt="">
                                 </div>
                             </div>
                         <?php endforeach; ?>
