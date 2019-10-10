@@ -142,7 +142,7 @@ $this->pageTitle = Yii::app()->name;
                     }
 
                     .item:hover p {
-                        opacity: 0.7;
+                        opacity: 0.95;
                         -ms-animation-name: flipInX;
                         -moz-animation-name: flipInX;
                         -op-animation-name: flipInX;
