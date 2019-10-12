@@ -1671,6 +1671,7 @@ var THEMEMASCOT = {};
                     $(this).owlCarousel({
                         rtl: THEMEMASCOT.isRTL.check(),
                         autoplay: true,
+                        autoplayHoverPause: true,
                         autoplayTimeout: data_duration,
                         loop: true,
                         items: 1,

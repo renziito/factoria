@@ -16211,3 +16211,8 @@ display:none;
 .text-color-workshop{
     color:#00b096;
 }
+
+.title-interno.line-bottom:after {
+    bottom: -15px;
+    width: 100%;
+}

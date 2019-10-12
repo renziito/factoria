@@ -9,11 +9,13 @@
                     <ul class="list-inline mt-5">
                         <li class="m-0 pl-10 pr-10"> 
                             <i class="fa fa-phone text-color-workshop mr-5"></i>
-                            <a class="text-gray" href="#">952 323 616</a> 
+                            <span class="text-gray">952 323 616</span> 
                         </li>
                         <li class="m-0 pl-10 pr-10"> 
                             <i class="fa fa-envelope-o text-color-workshop mr-5"></i> 
-                            <a class="text-gray" href="#">taller@factoriapenaranda.com</a>
+                            <a class="text-gray" href="mailto:taller@factoriapenaranda.com">
+                                taller@factoriapenaranda.com
+                            </a>
                         </li>
                         <li class="m-0 pl-10 pr-10">
                             <i class="fa fa-globe text-color-workshop mr-5"></i> 

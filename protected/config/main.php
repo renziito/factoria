@@ -38,6 +38,7 @@ return array(
             'rules'          => array(
                 'login'                                  => 'panel/default/login',
                 'logout'                                 => 'panel/default/logout',
+                'services'                               => 'site/servicios',
                 '<controller:\w+>/<id:\d+>'              => '<controller>/view',
                 '<controller:\w+>/<action:\w+>/<id:\d+>' => '<controller>/<action>',
                 '<controller:\w+>/<action:\w+>'          => '<controller>/<action>'

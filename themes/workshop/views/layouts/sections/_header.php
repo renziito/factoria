@@ -7,7 +7,11 @@
                 <div class="top-left">
                     <ul class="clearfix">
                         <li><i class="fa fa-whatsapp"></i> 993 616 759</li>
-                        <li><i class="fa fa-envelope"></i> taller@factoriapenaranda.com</li>
+                        <li><i class="fa fa-envelope"></i> 
+                            <a href="mailto:taller@factoriapenaranda.com">
+                                taller@factoriapenaranda.com
+                            </a>
+                        </li>
                     </ul>
                 </div>
                 <div class="top-right clearfix">
@@ -101,7 +105,7 @@
                         <ul class="navigation clearfix">
                             <li class="active"><a href="<?= Yii::app()->getBaseUrl(true) ?>/#home">Inicio</a></li>
                             <li><a href="<?= Yii::app()->getBaseUrl(true) ?>/#us">Nosotros</a></li>
-                            <li><a href="<?= Yii::app()->getBaseUrl(true) ?>/#services">Servicios</a></li>
+                            <li><a href="<?= Yii::app()->getBaseUrl(true) ?>/services">Servicios</a></li>
                             <li><a href="<?= Yii::app()->getBaseUrl(true) ?>/#clients">Clientes</a></li>
                             <li><a href="<?= Yii::app()->getBaseUrl(true) ?>/autos">Venta de Autos</a></li>
                             <li><a href="<?= Yii::app()->controller->createUrl('contacto') ?>">Contacto</a></li>

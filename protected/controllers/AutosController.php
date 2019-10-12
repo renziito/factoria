@@ -7,7 +7,8 @@ class AutosController extends Controller {
      * when an action is not explicitly requested by users.
      */
     public function actionIndex() {
-        $this->render('index');
+        $autos = Auto::model()->findAll('estado = TRUE');
+        $this->render('index', compact('autos'));
     }
 
 }
