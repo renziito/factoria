@@ -3,15 +3,12 @@
 /* @var $model Auto */
 /* @var $form CActiveForm */
 
-ini_set('display_errors', 1);
-error_reporting(E_ALL);
 $from    = "test@hostinger-tutorials.com";
 $to      = "sepia.aki@gmail.com";
 $subject = "Checking PHP mail";
 $message = "PHP mail works just fine";
 $headers = "From:" . $from;
-$mail    = mail($to, $subject, $message, $headers);
-Utils::show($mail);
+// mail($to, $subject, $message, $headers);
 ?>
 
 <div class="form">
@@ -37,7 +34,7 @@ Utils::show($mail);
                 <?= $form->textField($model, 'marca', ['class' => 'form-control', 'size' => 60, 'maxlength' => 255]); ?>
             </div>
         </div>
-        <div class="col-xs-4">
+        <div class="col-xs-5">
             <div class="form-group form-group-default required">
                 <?= $form->labelEx($model, 'modelo'); ?>
                 <?= $form->textField($model, 'modelo', ['class' => 'form-control', 'size' => 60, 'maxlength' => 255]); ?>
@@ -46,7 +43,7 @@ Utils::show($mail);
     </div>
 
     <div class="row">
-        <div class="col-xs-3">
+        <div class="col-xs-2">
             <div class="form-group form-group-default required">
                 <?= $form->labelEx($model, 'kilometraje'); ?>
                 <?= $form->numberField($model, 'kilometraje', ['class' => 'form-control', 'size' => 60, 'maxlength' => 255]); ?>
@@ -64,10 +61,16 @@ Utils::show($mail);
                 <?= $form->textField($model, 'precio', ['class' => 'form-control', 'size' => 60, 'maxlength' => 255]); ?>
             </div>
         </div>
+        <div class="col-xs-2">
+            <div class="form-group form-group-default required">
+                <?= $form->labelEx($model, 'anio'); ?>
+                <?= $form->numberField($model, 'anio', ['class' => 'form-control', 'size' => 60, 'maxlength' => 255]); ?>
+            </div>
+        </div>
     </div>
 
     <div class="row">
-        <div class="col-xs-9">
+        <div class="col-xs-10">
             <div class="form-group form-group-default required">
                 <?= $form->labelEx($model, 'descripcion'); ?>
                 <?= $form->textArea($model, 'descripcion', array('rows' => 6, 'cols' => 50)); ?>

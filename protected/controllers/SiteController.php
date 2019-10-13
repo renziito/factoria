@@ -27,6 +27,18 @@ class SiteController extends Controller {
     }
 
     public function actionContacto() {
+        $post = $_POST;
+        if ($post) {
+            $from    = "Taller@factoriapenaranda.com";
+            $to      = "sepia.aki@gmail.com";
+            $subject = "Contacto Factoria Peñaranda";
+            $message = "<h3>Contacto desde la pagina web</h3><br>";
+            foreach ($post as $key => $value) {
+                $message .= $key . ' : ' . $value . '<br>';
+            }
+            $headers = "From:" . $from;
+            mail($to, $subject, $message, $headers);
+        }
         $this->render('contacto');
     }
 
@@ -36,6 +48,18 @@ class SiteController extends Controller {
 
     public function actionParent() {
         echo $this->renderPartial('pages/_modalParent', true);
+    }
+
+    public function actionrepuesto() {
+        $from    = "Taller@factoriapenaranda.com";
+        $to      = "sepia.aki@gmail.com";
+        $subject = "Solicitud de Repuesto Factoria Peñaranda";
+        $message = "<h3>Contacto desde la pagina web</h3><br>";
+        foreach ($post as $key => $value) {
+            $message .= $key . ' : ' . $value . '<br>';
+        }
+        $headers = "From:" . $from;
+        echo mail($to, $subject, $message, $headers);
     }
 
     /**

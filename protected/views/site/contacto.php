@@ -5,8 +5,49 @@
                 <div class="col-xs-12 col-sm-6 col-md-7 pb-sm-20">
                     <h3 class="line-bottom font-20 text-theme-colored text-uppercase mt-0">Formulario de Contacto</h3>
 
-                    <div class="">
-
+                    <div class="form">
+                        <form method="POST" id="frm-contact"> 
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="form-group mb-30">
+                                        <input placeholder="Escriba su nombre" type="text"
+                                               id="popup_reservation_name" name="Nombre"
+                                               required="" class="form-control" aria-required="true">
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group mb-30">
+                                        <input placeholder="Escriba su telefono" type="text"
+                                               id="popup_reservation_phone" name="Telefono"
+                                               class="form-control" required="" aria-required="true">
+                                    </div>
+                                </div>
+                                <div class="col-sm-12">
+                                    <div class="form-group mb-30">
+                                        <input placeholder="Escriba su correo" type="text"
+                                               id="popup_reservation_phone" name="Correo"
+                                               class="form-control" required="" aria-required="true">
+                                    </div>
+                                </div>
+                                <div class="col-sm-12">
+                                    <div class="form-group">
+                                        <textarea placeholder="Escriba algun mensaje adcional" 
+                                                  rows="5" class="form-control required" name="Mensaje"
+                                                  aria-required="true"></textarea>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12">
+                                    <div class="form-group text-center mb-0 mt-20">
+                                        <button type="button" class="btn btn-colored btn-theme-colored btn-lg 
+                                                btn-flat border-left-theme-color-2-4px" id="btn-send"
+                                                data-keyboard="false"  data-backdrop="static" 
+                                                data-toggle="modal" data-target=".bs-example-modal-sm">
+                                            Enviar
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
                     </div>
                 </div>
                 <div class="col-xs-12 col-sm-6 col-md-5 pb-sm-20">
@@ -18,3 +59,23 @@
         </div>
     </div>
 </section>
+
+<div class="modal fade bs-example-modal-sm"  role="dialog"
+     aria-labelledby="mySmallModalLabel">
+    <div class="modal-dialog modal-sm" role="document">
+        <div class="modal-content">
+            <div class="p-10 text-center">
+                <br><h4>Correo enviado!</h4><br>
+                <button id="send-botton" class="btn btn-sm btn-success">
+                    Aceptar
+                </button><br><br>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $('#send-botton').on('click', function () {
+        $('#frm-contact').submit();
+    });
+</script>

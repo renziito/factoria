@@ -9,7 +9,7 @@
 <div class="p-40">
     <!-- Reservation Form Start-->
     <form id="popup_reservation_form" name="reservation_form" 
-          class="reservation-form" method="post" action="includes/booking-form-large.php">
+          class="reservation-form" method="post" action="<?= Yii::app()->createUrl('site/repuesto') ?>">
         <div class="row">
             <div class="reservation-first-step">
                 <h3 class="text-theme-colored line-bottom ml-15 mb-30 mr-15">Información del Vehiculo</span></h3>
@@ -17,7 +17,7 @@
                     <div class="form-group mb-30">
                         <label>Marca del Vehiculo</label>
                         <div class="styled-select">
-                            <select id="popup_car_name_select" name="car_name_select"
+                            <select id="popup_car_name_select" name="Marca"
                                     class="form-control ddslick" required="">
                                 <option data-description="Fabricante alemán de coches premium filial del Grupo Volkswagen con sede en Ingolstadt" 
                                         data-imagesrc="<?= Yii::app()->theme->getBaseUrl() ?>/bin/images/car-logos/1.png" value="Audi">
@@ -60,7 +60,7 @@
                     <div class="form-group mb-30">
                         <label>Tipo de Carro</label>
                         <div class="styled-select">
-                            <select id="popup_car_type_select" name="car_type_select" 
+                            <select id="popup_car_type_select" name="Tipo" 
                                     class="form-control ddslick" required="">
                                 <option data-description="Vehiculo empleado generalmente para el transporte de mercancías, y que tiene en su parte trasera una zona de carga."
                                         data-imagesrc="<?= Yii::app()->theme->getBaseUrl() ?>/bin/images/car-logos/c3.png" value="Truck">
@@ -90,28 +90,28 @@
                     <div class="form-group mb-30">
                         <label>Modelo del Carro</label>
                         <input placeholder="Escriba el modelo aquí" type="text" id="popup_car_model"
-                               name="car_model" class="form-control" required="">
+                               name="Modelo" class="form-control" required="">
                     </div>
                 </div>
                 <div class="col-sm-6">
                     <div class="form-group mb-30">
                         <label>VIN Code</label>
                         <input placeholder="Escriba el VIN CODE aquí" type="text" id="popup_car_model"
-                               name="car_model" class="form-control" required="">
+                               name="VIN" class="form-control" required="">
                     </div>
                 </div>
                 <div class="col-sm-6">
                     <div class="form-group mb-30">
                         <label>Descripción del repuesto</label>
                         <input placeholder="Escriba la descripción del respuesto" type="text" id="popup_car_model"
-                               name="car_model" class="form-control" required="">
+                               name="Descripcion" class="form-control" required="">
                     </div>
                 </div>
                 <div class="col-sm-6">
                     <div class="form-group mb-30">
                         <label>Código del repuesto</label>
                         <input placeholder="Escriba el código del respuesto" type="text" id="popup_car_model"
-                               name="car_model" class="form-control" >
+                               name="Codigo" class="form-control" >
                     </div>
                 </div>
             </div>
@@ -124,21 +124,21 @@
                 <div class="col-sm-6">
                     <div class="form-group mb-30">
                         <input placeholder="Escriba su nombre" type="text" 
-                               id="popup_reservation_name" name="reservation_name"
+                               id="popup_reservation_name" name="Nombre"
                                required="" class="form-control">
                     </div>
                 </div>
                 <div class="col-sm-6">
                     <div class="form-group mb-30">
                         <input placeholder="Escriba su telefono" type="text" 
-                               id="popup_reservation_phone" name="reservation_phone"
+                               id="popup_reservation_phone" name="Telefono"
                                class="form-control" required="">
                     </div>
                 </div>
                 <div class="col-sm-12">
                     <div class="form-group">
                         <textarea placeholder="Escriba algun mensaje adcional" rows="5" 
-                                  class="form-control required" name="form_message"
+                                  class="form-control required" name="Mensaje"
                                   aria-required="true"></textarea>
                     </div>
                 </div>

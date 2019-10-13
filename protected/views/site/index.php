@@ -281,7 +281,7 @@ $this->pageTitle = Yii::app()->name;
                                     <ul class="text-black">
                                         <ol>Marca : <?= $auto['marca'] ?></ol>
                                         <ol>Modelo : <?= $auto['modelo'] ?></ol>
-                                        <ol>Año : <?php //$auto['anio']                       ?></ol>
+                                        <ol>Año : <?= $auto['anio'] ?></ol>
                                         <ol> <?= $auto['kilometraje'] ?> Kilometros</ol>
                                         <ol>Color: <?= $auto['color'] ?></ol>
                                     </ul>
