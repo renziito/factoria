@@ -70,7 +70,13 @@ $route = Yii::app()->getBaseUrl(true) . '/files/media/servicios/';
         <div class="col-xs-9">
             <div class="form-group form-group-default required">
                 <?= $form->labelEx($model, 'link'); ?><br>
-                <?= $form->textArea($model, 'link', array('class' => 'form-control')); ?>
+                <?=
+                $form->dropDownList($model, 'link', [
+                    'services' => 'Servicios',
+                    'modal'    => 'Respuesto',
+                    'auto'     => 'Venta de Autos'
+                        ], ['class' => 'form-control'])
+                ?>
             </div>
         </div>
     </div>

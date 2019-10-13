@@ -30,7 +30,7 @@
                            text-white font-14 bs-modal-ajax-load mt-0"
                            style="padding: 14px 30px;"
                            data-toggle="modal" data-target="#BSParentModal"
-                           href="<?= Yii::app()->createUrl('site/modal') ?>">Solicita Repuestos</a>
+                           href="<?= Yii::app()->createUrl('modal') ?>">Solicita Repuestos</a>
                     </div>
                 </div>
             </div>

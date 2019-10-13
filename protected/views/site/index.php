@@ -180,10 +180,15 @@ $this->pageTitle = Yii::app()->name;
                                         <?= $servicio['titulo'] ?>
                                     </h4>
                                     <p><?= $servicio['parrafo'] ?>
-                                        <?php if ($servicio->link): ?>
+                                        <?php if ($servicio->button): ?>
                                             <br><br>
                                             <a class="btn btn-theme-colored btn-sm btn-flat"
-                                               href="<?= $servicio->link ?>" target="_blank">
+                                            <?php
+                                            if ($servicio->link == 'modal') {
+                                                echo' data-toggle = "modal" data-target = "#BSParentModal"';
+                                            }
+                                            ?>
+                                               href="<?= Yii::app()->createUrl($servicio->link) ?>">
                                                    <?= $servicio->button ?>
                                             </a>
                                         <?php endif; ?>
