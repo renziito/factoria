@@ -11,6 +11,7 @@
  * @property string $color
  * @property string $precio
  * @property string $anio
+ * @property string $mensaje
  * @property string $descripcion
  * @property integer $destacado
  * @property string $created_at
@@ -36,10 +37,10 @@ class Auto extends CActiveRecord
 		return array(
 			array('destacado, estado', 'numerical', 'integerOnly'=>true,'message' => '{attribute} solo debe ser numeros.'),
 			array('marca, modelo, kilometraje, color, precio, anio', 'length', 'max'=>255),
-			array('descripcion, created_at', 'safe'),
+			array('mensaje, descripcion, created_at', 'safe'),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('id, marca, modelo, kilometraje, color, precio, anio, descripcion, destacado, created_at, estado', 'safe', 'on'=>'search'),
+			array('id, marca, modelo, kilometraje, color, precio, anio, mensaje, descripcion, destacado, created_at, estado', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -67,6 +68,7 @@ class Auto extends CActiveRecord
 			'color' => 'Color',
 			'precio' => 'Precio',
 			'anio' => 'Anio',
+			'mensaje' => 'Mensaje',
 			'descripcion' => 'Descripcion',
 			'destacado' => 'Destacado',
 			'created_at' => 'Created At',
@@ -99,6 +101,7 @@ class Auto extends CActiveRecord
 		$criteria->compare('color',$this->color,true);
 		$criteria->compare('precio',$this->precio,true);
 		$criteria->compare('anio',$this->anio,true);
+		$criteria->compare('mensaje',$this->mensaje,true);
 		$criteria->compare('descripcion',$this->descripcion,true);
 		$criteria->compare('destacado',$this->destacado);
 		$criteria->compare('created_at',$this->created_at,true);

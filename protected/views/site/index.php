@@ -240,7 +240,7 @@ $this->pageTitle = Yii::app()->name;
         <div class="section-content">
             <div class="row">
                 <div class="col-md-12 text-center">
-                    <div class="owl-carousel-5col" data-dots="true">
+                    <div class="owl-carousel-5col" data-dots="false">
                         <?php foreach ($clientes as $cliente) : ?>
                             <?php if ($cliente['link']) : ?>
                                 <a target="_blank" href="<?= $cliente['link'] ?>">
@@ -275,9 +275,11 @@ $this->pageTitle = Yii::app()->name;
                             <div class=" item p-50">
                                 <div class="thumb">
                                     <?php
-                                    $foto = AutoFoto::model()->find('auto_id = ' . $auto['id'] . ' AND estado = TRUE');
-                                    ?>
-                                    <img src="<?= $pathAutos . $foto->image ?>" style="height: 350px;width: 100%" class="img-responsive" alt="">
+                                    $foto = AutoFoto::model()->find('auto_id = ' . $auto['id'] . ' AND estado = TRUE AND destacado = TRUE');
+                                    if ($foto):
+                                        ?>
+                                        <img src="<?= $pathAutos . $foto->image ?>" style="height: 350px;width: 100%" class="img-responsive" alt="">
+                                    <?php endif; ?>
                                 </div>
                                 <div class="bg-white p-20">
                                     <h4 class="line-bottom text-uppercase font-weight-600 mt-0 mb-15">
@@ -291,12 +293,18 @@ $this->pageTitle = Yii::app()->name;
                                         <ol>Color: <?= $auto['color'] ?></ol>
                                     </ul>
                                     <br>
-                                    <!--<a class="btn btn-theme-colored btn-sm btn-flat" href="#">Me Interesa</a>-->
+                                    <?php if ($auto['mensaje']): ?>
+                                        <a class="btn btn-theme-colored btn-sm btn-flat btn-interesa" 
+                                           data-text="<?= $auto['mensaje'] ?>"
+                                           href="#">Me Interesa</a>
+                                       <?php endif; ?>
                                 </div>
                             </div>
                         <?php endforeach; ?>
                     </div>
-                    <a href="#" class="btn btn-block btn-lg p-20 btn-theme-colored"> VER TODOS LOS AUTOS EN VENTA</a>
+                    <a href="<?= Yii::app()->createUrl('autos') ?>" class="btn btn-block btn-lg p-20 btn-theme-colored">
+                        VER TODOS LOS AUTOS EN VENTA
+                    </a>
                 </div>
             </div>
         </div>
@@ -310,7 +318,7 @@ $this->pageTitle = Yii::app()->name;
         <div class="section-content">
             <div class="row">
                 <div class="col-md-12">
-                    <div class="owl-carousel-5col" data-dots="true">
+                    <div class="owl-carousel-5col" data-dots="false">
                         <?php foreach ($marcas as $marca) : ?>
                             <div class=" item">
                                 <div class="thumb">

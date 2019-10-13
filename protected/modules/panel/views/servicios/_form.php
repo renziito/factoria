@@ -72,7 +72,7 @@ $route = Yii::app()->getBaseUrl(true) . '/files/media/servicios/';
                 <?= $form->labelEx($model, 'link'); ?><br>
                 <?=
                 $form->dropDownList($model, 'link', [
-                    'services' => 'Servicios',
+                    'contacto' => 'Servicios',
                     'modal'    => 'Respuesto',
                     'auto'     => 'Venta de Autos'
                         ], ['class' => 'form-control'])

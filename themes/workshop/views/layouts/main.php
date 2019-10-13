@@ -26,6 +26,18 @@
         </div>
         <!-- end wrapper -->
 
+        <div class="modal fade" id="mensajeAuto" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog  modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-body"></div>
+                    <div class="modal-footer"> 
+                        <button type="button" class="btn btn-default" 
+                                data-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <!-- Footer Scripts -->
         <!-- JS | Custom script for all pages -->
         <script src="<?= Yii::app()->theme->getBaseUrl() ?>/bin/js/custom.js"></script>
@@ -38,5 +50,16 @@
         <script type="text/javascript" src="<?= Yii::app()->theme->getBaseUrl() ?>/bin/js/revolution.extension.parallax.min.js"></script>
         <script type="text/javascript" src="<?= Yii::app()->theme->getBaseUrl() ?>/bin/js/revolution.extension.slideanims.min.js"></script>
         <script type="text/javascript" src="<?= Yii::app()->theme->getBaseUrl() ?>/bin/js/revolution.extension.video.min.js"></script>
+        <script>
+            $('.btn-interesa').on('click', function (e) {
+                e.preventDefault();
+                var text = $(this).data('text');
+                $('#mensajeAuto .modal-content .modal-body').html(text);
+                $('#mensajeAuto').modal({
+                    backdrop: 'static',
+                    keyboard: false
+                })
+            });
+        </script>
     </body>
 </html>

@@ -27,6 +27,12 @@
                 <?= $form->fileField($model, 'image', ['class' => 'form-control']); ?>
             </div>
         </div>
+        <div class="col-xs-2">
+            <div class="form-group form-group-default required">
+                <?= $form->labelEx($model, 'destacado'); ?>
+                <?= $form->checkBox($model, 'destacado', ['class' => 'switchery']); ?>
+            </div>
+        </div>
     </div>
 
     <hr>
@@ -35,3 +41,10 @@
     <?php $this->endWidget(); ?>
 
 </div><!-- form -->
+
+<script>
+    $(document).ready(function () {
+        var elem = document.querySelector('.switchery');
+        var init = new Switchery(elem);
+    });
+</script>

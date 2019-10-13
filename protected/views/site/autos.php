@@ -21,11 +21,16 @@
                 <ul class="text-black">
                     <ol>Marca : <?= $auto['marca'] ?></ol>
                     <ol>Modelo : <?= $auto['modelo'] ?></ol>
-                    <ol>Año : <?php //$auto['anio']                   ?></ol>
+                    <ol>Año : <?= $auto['anio'] ?></ol>
                     <ol> <?= $auto['kilometraje'] ?> Kilometros</ol>
                     <ol>Color: <?= $auto['color'] ?></ol>
                 </ul>
                 <br>
+                <?php if ($auto['mensaje']): ?>
+                    <a class="btn btn-theme-colored btn-sm btn-flat btn-interesa" 
+                       data-text="<?= $auto['mensaje'] ?>"
+                       href="#">Me Interesa</a>
+                   <?php endif; ?>
             </div>
         </div>
     <?php endforeach; ?>

@@ -2,19 +2,12 @@
 /* @var $this AutoController */
 /* @var $model Auto */
 /* @var $form CActiveForm */
-
-$from    = "test@hostinger-tutorials.com";
-$to      = "sepia.aki@gmail.com";
-$subject = "Checking PHP mail";
-$message = "PHP mail works just fine";
-$headers = "From:" . $from;
-// mail($to, $subject, $message, $headers);
 ?>
 
 <div class="form">
 
     <?php
-    $form    = $this->beginWidget('CActiveForm', [
+    $form = $this->beginWidget('CActiveForm', [
         'id'                   => 'auto-form',
         'enableAjaxValidation' => false,
         'htmlOptions'          => [
@@ -28,16 +21,22 @@ $headers = "From:" . $from;
     <?= $form->errorSummary($model, '<b>Por favor verifique los siguientes errores : </b>'); ?>
 
     <div class="row">
-        <div class="col-xs-5">
+        <div class="col-xs-4">
             <div class="form-group form-group-default required">
                 <?= $form->labelEx($model, 'marca'); ?>
                 <?= $form->textField($model, 'marca', ['class' => 'form-control', 'size' => 60, 'maxlength' => 255]); ?>
             </div>
         </div>
-        <div class="col-xs-5">
+        <div class="col-xs-4">
             <div class="form-group form-group-default required">
                 <?= $form->labelEx($model, 'modelo'); ?>
                 <?= $form->textField($model, 'modelo', ['class' => 'form-control', 'size' => 60, 'maxlength' => 255]); ?>
+            </div>
+        </div>
+        <div class="col-xs-2">
+            <div class="form-group form-group-default required">
+                <?= $form->labelEx($model, 'destacado'); ?>
+                <?= $form->checkBox($model, 'destacado', ['class' => 'switchery']); ?>
             </div>
         </div>
     </div>
@@ -73,7 +72,16 @@ $headers = "From:" . $from;
         <div class="col-xs-10">
             <div class="form-group form-group-default required">
                 <?= $form->labelEx($model, 'descripcion'); ?>
-                <?= $form->textArea($model, 'descripcion', array('rows' => 6, 'cols' => 50)); ?>
+                <?= $form->textArea($model, 'descripcion', array('rows' => 6, 'cols' => 140)); ?>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-xs-10">
+            <div class="form-group form-group-default required">
+                <?= $form->labelEx($model, 'mensaje'); ?>
+                <?= $form->textArea($model, 'mensaje', array('rows' => 6, 'cols' => 140)); ?>
             </div>
         </div>
     </div>

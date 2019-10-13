@@ -12,7 +12,7 @@ class SiteController extends Controller {
         $marcas    = Utils::getAllasArray(Marcas::model()->findAll('estado = true'));
         $servicios = Utils::getAllasArray(Servicios::model()->findAll('estado=true'));
         $nosotros  = Nosotros::model()->find('estado = TRUE');
-        $autos     = Utils::getAllasArray(Auto::model()->findAll('estado = TRUE'));
+        $autos     = Utils::getAllasArray(Auto::model()->findAll('estado = TRUE AND destacado = TRUE'));
         $this->render('index', compact('sliders', 'clientes', 'autos', 'marcas', 'servicios', 'nosotros'));
     }
 
