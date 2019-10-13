@@ -53,7 +53,8 @@
             <div class="clearfix">
                 <div class="upper-right clearfix">
                     <!--Info Box-->
-                    <div class="upper-column info-box" style="margin-top: 1.5%;">
+                    <div class="visible-xs" style="height: 120px"></div>
+                    <div class="upper-column info-box" style="margin-top: 1%;">
                         <div class="icon-box"><i class="fa fa-map-marker"></i></div>
                         <ul>
                             <li><strong>Jr Mariano Jurado de los Reyes 660</strong></li>
@@ -62,7 +63,7 @@
 
                     </div>
                     <!--Info Box-->
-                    <div class="upper-column info-box" style="margin-top: 1.5%;">
+                    <div class="upper-column info-box" style="margin-top: 1%;">
                         <div class="icon-box"><i class="fa fa-clock-o"></i></div>
                         <ul>
                             <li><strong>LUNES A VIERNES</strong></li>
@@ -71,7 +72,9 @@
                     </div>
 
                     <!--Info Box-->
-                    <div class="upper-column info-box" style="margin-top: 1.5%;">
+                    <div class="upper-column info-box" >
+                        <div class="hidden-xs" style="margin-top: 15%;"></div>
+                        <div class="visible-xs" style="margin-top: -15%;"></div>
                         <div class="icon-box"></div>
                         <ul>
                             <li><strong>SÁBADOS</strong></li>
