@@ -144,11 +144,10 @@
                 </div>
                 <div class="col-sm-12">
                     <div class="form-group text-center mb-0 mt-20">
-                        <input name="form_botcheck" class="form-control" type="hidden" value="">
                         <button type="submit" 
                                 class="btn btn-colored btn-theme-colored btn-lg 
                                 btn-flat border-left-theme-color-2-4px" 
-                                data-loading-text="Please wait...">Submit Now
+                                data-loading-text="Enviando...">Solicitar 
                         </button>
                     </div>
                 </div>

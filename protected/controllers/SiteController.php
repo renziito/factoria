@@ -51,7 +51,7 @@ class SiteController extends Controller {
     }
 
     public function actionrepuesto() {
-        $post = $_POST;
+        $post    = $_POST;
         $from    = "Taller@factoriapenaranda.com";
         $to      = "sepia.aki@gmail.com";
         $subject = "Solicitud de Repuesto Factoria Peñaranda";
@@ -60,6 +60,8 @@ class SiteController extends Controller {
             $message .= $key . ' : ' . $value . '<br>';
         }
         $headers = "From:" . $from;
+        $headers .= "MIME-Version: 1.0\r\n";
+        $headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
         echo mail($to, $subject, $message, $headers);
     }
 
