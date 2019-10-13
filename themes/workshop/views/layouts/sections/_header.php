@@ -30,7 +30,7 @@
                            text-white font-14 bs-modal-ajax-load mt-0"
                            style="padding: 14px 30px;"
                            data-toggle="modal" data-target="#BSParentModal"
-                           href="<?= $this->createUrl('modal') ?>">Solicita Repuestos</a>
+                           href="<?= Yii::app()->createUrl('site/modal') ?>">Solicita Repuestos</a>
                     </div>
                 </div>
             </div>
@@ -40,18 +40,18 @@
 
     <!--Header-Upper-->
     <div class="header-upper">
+        <div class="pull-left logo-outer">
+            <div class="logo">
+                <a href="<?= Yii::app()->getBaseUrl(true) ?>">
+                    <img src="<?= Yii::app()->theme->getBaseUrl() ?>/bin/images/logo-factoria-fondotransparente.png" 
+                         style="max-height: 130px"
+                         alt="" title="">
+                </a>
+            </div>
+        </div>
         <div class="auto-container">
             <div class="clearfix">
-                <div class="pull-left logo-outer">
-                    <div class="logo">
-                        <a href="<?= Yii::app()->getBaseUrl(true) ?>">
-                            <img src="<?= Yii::app()->theme->getBaseUrl() ?>/bin/images/logo-factoria-fondotransparente.png" 
-                                 style="max-height: 130px"
-                                 alt="" title="">
-                        </a>
-                    </div>
-                </div>
-                <div class="pull-right upper-right clearfix">
+                <div class="upper-right clearfix">
                     <!--Info Box-->
                     <div class="upper-column info-box" style="margin-top: 1.5%;">
                         <div class="icon-box"><i class="fa fa-map-marker"></i></div>
@@ -103,7 +103,7 @@
 
                     <div class="navbar-collapse collapse clearfix" id="navbarSupportedContent">
                         <ul class="navigation clearfix">
-                            <li class="active"><a href="<?= Yii::app()->getBaseUrl(true) ?>/#home">Inicio</a></li>
+                            <li class="active"><a href="<?= Yii::app()->getBaseUrl(true) ?>">Inicio</a></li>
                             <li><a href="<?= Yii::app()->getBaseUrl(true) ?>/#us">Nosotros</a></li>
                             <li><a href="<?= Yii::app()->getBaseUrl(true) ?>/services">Servicios</a></li>
                             <li><a href="<?= Yii::app()->getBaseUrl(true) ?>/#clients">Clientes</a></li>

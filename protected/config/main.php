@@ -39,6 +39,7 @@ return array(
                 'login'                                  => 'panel/default/login',
                 'logout'                                 => 'panel/default/logout',
                 'services'                               => 'site/servicios',
+                'autos'                                  => 'site/autos',
                 '<controller:\w+>/<id:\d+>'              => '<controller>/view',
                 '<controller:\w+>/<action:\w+>/<id:\d+>' => '<controller>/<action>',
                 '<controller:\w+>/<action:\w+>'          => '<controller>/<action>'

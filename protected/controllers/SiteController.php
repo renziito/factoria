@@ -21,6 +21,11 @@ class SiteController extends Controller {
         $this->render('servicios', compact('servicios'));
     }
 
+    public function actionAutos() {
+        $autos = Auto::model()->findAll('estado = TRUE');
+        $this->render('autos', compact('autos'));
+    }
+
     public function actionContacto() {
         $this->render('contacto');
     }
