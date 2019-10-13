@@ -57,6 +57,24 @@ $route = Yii::app()->getBaseUrl(true) . '/files/media/servicios/';
         </div>
     </div>
 
+    <div class="row">
+        <div class="col-xs-9">
+            <div class="form-group form-group-default required">
+                <?= $form->labelEx($model, 'button', ['label' => 'Texto del Boton']); ?><br>
+                <?= $form->textArea($model, 'button', array('class' => 'form-control')); ?>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-xs-9">
+            <div class="form-group form-group-default required">
+                <?= $form->labelEx($model, 'link'); ?><br>
+                <?= $form->textArea($model, 'link', array('class' => 'form-control')); ?>
+            </div>
+        </div>
+    </div>
+
 
     <hr>
     <?= CHtml::submitButton($model->isNewRecord ? 'Crear' : 'Guardar', ['class' => 'btn btn-success']); ?>

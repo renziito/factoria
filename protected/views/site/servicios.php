@@ -14,8 +14,8 @@
                 <?= $servicio->parrafo ?>
                 <div class="clearfix"></div>
                 <?php if ($servicio->link): ?>
-                    <a class="btn btn-md btn-info"
-                       href="<?= $servicio->link ?>">
+                    <a class="btn btn-md btn-info pull-right"
+                       href="<?= $servicio->link ?>" target="_blank">
                            <?= $servicio->button ?>
                     </a>
                 <?php endif; ?>

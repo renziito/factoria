@@ -179,8 +179,15 @@ $this->pageTitle = Yii::app()->name;
                                     <h4 class="line-bottom text-uppercase font-weight-600 mt-0 mb-15">
                                         <?= $servicio['titulo'] ?>
                                     </h4>
-                                    <p><?= $servicio['parrafo'] ?></p>
-                                    <!--<a class="btn btn-theme-colored btn-sm btn-flat" href="#">Get Service ></a>-->
+                                    <p><?= $servicio['parrafo'] ?>
+                                        <?php if ($servicio->link): ?>
+                                            <br><br>
+                                            <a class="btn btn-theme-colored btn-sm btn-flat"
+                                               href="<?= $servicio->link ?>" target="_blank">
+                                                   <?= $servicio->button ?>
+                                            </a>
+                                        <?php endif; ?>
+                                    </p>
                                 </div>
                             </div>
                         <?php endforeach; ?>
@@ -274,7 +281,7 @@ $this->pageTitle = Yii::app()->name;
                                     <ul class="text-black">
                                         <ol>Marca : <?= $auto['marca'] ?></ol>
                                         <ol>Modelo : <?= $auto['modelo'] ?></ol>
-                                        <ol>Año : <?php //$auto['anio']                  ?></ol>
+                                        <ol>Año : <?php //$auto['anio']                       ?></ol>
                                         <ol> <?= $auto['kilometraje'] ?> Kilometros</ol>
                                         <ol>Color: <?= $auto['color'] ?></ol>
                                     </ul>
