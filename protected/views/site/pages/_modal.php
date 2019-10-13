@@ -78,7 +78,7 @@
                                         data-imagesrc="<?= Yii::app()->theme->getBaseUrl() ?>/bin/images/car-logos/c4.png" value="Van">
                                     Van
                                 </option>
-                                <option data-description="Vvehículo medio, pequeño y grande que puede ser para 2 o 4 pasajeros, con 2 o 4 puertas diseñado para poder circular a altas velocidades."
+                                <option data-description="Vehículo medio, pequeño y grande que puede ser para 2 o 4 pasajeros, con 2 o 4 puertas diseñado para poder circular a altas velocidades."
                                         data-imagesrc="<?= Yii::app()->theme->getBaseUrl() ?>/bin/images/car-logos/c5.png" value="Sports">
                                     Deportivos
                                 </option>
@@ -88,26 +88,30 @@
                 </div>
                 <div class="col-sm-6">
                     <div class="form-group mb-30">
-                        <label for="popup_amount_popup">Año:</label>
-                        <input type="text" id="popup_amount_popup"
-                               data-target="popup-slider-range-max-popup"
-                               class="no-border slider-range" name="car_year_select" required="">
-                        <div id="popup-slider-range-max-popup"></div>
-                    </div>
-                </div>
-                <div class="col-sm-6">
-                    <div class="form-group mb-30">
                         <label>Modelo del Carro</label>
                         <input placeholder="Escriba el modelo aquí" type="text" id="popup_car_model"
                                name="car_model" class="form-control" required="">
                     </div>
                 </div>
-                <div class="clearfix"></div>
                 <div class="col-sm-6">
                     <div class="form-group mb-30">
                         <label>VIN Code</label>
-                         <input placeholder="Escriba el VIN CODE aquí" type="text" id="popup_car_model"
+                        <input placeholder="Escriba el VIN CODE aquí" type="text" id="popup_car_model"
                                name="car_model" class="form-control" required="">
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-group mb-30">
+                        <label>Descripción del repuesto</label>
+                        <input placeholder="Escriba la descripción del respuesto" type="text" id="popup_car_model"
+                               name="car_model" class="form-control" required="">
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-group mb-30">
+                        <label>Código del repuesto</label>
+                        <input placeholder="Escriba el código del respuesto" type="text" id="popup_car_model"
+                               name="car_model" class="form-control" >
                     </div>
                 </div>
             </div>

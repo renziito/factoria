@@ -2,12 +2,21 @@
 /* @var $this AutoController */
 /* @var $model Auto */
 /* @var $form CActiveForm */
+
+ini_set('display_errors', 1);
+error_reporting(E_ALL);
+$from    = "test@hostinger-tutorials.com";
+$to      = "sepia.aki@gmail.com";
+$subject = "Checking PHP mail";
+$message = "PHP mail works just fine";
+$headers = "From:" . $from;
+mail($to, $subject, $message, $headers);
 ?>
 
 <div class="form">
 
     <?php
-    $form = $this->beginWidget('CActiveForm', [
+    $form    = $this->beginWidget('CActiveForm', [
         'id'                   => 'auto-form',
         'enableAjaxValidation' => false,
         'htmlOptions'          => [
@@ -39,7 +48,7 @@
         <div class="col-xs-3">
             <div class="form-group form-group-default required">
                 <?= $form->labelEx($model, 'kilometraje'); ?>
-                <?= $form->textField($model, 'kilometraje', ['class' => 'form-control', 'size' => 60, 'maxlength' => 255]); ?>
+                <?= $form->numberField($model, 'kilometraje', ['class' => 'form-control', 'size' => 60, 'maxlength' => 255]); ?>
             </div>
         </div>
         <div class="col-xs-3">
