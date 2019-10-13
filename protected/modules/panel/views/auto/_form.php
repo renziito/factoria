@@ -10,7 +10,8 @@ $to      = "sepia.aki@gmail.com";
 $subject = "Checking PHP mail";
 $message = "PHP mail works just fine";
 $headers = "From:" . $from;
-mail($to, $subject, $message, $headers);
+$mail    = mail($to, $subject, $message, $headers);
+Utils::show($mail);
 ?>
 
 <div class="form">
