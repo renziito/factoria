@@ -51,6 +51,7 @@ class SiteController extends Controller {
     }
 
     public function actionrepuesto() {
+        $post = $_POST;
         $from    = "Taller@factoriapenaranda.com";
         $to      = "sepia.aki@gmail.com";
         $subject = "Solicitud de Repuesto Factoria Peñaranda";
