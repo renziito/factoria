@@ -37,6 +37,7 @@ class SiteController extends Controller {
                 $message .= $key . ' : ' . $value . '<br>';
             }
             $headers = "From:" . $from;
+            $headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
             mail($to, $subject, $message, $headers);
         }
         $this->render('contacto');
@@ -60,7 +61,6 @@ class SiteController extends Controller {
             $message .= $key . ' : ' . $value . '<br>';
         }
         $headers = "From:" . $from;
-        $headers .= "MIME-Version: 1.0\r\n";
         $headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
         echo mail($to, $subject, $message, $headers);
     }
