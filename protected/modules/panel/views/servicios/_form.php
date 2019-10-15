@@ -18,7 +18,7 @@ $route = Yii::app()->getBaseUrl(true) . '/files/media/servicios/';
     ]);
     ?>
 
-    <?php if ($model->image) : ?>
+66    <?php if ($model->image) : ?>
         <div class="row">
             <div class="col-xs-12 col-md-6">
                 <img class="img-responsive" src="<?= $route ?><?= $model->image ?>" />
@@ -74,7 +74,7 @@ $route = Yii::app()->getBaseUrl(true) . '/files/media/servicios/';
                 $form->dropDownList($model, 'link', [
                     'contacto' => 'Servicios',
                     'modal'    => 'Respuesto',
-                    'auto'     => 'Venta de Autos'
+                    'autos'     => 'Venta de Autos'
                         ], ['class' => 'form-control'])
                 ?>
             </div>
