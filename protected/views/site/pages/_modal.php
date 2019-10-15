@@ -146,7 +146,7 @@
                     <div class="form-group text-center mb-0 mt-20">
                         <button type="submit" 
                                 class="btn btn-colored btn-theme-colored btn-lg 
-                                btn-flat border-left-theme-color-2-4px" 
+                                btn-flat border-right-theme-workshop-6px" 
                                 data-loading-text="Enviando...">Solicitar 
                         </button>
                     </div>
