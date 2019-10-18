@@ -7,10 +7,24 @@
 </div>
 <div class="p-40">
     <!-- Reservation Form Start-->
-    <form id="popup_reservation_form" name="reservation_form" class="reservation-form" method="post" action="<?= Yii::app()->createUrl('site/repuesto') ?>">
-        <div class="row">
+
+    <div class="row">
+        <ul class="nav nav-tabs">
+            <li class="active">
+                <h3 class="text-theme-colored line-bottom ml-15 mb-30 mr-15">
+                    <a data-toggle="tab" href="#nuevoRepuesto">
+                        Solicitar un repuesto
+                    </a>
+                </h3>
+            </li>
+
+            <li><a data-toggle="tab" href="#menu1">Menu 1</a></li>
+            <li><a data-toggle="tab" href="#menu2">Menu 2</a></li>
+        </ul>
+    </div>
+    <div class="tab-content">
+        <form id="popup_reservation_form" name="reservation_form" class="reservation-form" method="post" action="<?= Yii::app()->createUrl('site/repuesto') ?>">
             <div class="reservation-first-step">
-                <h3 class="text-theme-colored line-bottom ml-15 mb-30 mr-15">Información del Vehiculo</span></h3>
                 <div class="col-sm-6">
                     <div class="form-group mb-30">
                         <label>Marca del Vehiculo</label>
@@ -78,67 +92,68 @@
                     </div>
                 </div>
             </div>
-        </div>
 
-        <div class="row">
-            <div class="reservation-second-step">
-                <h3 class="text-theme-colored line-bottom mt-0 mr-15 mb-30 ml-15">
-                    Información Personal</h3>
-                <div class="col-sm-6">
-                    <div class="form-group mb-30">
-                        <input placeholder="Escriba su nombre" type="text" id="popup_reservation_name" name="Nombre" required="" class="form-control">
+
+            <div class="row">
+                <div class="reservation-second-step">
+                    <h3 class="text-theme-colored line-bottom mt-0 mr-15 mb-30 ml-15">
+                        Información Personal</h3>
+                    <div class="col-sm-6">
+                        <div class="form-group mb-30">
+                            <input placeholder="Escriba su nombre" type="text" id="popup_reservation_name" name="Nombre" required="" class="form-control">
+                        </div>
                     </div>
-                </div>
-                <div class="col-sm-6">
-                    <div class="form-group mb-30">
-                        <input placeholder="Escriba su telefono" type="text" id="popup_reservation_phone" name="Telefono" class="form-control" required="">
+                    <div class="col-sm-6">
+                        <div class="form-group mb-30">
+                            <input placeholder="Escriba su telefono" type="text" id="popup_reservation_phone" name="Telefono" class="form-control" required="">
+                        </div>
                     </div>
-                </div>
-                <div class="col-sm-12">
-                    <div class="form-group">
-                        <textarea placeholder="Escriba algun mensaje adcional" rows="5" class="form-control required" name="Mensaje" aria-required="true"></textarea>
+                    <div class="col-sm-12">
+                        <div class="form-group">
+                            <textarea placeholder="Escriba algun mensaje adcional" rows="5" class="form-control required" name="Mensaje" aria-required="true"></textarea>
+                        </div>
                     </div>
-                </div>
-                <div class="col-sm-12">
-                    <div class="form-group text-center mb-0 mt-20">
-                        <button type="submit" class="btn btn-colored btn-theme-colored btn-lg 
+                    <div class="col-sm-12">
+                        <div class="form-group text-center mb-0 mt-20">
+                            <button type="submit" class="btn btn-colored btn-theme-colored btn-lg 
                                 btn-flat border-right-theme-workshop-6px" data-loading-text="Enviando...">Solicitar
-                        </button>
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </form>
-    <!-- Reservation Form End-->
+        </form>
+        <!-- Reservation Form End-->
 
-    <!-- Reservation Form Validation Start-->
-    <script type="text/javascript">
-        $("#popup_reservation_form").validate({
-            submitHandler: function(form) {
-                var form_btn = $(form).find('button[type="submit"]');
-                var form_result_div = '#popup_form-result';
-                $(form_result_div).remove();
-                form_btn.before('<div id="popup_form-result" class="alert alert-success" role="alert" style="display: none;"></div>');
-                var form_btn_old_msg = form_btn.html();
-                form_btn.html(form_btn.prop('disabled', true).data("loading-text"));
-                $(form).ajaxSubmit({
-                    dataType: 'json',
-                    success: function(data) {
-                        if (data.status == 'true') {
-                            $(form).find('.form-control').val('');
+        <!-- Reservation Form Validation Start-->
+        <script type="text/javascript">
+            $("#popup_reservation_form").validate({
+                submitHandler: function(form) {
+                    var form_btn = $(form).find('button[type="submit"]');
+                    var form_result_div = '#popup_form-result';
+                    $(form_result_div).remove();
+                    form_btn.before('<div id="popup_form-result" class="alert alert-success" role="alert" style="display: none;"></div>');
+                    var form_btn_old_msg = form_btn.html();
+                    form_btn.html(form_btn.prop('disabled', true).data("loading-text"));
+                    $(form).ajaxSubmit({
+                        dataType: 'json',
+                        success: function(data) {
+                            if (data.status == 'true') {
+                                $(form).find('.form-control').val('');
+                            }
+                            form_btn.prop('disabled', false).html(form_btn_old_msg);
+                            $(form_result_div).html(data.message).fadeIn('slow');
+                            setTimeout(function() {
+                                $(form_result_div).fadeOut('slow')
+                            }, 6000);
                         }
-                        form_btn.prop('disabled', false).html(form_btn_old_msg);
-                        $(form_result_div).html(data.message).fadeIn('slow');
-                        setTimeout(function() {
-                            $(form_result_div).fadeOut('slow')
-                        }, 6000);
-                    }
-                });
-            }
-        });
-        $('[data-toggle="tooltip"]').tooltip();
-    </script>
-    <!-- Reservation Form Validation Start -->
+                    });
+                }
+            });
+            $('[data-toggle="tooltip"]').tooltip();
+        </script>
+        <!-- Reservation Form Validation Start -->
+    </div>
 </div>
 <!-- Footer Scripts -->
 <script>
