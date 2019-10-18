@@ -58,7 +58,10 @@
                 </div>
                 <div class="col-sm-6">
                     <div class="form-group mb-30">
-                        <label>VIN Code</label>
+                        <label>
+                            VIN Code
+                            <i class='fa fa-exclamation-circle' data-toggle="tooltip" title="Se Encuentra en la tarjeta de propiedad"></i>
+                        </label>
                         <input placeholder="Escriba el VIN CODE aquí" type="text" id="popup_car_model" name="VIN" class="form-control" required="">
                     </div>
                 </div>
@@ -133,6 +136,7 @@
                 });
             }
         });
+        $('[data-toggle="tooltip"]').tooltip();
     </script>
     <!-- Reservation Form Validation Start -->
 </div>
