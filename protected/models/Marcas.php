@@ -6,6 +6,8 @@
  * The followings are the available columns in table 'marcas':
  * @property integer $id
  * @property string $image
+ * @property string $titulo
+ * @property string $descripcion
  * @property string $created_at
  * @property integer $estado
  */
@@ -28,11 +30,11 @@ class Marcas extends CActiveRecord
 		// will receive user inputs.
 		return array(
 			array('estado', 'numerical', 'integerOnly'=>true,'message' => '{attribute} solo debe ser numeros.'),
-			array('image', 'length', 'max'=>255),
+			array('image, titulo, descripcion', 'length', 'max'=>255),
 			array('created_at', 'safe'),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('id, image, created_at, estado', 'safe', 'on'=>'search'),
+			array('id, image, titulo, descripcion, created_at, estado', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -55,6 +57,8 @@ class Marcas extends CActiveRecord
 		return array(
 			'id' => 'ID',
 			'image' => 'Image',
+			'titulo' => 'Titulo',
+			'descripcion' => 'Descripcion',
 			'created_at' => 'Created At',
 			'estado' => 'Estado',
 		);
@@ -80,6 +84,8 @@ class Marcas extends CActiveRecord
 
 		$criteria->compare('id',$this->id);
 		$criteria->compare('image',$this->image,true);
+		$criteria->compare('titulo',$this->titulo,true);
+		$criteria->compare('descripcion',$this->descripcion,true);
 		$criteria->compare('created_at',$this->created_at,true);
 		$criteria->compare('estado',$this->estado);
 

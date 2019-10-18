@@ -21,6 +21,8 @@ $this->breadcrumbs = array(
         'filter'       => $model,
         'columns'      => [
             'id',
+            'titulo',
+            'descripcion',
             [
                 'name'        => 'image',
                 'htmlOptions' => array('style' => 'text-align:center'),

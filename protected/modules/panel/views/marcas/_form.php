@@ -31,6 +31,22 @@ $route = Yii::app()->getBaseUrl(true) . '/files/media/marcas/';
     <div class="row">
         <div class="col-xs-9">
             <div class="form-group form-group-default required">
+                <?= $form->labelEx($model, 'titulo'); ?>
+                <?= $form->textField($model, 'titulo', ['class' => 'form-control']); ?>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-9">
+            <div class="form-group form-group-default required">
+                <?= $form->labelEx($model, 'descripcion'); ?>
+                <?= $form->textField($model, 'descripcion', ['class' => 'form-control']); ?>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-9">
+            <div class="form-group form-group-default required">
                 <?= $form->labelEx($model, 'image'); ?>
                 <?= $form->fileField($model, 'image', ['class' => 'form-control']); ?>
             </div>
