@@ -47,7 +47,13 @@
                    style="width: 100%">
                     <span class="title">Venta de Autos</span>
                 </a>
-            </li><br><br>
+            </li>
+            <li>
+                <a href="<?= Yii::app()->createUrl('panel/repuesto') ?>" class="detailed"
+                   style="width: 100%">
+                    <span class="title">Repuestos</span>
+                </a>
+            </li><br><br><br>
             <li>
                 <a href="<?= Yii::app()->createUrl('logout') ?>" class="detailed"
                    style="width: 100%">
