@@ -52,6 +52,7 @@
                                 <div class="styled-select">
                                     <?php $pathCars = Yii::app()->theme->getBaseUrl() . "/bin/images/car-logos/"; ?>
                                     <select id="popup_car_type_select" name="Tipo" class="form-control ddslick" required="">
+                                        <option>Seleccione una opción</option>
                                         <?php foreach ($carros as $carro) : ?>
                                             <option data-description="<?= $carro['descripcion'] ?>" 
                                                     data-imagesrc="<?= $pathCars ?>/<?= $carro['image'] ?>" value="<?= $carro['titulo'] ?>">
@@ -104,6 +105,7 @@
                                 <?php $pathRepuesto = Yii::app()->getBaseUrl(true) . '/files/media/repuestos/' ?>
                                 <div class="styled-select">
                                     <select id="repuestos" name="Respuesto" class="form-control ddslick" required="">
+                                        <option>Seleccione una opción</option>
                                         <?php foreach ($repuestos as $repuesto) : ?>
                                             <option data-description="<?= $repuesto->titulo ?>" 
                                                     data-imagesrc="<?= $pathRepuesto ?>/<?= $repuesto->image ?>" value="<?= $repuesto->codigo ?>">
