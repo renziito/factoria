@@ -105,7 +105,7 @@
                                 <?php $pathRepuesto = Yii::app()->getBaseUrl(true) . '/files/media/repuestos/' ?>
                                 <div class="styled-select">
                                     <select id="repuestos" name="Respuesto" class="form-control ddslick" required="">
-                                        <option>Seleccione una opción</option>
+                                        <option value ="">Seleccione una opción</option>
                                         <?php foreach ($repuestos as $repuesto) : ?>
                                             <option data-description="<?= $repuesto->modelo  ?> - <?= $repuesto->codigo ?> a S/. <?= $repuesto->precio ?>" 
                                                     data-imagesrc="<?= $pathRepuesto . $repuesto->image ?>" value="<?= $repuesto->codigo ?>">
