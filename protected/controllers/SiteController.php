@@ -92,9 +92,7 @@ class SiteController extends Controller {
         $headers = "From:" . $from;
         $headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
     
-        Utils::show($post);
-        mail($to, $subject, $message, $headers);
-        echo json_encode(['status'=>true,'message'=>'Envio realizado con éxito']);
+        echo json_encode(['status'=> mail($to, $subject, $message, $headers),'message'=>'Envio realizado con éxito']);
     }
 
     /**
