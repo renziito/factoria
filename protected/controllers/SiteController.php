@@ -94,7 +94,7 @@ class SiteController extends Controller {
     
         Utils::show($post);
         mail($to, $subject, $message, $headers);
-        echo json_encode(['message'=>'Envio realizado con éxito']);
+        echo json_encode(['status'=>true,'message'=>'Envio realizado con éxito']);
     }
 
     /**
