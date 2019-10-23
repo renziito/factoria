@@ -107,9 +107,9 @@
                                     <select id="repuestos" name="Respuesto" class="form-control ddslick" required="">
                                         <option>Seleccione una opción</option>
                                         <?php foreach ($repuestos as $repuesto) : ?>
-                                            <option data-description="<?= $repuesto->titulo ?>" 
-                                                    data-imagesrc="<?= $pathRepuesto ?>/<?= $repuesto->image ?>" value="<?= $repuesto->codigo ?>">
-                                                        <?= $marca->titulo ?>
+                                            <option data-description="<?= $repuesto->modelo  ?> - <?= $repuesto->codigo ?> a S/. <?= $repuesto->precio ?>" 
+                                                    data-imagesrc="<?= $pathRepuesto . $repuesto->image ?>" value="<?= $repuesto->codigo ?>">
+                                                        <?= $repuesto->titulo ?>
                                             </option>
                                         <?php endforeach; ?>
                                     </select>
