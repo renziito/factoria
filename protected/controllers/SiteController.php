@@ -35,7 +35,7 @@ class SiteController extends Controller
         $post = $_POST;
         if ($post) {
             $from    = "Taller@factoriapenaranda.com";
-            $to      = "sepia.aki@gmail.com";
+            $to      = "taller@factoriapenaranda.com";
             $subject = "Contacto Factoria Peñaranda";
             $message = "<h3>Contacto desde la pagina web</h3><br>";
             foreach ($post as $key => $value) {
@@ -101,7 +101,7 @@ class SiteController extends Controller
     {
         $post    = $_POST;
         $from    = "Taller@factoriapenaranda.com";
-        $to      = "sepia.aki@gmail.com";
+        $to      = "repuestos@factoriapenaranda.com";
         $subject = "Solicitud de Repuesto Factoria Peñaranda";
         $message = "<h3>Contacto desde la pagina web</h3><br>";
         foreach ($post as $key => $value) {
