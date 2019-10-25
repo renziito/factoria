@@ -278,7 +278,7 @@ $this->pageTitle = Yii::app()->name;
                                     $foto = AutoFoto::model()->find('auto_id = ' . $auto['id'] . ' AND estado = TRUE AND destacado = TRUE');
                                     if ($foto):
                                         ?>
-                                        <img src="<?= $pathAutos . $foto->image ?>" style="height: 300px;width: 100%" class="img-responsive" alt="">
+                                        <img src="<?= $pathAutos . $foto->image ?>" class="img-responsive" alt="">
                                     <?php endif; ?>
                                 </div>
                                 <div class="bg-white p-20">
