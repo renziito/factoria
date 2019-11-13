@@ -52,6 +52,7 @@
 <!-- Revolution Slider 5.x SCRIPTS -->
 <script src="<?= Yii::app()->theme->getBaseUrl() ?>/bin/js/jquery.themepunch.tools.min.js"></script>
 <script src="<?= Yii::app()->theme->getBaseUrl() ?>/bin/js/jquery.themepunch.revolution.min.js"></script>
+<script src="<?= Yii::app()->theme->getBaseUrl() ?>/bin/js/instafeed.js"></script>
 
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-4548528-6"></script>
 
@@ -94,4 +95,21 @@
     gtag('js', new Date());
 
     gtag('config', 'UA-4548528-6');
+    
+     (function($){
+        $(window).on('load', function(){
+            $.instagramFeed({
+                'username': 'factoria.penaranda',
+                'container': "#instafeed1",
+                'display_profile': false,
+                'display_biography': false,
+                'display_gallery': true,
+                'callback': null,
+                'styling': true,
+                'items': 2,
+                'items_per_row': 2,
+                'margin': 1 
+            });
+        });
+    })(jQuery);
 </script>
