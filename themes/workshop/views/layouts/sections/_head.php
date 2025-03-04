@@ -95,21 +95,4 @@
     gtag('js', new Date());
 
     gtag('config', 'UA-4548528-6');
-    
-     (function($){
-        $(window).on('load', function(){
-            $.instagramFeed({
-                'username': 'factoria.penaranda',
-                'container': "#instafeed1",
-                'display_profile': false,
-                'display_biography': false,
-                'display_gallery': true,
-                'callback': null,
-                'styling': true,
-                'items': 2,
-                'items_per_row': 2,
-                'margin': 1 
-            });
-        });
-    })(jQuery);
 </script>

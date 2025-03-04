@@ -1,5 +1,4 @@
-<footer id="footer" class="footer divider" style="background-size:100% 100%;"
-        data-bg-img="<?= Yii::app()->theme->getBaseUrl() ?>/bin/images/fondo_footer.png">
+<footer id="footer" class="footer divider" style="background-size:100% 100%;" data-bg-img="<?= Yii::app()->theme->getBaseUrl() ?>/bin/images/fondo_footer.png">
     <div class="container pt-70 pb-40">
         <div class="row">
             <div class="col-sm-6 col-md-3">
@@ -7,18 +6,18 @@
                     <img class="mt-5 mb-20" alt="" src="<?= Yii::app()->theme->getBaseUrl() ?>/bin/images/logo-factoria-blancotransparente.png">
                     <p>San Carlos 660, Surquillo</p>
                     <ul class="list-inline mt-5">
-                        <li class="m-0 pl-10 pr-10"> 
+                        <li class="m-0 pl-10 pr-10">
                             <i class="fa fa-phone text-color-workshop mr-5"></i>
-                            <span class="text-gray">952 323 616</span> 
+                            <span class="text-gray">952 323 616</span>
                         </li>
-                        <li class="m-0 pl-10 pr-10"> 
-                            <i class="fa fa-envelope-o text-color-workshop mr-5"></i> 
+                        <li class="m-0 pl-10 pr-10">
+                            <i class="fa fa-envelope-o text-color-workshop mr-5"></i>
                             <a class="text-gray" href="mailto:taller@factoriapenaranda.com">
                                 taller@factoriapenaranda.com
                             </a>
                         </li>
                         <li class="m-0 pl-10 pr-10">
-                            <i class="fa fa-globe text-color-workshop mr-5"></i> 
+                            <i class="fa fa-globe text-color-workshop mr-5"></i>
                             <a class="text-gray" href="http://www.factoriapenaranda.com">www.factoriapenaranda.com</a>
                         </li>
                     </ul>
@@ -36,13 +35,26 @@
                     </ul>
                 </div>
             </div>
-            <div class="col-sm-6 col-md-3"></div>
+            <div class="col-sm-6 col-md-3">
+                <div class="widget dark">
+                    <h4 class="widget-title line-bottom-theme-colored-2">
+                        Instagram
+                        <a class="text-white" target="_blank" href="https://instagram.com/factoria.penaranda"><i class="fa fa-instagram"></i></a>
+                    </h4>
+                    <div>
+                        <!-- Elfsight Instagram Feed | Untitled widget -->
+                        <script src="https://static.elfsight.com/platform/platform.js" async></script>
+                        <div class="elfsight-app-6f3ec55a-0d53-45a6-a416-bcf2ff48f875" data-elfsight-app-lazy></div>
+
+                    </div>
+                </div>
+            </div>
             <div class="col-sm-6 col-md-3">
                 <div class="widget dark">
                     <h4 class="widget-title line-bottom-theme-colored-2">Horas de Atención</h4>
                     <div class="opening-hourse">
                         <ul class="list-border">
-                            <li class="clearfix"> <span> Lun - Vier :  </span>
+                            <li class="clearfix"> <span> Lun - Vier : </span>
                                 <div class="value pull-right"> 8:15 am - 5:45 pm </div>
                             </li>
                             <li class="clearfix"> <span> Sábados :</span>
@@ -51,14 +63,7 @@
                         </ul>
                     </div>
                     <br>
-                    <h4 class="widget-title line-bottom-theme-colored-2">Instagram</h4>
-                    <div>
-                        <div id="instafeed1" class="instagram-feed clearfix" 
-                             data-userid="3450544574" 
-                             data-accesstoken="3450544574.1677ed0.7d0725a565914415b40a4953c17bcdc9"
-                             data-limit="2" data-resolution="low_resolution">
-                        </div>
-                    </div>
+
                 </div>
             </div>
         </div>
